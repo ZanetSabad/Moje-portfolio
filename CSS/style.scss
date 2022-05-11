@@ -34,6 +34,12 @@ $main-color5:#716D6E;
     background-color: $main-color;
 }
 
+@mixin window{
+    width: 70%;
+    height: 1200px;
+    margin-left: 380px;
+}
+
 
 // ****************************Header
 .index{
@@ -472,9 +478,7 @@ main{
 
 }
 .row{
-    width: 70%;
-    height: 1200px;
-    margin-left: 380px;
+   @include window;
 }
 
 .textCV{
@@ -536,6 +540,26 @@ h4{
     font-family: 'Inconsolata', monospace;
     margin-left: 20px;
     margin-top: -30px;
+}
+
+// ****************************************************************Portfolio
+.preview{
+    @include window;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.preview img{
+    width: 250px;
+    margin-bottom: 40px;
+    border: 2px solid $main-color3;
+    border-radius: 10px;
+
 }
 
 
