@@ -454,7 +454,7 @@ main {
 
 .row {
   width: 70%;
-  height: 1200px;
+  height: 500px;
   margin-left: 380px;
 }
 
@@ -518,21 +518,116 @@ h4 {
 
 .preview {
   width: 70%;
-  height: 1200px;
+  height: 500px;
   margin-left: 380px;
+  position: relative;
   margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: space-around;
 }
 
-.preview img {
-  width: 250px;
-  margin-bottom: 40px;
-  border: 2px solid #010D00;
+.flip-box, .preview-content, .title-front {
+  background-color: transparent;
+  width: 280px;
+  height: 200px;
   border-radius: 10px;
+  box-shadow: 10px 10px 15px #716D6E;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 1.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 10% 100%;
+     object-position: 10% 100%;
+  transform: translateZ(2rem);
+}
+
+.title-front {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #F24E29;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  z-index: 999;
+  line-height: 200px;
+  text-align: center;
+  transform: translateZ(80px) translate(-50%, -50%);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #010D00;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  background-color: #45A9BF;
+  color: #010D00;
+  border-radius: 10px;
+  font-family: "Inconsolata", monospace;
+}
+
+.back {
+  position: absolute;
+  line-height: 200px;
+  text-align: center;
+  font-size: 25px;
+  overflow: hidden;
+  background-color: #89345e;
+  border-radius: 10px;
+  font-family: "Inconsolata", monospace;
+  transform: rotateY(180deg);
+}
+
+.back a {
+  color: #010D00;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  font-size: 20px;
+  color: #F24E29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Inconsolata", monospace;
+}
+
+.html-back {
+  color: #010D00;
+  border: 2px solid green;
 }
 
 footer {

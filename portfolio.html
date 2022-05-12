@@ -15,8 +15,7 @@
             <nav class = "navigace"> 
                 <ul>     
                     <li><a class="active" href="#">Kdo jsem</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Životopis</a></li>
+                    <li><a href="zivotopis.html">Životopis</a></li>
                     <li><a href="index.html"><img src="IMG/icons/home.png" alt="ikona domečku - zpět na úvodní stranu"></a></li>
                 </ul>    
             </nav>
@@ -24,14 +23,68 @@
             <p class="follow">follow me</p>
             <a href="https://www.linkedin.com/in/žaneta-sabadková-56542b213/" target="_blank"><img class = "socMedia "src="IMG/icons/linkedin.png" alt="odkaz na Linkedin"> </a>
         </section>
+    </header>
 
+    <main> 
         <h1>Portfolio</h1> 
 
         <section class="preview">
-            <img src="IMG/VilbeeWeb.jpg" alt="Webová stránka">
-            <img src="IMG/Vlna.jpg" alt="Efekt vlna pomocí CSS">
-            <img src="IMG/Tecka.jpg" alt="Efekt vyskočení z tečky">
-            <img src="IMG/Flex-box.jpg" alt="Zkoušení flex-boxu">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="front">
+                        <img class="preview-content"src="IMG/VilbeeWeb.jpg" alt="Webová stránka">
+                        <p class="title-front">Webová stránka</p>
+                    </div>
+                    <div class="back">
+                        <p>Webová stránka</p>
+                        <a href="#">HTML</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="front">
+                        <img src="IMG/Vlna.jpg" alt="Efekt vlna pomocí CSS">
+                        <p class="title-front">Efekt Vlna</p>
+                    </div>
+                    <div class="back">
+                        <p class="title-back">Práce s CSS</p>
+                        <a class="html-back"href="#">HTML</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="front">
+                        <img src="IMG/Tecka.jpg" alt="Efekt vyskočení z tečky">
+                        <p class="title-front">Efekt vyskočení z tečky</p>
+                    </div>
+                    <div class="back">
+                        <p class="title-back">Práce s CSS</p>
+                        <a class="html-back" href="#">HTML</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="front">            
+                        <img src="IMG/Flex-box.jpg" alt="Zkoušení flex-boxu">
+                        <p class="title-front">Flex-box</p>
+                    </div>
+                    <div class="back">
+                        <p class="title-back">Práce s flex-boxem</p>
+                        <a class="html-back"href="#">HTML</a>
+                    </div>
+                </div>
+            </div>
         </section>
+    </main>
+
+    <footer>
+        <p>&copy; Na brzkou shledanou - Žaneta Sabadková &#128540;</p>
+    </footer>   
 </body>
 </html>
