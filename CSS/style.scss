@@ -16,7 +16,7 @@ $main-color5:#716D6E;
     text-decoration: none;
     font-weight: 600;
     color: $main-color3;
-    font-family: 'Inconsolata', monospace;
+    @include font;
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -38,6 +38,10 @@ $main-color5:#716D6E;
     width: 70%;
     height: 1200px;
     margin-left: 380px;
+}
+
+@mixin font {
+    font-family: 'Inconsolata', monospace;
 }
 
 
@@ -108,7 +112,7 @@ $main-color5:#716D6E;
 }
 
 .follow{
-    font-family: 'Inconsolata', monospace;
+    @include font;
     color: $main-color4;
     letter-spacing: 2px;
     text-align: center;
@@ -137,7 +141,7 @@ $main-color5:#716D6E;
 
 .title{
     position: absolute;
-    font-family: 'Inconsolata', monospace;
+    @include font;
     width: 800px;
     height: 650px;
     color: $main-color3;
@@ -153,7 +157,7 @@ $main-color5:#716D6E;
     height: 40px;
     overflow:hidden;
 
-    font-family: 'Inconsolata', monospace;
+    @include font;
     font-size: 35px;
     line-height: 40px;
     color: $main-color4;
@@ -367,7 +371,7 @@ main{
 
 .about_me h1{
     margin-top: 100px;
-    font-family: 'Inconsolata', monospace;
+    @include font;
     border-left: $main-color3 6px solid;
     padding-left: 10px;
     font-size: 28px;
@@ -376,7 +380,7 @@ main{
 
 .about_me p{
     margin-top: 20px;
-    font-family: 'Inconsolata', monospace;
+    @include font;
     letter-spacing: 1px;
     font-size: 21px;
 }
@@ -406,7 +410,7 @@ main{
     margin-top: 20px;
     position: absolute;
     color: $main-color1;
-    font-family: 'Inconsolata', monospace;
+    @include font;
     letter-spacing: 2px;
     font-size: 30px;
     border-bottom: 2px solid $main-color1;
@@ -464,7 +468,7 @@ main{
 
 // ********************************************ŽIVOTOPIS
 .zivotopis h1{
-    font-family: 'Inconsolata', monospace;
+    @include font;
     padding-top: 50px;
     letter-spacing: 2px;
     font-size: 40px;
@@ -498,13 +502,13 @@ main{
 }
 
 h2{
-    font-family: 'Inconsolata', monospace;
+    @include font;
     
 
 }
 
 h3{
-    font-family: 'Inconsolata', monospace;
+    @include font;
     color: $main-color1;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -513,13 +517,13 @@ h3{
 }
 
 h4{
-    font-family: 'Inconsolata', monospace;
+    @include font;
     margin-bottom: 10px;
     font-size: 18px;
 }
 
 .popis{
-    font-family: 'Inconsolata', monospace;
+    @include font;
     line-height: 25px;
     margin-top: 40px;
     font-size: 17px;
@@ -537,7 +541,7 @@ h4{
     font-size: 15px;
     color: $main-color;
     font-weight: 600;
-    font-family: 'Inconsolata', monospace;
+    @include font;
     margin-left: 20px;
     margin-top: -30px;
 }
@@ -545,22 +549,120 @@ h4{
 // ****************************************************************Portfolio
 .preview{
     @include window;
-    margin-top: 40px;
+    position: relative;
+    height: -500px;
+    // margin-top: 40px;
     display: flex;
-    flex-direction: row;
-
+    flex-direction: row;    
     justify-content: space-around;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: space-around;
 }
 
-.preview img{
-    width: 250px;
-    margin-bottom: 40px;
-    border: 2px solid $main-color3;
+.flip-box, .preview-content, .title-front{
+    background-color: transparent;
+    width: 280px;
+    height: 200px;
     border-radius: 10px;
+    box-shadow: 10px 10px 15px $main-color5;
+    perspective: 1000px;
+}
+
+.flip-box-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 1.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 10% 100%;
+    transform: translateZ(2rem);
+}
+
+.title-front{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: $main-color4;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 999;
+    line-height: 200px;
+    text-align: center;
+    transform: translateZ(80px) translate(-50%,-50%);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: $main-color3;
+}
+
+.flip-box:hover 
+.flip-box-inner{
+    transform: rotateY(180deg);
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.front{
+    background-color: $main-color;
+    color: #010D00;
+    border-radius: 10px;
+    @include font;
+    // z-index: 1;
+}
+
+.back{
+    position: absolute;
+    // top: 40%;
+    line-height: 200px;
+    text-align: center;
+    font-size: 25px;
+    overflow: hidden;
+    background-color: $main-color1;
+    border-radius: 10px;
+    @include font;
+    // z-index: 0;
+    transform: rotateY(180deg);
+    
+}
+
+.back a{
+    color: #010D00;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 20px;
+    color: $main-color4;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    @include font;
 
 }
+
+.html-back{
+    color: #010D00;
+}
+
 
 
 
