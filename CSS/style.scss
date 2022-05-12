@@ -10,7 +10,7 @@ $main-color1: #89345e;
 $main-color2: #F2F2F2;
 $main-color3: #010D00;
 $main-color4: #F24E29;
-$main-color5:#716D6E;
+$main-color5: #716D6E;
 
 @mixin font{
     @include font;
@@ -336,9 +336,9 @@ $main-color5:#716D6E;
     }
 }
 // ***************************************Main
-main{
+.h1{
     background-color: $main-color2;
-    height: 1220px;
+    height: 20px;
     width: 100%;
     margin-top: -20px;
     // position: relative;
@@ -471,7 +471,7 @@ main h1{
     @include font;
     // position: relative;
     text-align: center;
-    margin-top: 120px;
+    // margin-top: 120px;
     // padding-top: 50px;
     // letter-spacing: 2px;
     font-size: 60px;
@@ -601,7 +601,7 @@ h4{
     left: 50%;
     color: $main-color4;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     z-index: 999;
     line-height: 200px;
