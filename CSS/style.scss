@@ -36,7 +36,6 @@ $main-color5:#716D6E;
 
 @mixin window{
     width: 70%;
-    height: 1200px;
     margin-left: 380px;
 }
 
@@ -483,6 +482,7 @@ main{
 }
 .row{
    @include window;
+   height: 1000px;
 }
 
 .textCV{
@@ -549,9 +549,8 @@ h4{
 // ****************************************************************Portfolio
 .preview{
     @include window;
+    height: 500px;
     position: relative;
-    height: -500px;
-    // margin-top: 40px;
     display: flex;
     flex-direction: row;    
     justify-content: space-around;
@@ -564,7 +563,7 @@ h4{
     width: 280px;
     height: 200px;
     border-radius: 10px;
-    box-shadow: 10px 10px 15px $main-color5;
+    // box-shadow: 10px 10px 15px $main-color5;
     perspective: 1000px;
 }
 
@@ -574,8 +573,9 @@ h4{
     height: 100%;
     text-align: center;
     border-radius: 10px;
-    transition: transform 1.8s;
+    transition: transform 2s;
     transform-style: preserve-3d;
+    
 }
 
 .flip-box img{
@@ -590,6 +590,7 @@ h4{
     object-fit: cover;
     object-position: 10% 100%;
     transform: translateZ(2rem);
+    box-shadow: 10px 10px 15px $main-color5;
 }
 
 .title-front{
@@ -611,6 +612,9 @@ h4{
 .flip-box:hover 
 .flip-box-inner{
     transform: rotateY(180deg);
+    box-shadow: 10px 10px 15px $main-color2;
+    
+
 }
 
 .front, .back{
@@ -659,9 +663,7 @@ h4{
 
 }
 
-.html-back{
-    color: #010D00;
-}
+
 
 
 
@@ -674,6 +676,7 @@ footer{
     height: 100px;
     background-color: $main-color1;
     border-top: 1px solid $main-color5;
+    margin-top: 200px;
 }
 
 footer p{

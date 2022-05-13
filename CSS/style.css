@@ -454,8 +454,8 @@ main {
 
 .row {
   width: 70%;
-  height: 1200px;
   margin-left: 380px;
+  height: 1000px;
 }
 
 .textCV {
@@ -518,10 +518,9 @@ h4 {
 
 .preview {
   width: 70%;
-  height: 1200px;
   margin-left: 380px;
+  height: 500px;
   position: relative;
-  height: -500px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -534,7 +533,6 @@ h4 {
   width: 280px;
   height: 200px;
   border-radius: 10px;
-  box-shadow: 10px 10px 15px #716D6E;
   perspective: 1000px;
 }
 
@@ -544,7 +542,7 @@ h4 {
   height: 100%;
   text-align: center;
   border-radius: 10px;
-  transition: transform 1.8s;
+  transition: transform 2s;
   transform-style: preserve-3d;
 }
 
@@ -562,6 +560,7 @@ h4 {
   -o-object-position: 10% 100%;
      object-position: 10% 100%;
   transform: translateZ(2rem);
+  box-shadow: 10px 10px 15px #716D6E;
 }
 
 .title-front {
@@ -582,6 +581,7 @@ h4 {
 
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
+  box-shadow: 10px 10px 15px #F2F2F2;
 }
 
 .front, .back {
@@ -625,15 +625,12 @@ h4 {
   font-family: "Inconsolata", monospace;
 }
 
-.html-back {
-  color: #010D00;
-}
-
 footer {
   width: 100%;
   height: 100px;
   background-color: #89345e;
   border-top: 1px solid #716D6E;
+  margin-top: 200px;
 }
 
 footer p {
