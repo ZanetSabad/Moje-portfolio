@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+}
+
 header {
+  width: 100%;
+  height: 100px;
   background-color: #F2F2F2;
+  position: absolute;
   height: 150px;
 }
 
@@ -14,18 +21,12 @@ header {
   height: 100vh;
   background-color: #F2F2F2;
   background: url(../IMG/my_foto.png);
-  box-shadow: 10px 10px 15px #716D6E;
   background-position: right;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-}
-
-.cv {
-  width: 100%;
-  height: 100vh;
-  background-color: #F2F2F2;
+  box-shadow: 10px 10px 15px #716D6E;
 }
 
 .menu {
@@ -36,7 +37,7 @@ header {
   margin-top: 40px;
   margin-left: 40px;
   box-shadow: 10px 10px 20px #716D6E;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .navigace {
@@ -50,35 +51,44 @@ header {
   text-align: center;
 }
 
-.navigace li a {
+.navigace a {
   text-decoration: none;
   font-weight: 600;
   color: #010D00;
   font-family: "Inconsolata", monospace;
   font-size: 25px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
-.navigace ul li img {
+.navigace img {
   width: 50px;
 }
 
+.active {
+  box-shadow: 5px 2px 15px #010D00;
+  padding: 5px 10px;
+}
+
+.active_house {
+  box-shadow: 5px 2px 15px #010D00;
+  padding-top: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .cv {
-  text-decoration: none;
-  font-weight: 600;
-  color: #010D00;
-  font-family: "Inconsolata", monospace;
-  font-size: 25px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   position: absolute;
+  display: inline-block;
+  font-family: "Inconsolata", monospace;
+  font-weight: 600;
+  text-decoration: none;
   background-color: #89345e;
-  text-align: center;
   font-size: 20px;
-  height: 25px;
   color: #F2F2F2;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  margin-left: 40px;
+  margin-top: 20px;
 }
 
 .follow {
@@ -89,12 +99,12 @@ header {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .socMedia {
-  width: 30px;
   margin-top: 20px;
+  width: 30px;
   margin-left: 135px;
 }
 
@@ -145,7 +155,7 @@ header {
 }
 .animation .content_animation:after, .animation .content_animation:before {
   position: absolute;
-  top: 13%;
+  top: 12%;
   color: #45A9BF;
   font-size: 40px;
   line-height: 40px;
@@ -270,37 +280,6 @@ header {
   border-style: inset;
 }
 
-.arrow {
-  width: 30px;
-  margin-top: -150px;
-  display: block;
-  -webkit-animation: fromTop 2s 0.5s;
-          animation: fromTop 2s 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes fromTop {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(40px);
-  }
-}
-
-@keyframes fromTop {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(40px);
-  }
-}
 .main_index {
   background-color: #F2F2F2;
   height: 1220px;
@@ -467,6 +446,8 @@ main {
   width: 70%;
   margin-left: 380px;
   height: 1000px;
+  position: absolute;
+  margin-top: 120px;
 }
 
 .textCV {
@@ -531,7 +512,8 @@ h4 {
   width: 70%;
   margin-left: 380px;
   height: 500px;
-  position: relative;
+  margin-top: 150px;
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -636,14 +618,31 @@ h4 {
   font-family: "Inconsolata", monospace;
 }
 
-.priprava {
+.who_are_I {
   font-family: "Inconsolata", monospace;
   width: 70%;
   margin-left: 380px;
-  text-align: center;
+  height: 500px;
+  margin-top: 150px;
+  position: absolute;
   font-size: 30px;
-  color: #F24E29;
-  padding-top: 100px;
+}
+
+.who_are_title {
+  font-size: 30px;
+  color: #45A9BF;
+}
+
+.who_are_I h2 {
+  font-size: 25px;
+  color: #89345e;
+  margin-top: 20px;
+}
+
+.who_are_I p {
+  font-size: 19px;
+  line-height: 23px;
+  margin-top: 10px;
 }
 
 footer {
