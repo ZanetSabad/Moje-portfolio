@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+header {
+  background-color: #F2F2F2;
+  height: 150px;
+}
+
 .index {
   width: 100%;
   height: 100vh;
@@ -296,11 +301,17 @@
     transform: translateY(40px);
   }
 }
-main {
+.main_index {
   background-color: #F2F2F2;
   height: 1220px;
   width: 100%;
   margin-top: -20px;
+}
+
+main {
+  background-color: #F2F2F2;
+  height: 1220px;
+  width: 100%;
 }
 
 .about {
@@ -625,12 +636,21 @@ h4 {
   font-family: "Inconsolata", monospace;
 }
 
+.priprava {
+  font-family: "Inconsolata", monospace;
+  width: 70%;
+  margin-left: 380px;
+  text-align: center;
+  font-size: 30px;
+  color: #F24E29;
+  padding-top: 100px;
+}
+
 footer {
   width: 100%;
   height: 100px;
   background-color: #89345e;
   border-top: 1px solid #716D6E;
-  margin-top: 200px;
 }
 
 footer p {
