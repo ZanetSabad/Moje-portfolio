@@ -293,7 +293,7 @@ header {
   margin-top: -20px;
 }
 
-main {
+.port, .who, .curiculum {
   background-color: #F2F2F2;
   height: 1420px;
   width: 100%;

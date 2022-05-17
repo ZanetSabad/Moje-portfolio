@@ -1,3 +1,4 @@
+
 @media only screen and (min-width: 1500px){
     
     .my_foto{
@@ -43,6 +44,122 @@
         margin-top: 0px;
     }
 
+}
+
+@media only screen and (max-width: 1024px){
+    .menu{
+        width: 300px;
+        height: 100vh;
+        margin-top: 40px;
+        margin-left: 40px;
+        border-radius: 10px;
+    }
+
+    header h1{
+        padding-top: 50px;
+        letter-spacing: 2px;
+        font-size: 40px;
+        margin: 20px 600px;
+    }
+
+    .who{
+        height: 1600px;
+        width: 100%;        
+    }
+
+    .my_foto_front{
+        margin-top: 490px;
+        
+    }   
+
+    .row{
+        width: 55%;
+    }
+
+    .name_who_are{
+        font-size: 37px;
+    }
+
+    .title_who_are{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 20px 0;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 600px;
+        text-align: center;    
+    } 
+
+     .text_who_are{
+        font-size: 17px;
+        line-height: 21px;
+    }
+    
+  
+    /******************************** Životopis */
+    .icon{
+        width: 35px;
+        margin-left:0px;
+    
+    }
+    
+    .kurz{
+        margin-top: 80px;
+    }
+
+    h2{
+        font-size: 20px;
+        text-align: center;
+        width: 200px;    
+    }
+    
+    h4{
+        margin-bottom: 5px;
+
+    }
+    
+    .popis{
+        line-height: 22px;
+        margin-top: 20px;
+        font-size: 17px;
+    }
+    
+    .eyes{
+        width: 30px;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 40px;
+        
+    }
+
+    .certif{
+        margin-right: 20px;
+    }
+    
+    .watch a{
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 20px;
+        margin-top: -30px;
+    }
+
+    /* portfolio */
+    .preview{
+        width: 55%;
+        height: 500px;        
+    }
+
+    .flip-box, .preview-content, .title-front{
+        background-color: transparent;
+        width: 250px;
+        height: 180px;
+    }
+
+    .port{
+        height: 1000px;
+        width: 100%;
+        
+    }
 }
 
 

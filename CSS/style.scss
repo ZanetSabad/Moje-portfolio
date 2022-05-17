@@ -175,8 +175,6 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    // border: 2px solid yellow;
-
 }
 
 .animation {
@@ -193,6 +191,7 @@ header{
       overflow: hidden;
       height: 40px;
       padding: 0 0px;
+
   
       &:before {
         content: '[';
@@ -357,7 +356,7 @@ header{
     margin-top: -20px;
 }
 
-main{
+.port, .who, .curiculum{
     background-color: $main-color2;
     height: 1420px;
     width: 100%;
