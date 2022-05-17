@@ -33,11 +33,11 @@ $main-color5:#716D6E;
 
 @mixin phoneMail{
     border: 2px solid $main-color3;
-    border-radius: 5px;
-    width: 230px;
-    display: inline-block;
+    border-radius: 10px;
+    width: 240px;
+    height: 100px;
     position: absolute;
-    margin-top: 400px;
+    margin-top: 500px;
     text-align: center;
     padding: 10px 25px;
     background-color: $main-color;
@@ -119,6 +119,7 @@ header{
     padding-top: 35px;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 10px;
 }    
     
 .cv{
@@ -205,7 +206,7 @@ header{
   
       &:after, &:before {
         position: absolute;
-        top: 12%;
+        top: 8%;
         
         color: $main-color;
         font-size: 40px;
@@ -322,23 +323,7 @@ header{
     letter-spacing: 2px;
 }
 
-.btn_port{
-    text-decoration: none;
-    margin-bottom: 80px;
-    font-size: 25px;
-    color: $main-color3;
-    font-weight: 700;
-    border: $main-color1 4px solid;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    padding: 10px 15px;
-    border-style: outset;
-    background-color:$main-color1;
-}
 
-.btn_port:hover{
-    border-style: inset;
-}
 
 // ***************************************MAIN
 .main_index{
@@ -358,7 +343,7 @@ main{
 // *******************************Index MAIN
 
 
-.about{
+.prolog{
     position: relative;
     background-color: $main-color2;
     box-shadow: 10px 10px 15px $main-color5;
@@ -366,14 +351,14 @@ main{
     flex-direction: row;
     justify-content: center;
     width: 90%;
-    height: 600px;
+    height: 700px;
     margin: 0 auto;
     z-index: 1;
 
 
 }
 
-.about_me{
+.prolog_about_me{
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -381,28 +366,65 @@ main{
     color: $main-color3;
 }
 
-.about_me h1{
+.prolog_about_me h1{
+    width: 230px;
     margin-top: 100px;
     @include font;
     border-left: $main-color3 6px solid;
-    padding-left: 10px;
     font-size: 28px;
     letter-spacing: 1px;
 }
 
-.about_me p{
+.prolog_about_me p{
     margin-top: 20px;
     @include font;
     letter-spacing: 1px;
     font-size: 21px;
 }
 
+.link{
+    position: absolute;
+    display: inline-block;
+    // margin-left: 620px;
+    margin-top: 200px;
+    width: 200px;
+
+}
+
+.btn_port{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    color: $main-color3;
+    font-weight: 700;
+    border: $main-color1 4px solid;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border-style: outset;
+    background-color:$main-color1;
+
+}
+
+.btn_port:hover{
+    border-style: inset;
+}
+
+.phone, .mail{
+    width: 50px;
+    margin-bottom: 8px;
+    
+}
+
 .phoneNumber{
     @include phoneMail;
 }
 
-.phone{
-    width: 40px;
+.phoneNumber a, .email a{
+    text-decoration: none;
+    color: $main-color3;
+    display: inline-block;
+    position: relative;
 }
 
 .email{
@@ -412,10 +434,6 @@ main{
 
 .phoneNumber .email:hover{
     border-style: groove;
-}
-
-.mail{
-    width: 40px;
 }
 
 .WhichIWork{
