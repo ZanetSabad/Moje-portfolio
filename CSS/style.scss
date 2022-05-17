@@ -111,6 +111,7 @@ header{
 .active{
     box-shadow: 5px 2px 15px $main-color3;
     padding: 5px 10px;
+    border-radius: 10px;
 }
 
 .active_house{
@@ -342,14 +343,14 @@ header{
 // ***************************************MAIN
 .main_index{
     background-color: $main-color2;
-    height: 1220px;
+    height: 1320px;
     width: 100%;
     margin-top: -20px;
 }
 
 main{
     background-color: $main-color2;
-    height: 1220px;
+    height: 1420px;
     width: 100%;
     
 }
@@ -475,10 +476,19 @@ main{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
 }
 
+.my_foto_front{
+    position: relative;
+    // height: 550px;
+    width: 500px;
+    margin-top: 310px;
+    margin-left: -120px;
+    
+}
+
 
 
 // ********************************************ŽIVOTOPIS
-.zivotopis h1{
+header h1{
     @include font;
     padding-top: 50px;
     letter-spacing: 2px;
@@ -678,40 +688,46 @@ h4{
 }
 
 
-.who_are_I{
-    @include font;
-    @include window;
-    height: 500px;
-    margin-top: 150px;
-    position: absolute;
-    font-size: 30px;
-
+// ***********************************************WHOARE
+main h1{
+    color: $main-color;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 50px;
 }
 
-.who_are_title{
+.name_who_are{
+    font-size: 45px;
+    color: $main-color3;
+}
+
+.head_title_who_are{
     font-size: 30px;
     color: $main-color;
 }
 
-.who_are_I h2{
-    font-size: 25px;
-    color: $main-color1;
-    margin-top: 20px;
-}
-
-.who_are_I p{
+.text_who_are{
+    @include font;
     font-size: 19px;
     line-height: 23px;
     margin-top: 10px;
 }
 
+ .title_who_are{
+    @include font;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $main-color;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    box-shadow: 10px 10px 15px $main-color5;
+    border-radius: 5px;
+    font-size: 18px;
 
-
-
-
-
-
-
+} 
 // ********************************************Footer
 footer{
     width: 100%;

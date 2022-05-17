@@ -13,7 +13,7 @@
         margin-top: 300px;
     }
 
-    .zivotopis h1{
+    header h1{
         font-size: 60px;
         margin: 20px 900px;
     
@@ -23,9 +23,18 @@
         height: 750px;
      }
 
+/* FOTO - Who are */
+    .my_foto_front{
+        position: absolute;
+        width: 550px;
+        margin-top: 100px;
+        margin-left: -280px;
+    
+}
     footer{
+        position: relative;
         height: 100px;
-        margin-top: 400px;
+        margin-top: 0px;
     }
 
 }

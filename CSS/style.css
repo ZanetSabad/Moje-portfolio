@@ -68,6 +68,7 @@ header {
 .active {
   box-shadow: 5px 2px 15px #010D00;
   padding: 5px 10px;
+  border-radius: 10px;
 }
 
 .active_house {
@@ -282,14 +283,14 @@ header {
 
 .main_index {
   background-color: #F2F2F2;
-  height: 1220px;
+  height: 1320px;
   width: 100%;
   margin-top: -20px;
 }
 
 main {
   background-color: #F2F2F2;
-  height: 1220px;
+  height: 1420px;
   width: 100%;
 }
 
@@ -428,7 +429,14 @@ main {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
 }
 
-.zivotopis h1 {
+.my_foto_front {
+  position: relative;
+  width: 500px;
+  margin-top: 310px;
+  margin-left: -120px;
+}
+
+header h1 {
   font-family: "Inconsolata", monospace;
   padding-top: 50px;
   letter-spacing: 2px;
@@ -618,31 +626,43 @@ h4 {
   font-family: "Inconsolata", monospace;
 }
 
-.who_are_I {
-  font-family: "Inconsolata", monospace;
-  width: 70%;
-  margin-left: 380px;
-  height: 500px;
-  margin-top: 150px;
-  position: absolute;
-  font-size: 30px;
+main h1 {
+  color: #45A9BF;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 50px;
 }
 
-.who_are_title {
+.name_who_are {
+  font-size: 45px;
+  color: #010D00;
+}
+
+.head_title_who_are {
   font-size: 30px;
   color: #45A9BF;
 }
 
-.who_are_I h2 {
-  font-size: 25px;
-  color: #89345e;
-  margin-top: 20px;
-}
-
-.who_are_I p {
+.text_who_are {
+  font-family: "Inconsolata", monospace;
   font-size: 19px;
   line-height: 23px;
   margin-top: 10px;
+}
+
+.title_who_are {
+  font-family: "Inconsolata", monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #45A9BF;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px 0;
+  box-shadow: 10px 10px 15px #716D6E;
+  border-radius: 5px;
+  font-size: 18px;
 }
 
 footer {
