@@ -34,10 +34,11 @@ $main-color5:#716D6E;
 @mixin phoneMail{
     border: 2px solid $main-color3;
     border-radius: 10px;
-    width: 240px;
+    width: 260px;
     height: 100px;
     position: absolute;
     margin-top: 500px;
+    margin-left: -40px;
     text-align: center;
     padding: 10px 25px;
     background-color: $main-color;
@@ -310,6 +311,9 @@ header{
     text-transform: uppercase;
     letter-spacing: 4px;
     color: $main-color;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 20px;
 }
 .color_name{
     color: $main-color3;
@@ -321,6 +325,26 @@ header{
     // margin-top: 0px;
     font-size: 25px;
     letter-spacing: 2px;
+}
+
+.btn_port{
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 90px;
+    font-size: 25px;
+    color: $main-color3;
+    font-weight: 700;
+    border: $main-color1 4px solid;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border-style: outset;
+    background-color:$main-color1;
+
+}
+
+.btn_port:hover{
+    border-style: inset;
 }
 
 
@@ -382,34 +406,6 @@ main{
     font-size: 21px;
 }
 
-.link{
-    position: absolute;
-    display: inline-block;
-    // margin-left: 620px;
-    margin-top: 200px;
-    width: 200px;
-
-}
-
-.btn_port{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 25px;
-    color: $main-color3;
-    font-weight: 700;
-    border: $main-color1 4px solid;
-    border-radius: 10px;
-    letter-spacing: 1px;
-    padding: 10px 15px;
-    border-style: outset;
-    background-color:$main-color1;
-
-}
-
-.btn_port:hover{
-    border-style: inset;
-}
-
 .phone, .mail{
     width: 50px;
     margin-bottom: 8px;
@@ -425,6 +421,8 @@ main{
     color: $main-color3;
     display: inline-block;
     position: relative;
+    font-weight: 600;
+    @include font;
 }
 
 .email{

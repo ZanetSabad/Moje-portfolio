@@ -251,6 +251,9 @@ header {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #45A9BF;
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 20px;
 }
 
 .color_name {
@@ -262,6 +265,25 @@ header {
 .text {
   font-size: 25px;
   letter-spacing: 2px;
+}
+
+.btn_port {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 90px;
+  font-size: 25px;
+  color: #010D00;
+  font-weight: 700;
+  border: #89345e 4px solid;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  border-style: outset;
+  background-color: #89345e;
+}
+
+.btn_port:hover {
+  border-style: inset;
 }
 
 .main_index {
@@ -314,31 +336,6 @@ main {
   font-size: 21px;
 }
 
-.link {
-  position: absolute;
-  display: inline-block;
-  margin-top: 200px;
-  width: 200px;
-}
-
-.btn_port {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 25px;
-  color: #010D00;
-  font-weight: 700;
-  border: #89345e 4px solid;
-  border-radius: 10px;
-  letter-spacing: 1px;
-  padding: 10px 15px;
-  border-style: outset;
-  background-color: #89345e;
-}
-
-.btn_port:hover {
-  border-style: inset;
-}
-
 .phone, .mail {
   width: 50px;
   margin-bottom: 8px;
@@ -347,10 +344,11 @@ main {
 .phoneNumber {
   border: 2px solid #010D00;
   border-radius: 10px;
-  width: 240px;
+  width: 260px;
   height: 100px;
   position: absolute;
   margin-top: 500px;
+  margin-left: -40px;
   text-align: center;
   padding: 10px 25px;
   background-color: #45A9BF;
@@ -361,15 +359,18 @@ main {
   color: #010D00;
   display: inline-block;
   position: relative;
+  font-weight: 600;
+  font-family: "Inconsolata", monospace;
 }
 
 .email {
   border: 2px solid #010D00;
   border-radius: 10px;
-  width: 240px;
+  width: 260px;
   height: 100px;
   position: absolute;
   margin-top: 500px;
+  margin-left: -40px;
   text-align: center;
   padding: 10px 25px;
   background-color: #45A9BF;
