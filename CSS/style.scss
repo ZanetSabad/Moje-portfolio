@@ -55,10 +55,9 @@ html{
 }
 header{
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: $main-color2;
     position: absolute;
-    height: 150px;
 
 }
 // ****************************************Index - hlavní stránka
@@ -73,6 +72,7 @@ header{
     background-size: contain;
     position: relative;
     box-shadow: 10px 10px 15px $main-color5;
+    border-radius: 10px;
 
 }
 
@@ -186,28 +186,30 @@ header{
     line-height: 40px;
     color: $main-color4;
     
+}
+
     .content_animation {
       font-weight: 600;
       overflow: hidden;
       height: 40px;
       padding: 0 0px;
-
+      border: 2px solid green;
+    }
   
-      &:before {
+    .hi:before {
         content: '[';
         left: 190px;
       }
   
-      &:after {
+    .hi:after {
         content: ']';
         position: absolute;
         right: 220px;
       }
   
-      &:after, &:before {
+      .hi:after, .hi:before {
         position: absolute;
         top: 8%;
-        
         color: $main-color;
         font-size: 40px;
         line-height: 40px;
@@ -238,15 +240,16 @@ header{
         animation-name: change;
         animation-duration: 10s;
         animation-iteration-count: infinite;
+      }
   
         .animation_list_item {  
           line-height:40px;
           margin:0;
           
         }
-      }
-    }
-}
+      
+    
+
   
   @-webkit-keyframes opacity {
     0%, 100% {opacity:0;}
@@ -370,6 +373,7 @@ header{
     position: relative;
     background-color: $main-color2;
     box-shadow: 10px 10px 15px $main-color5;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -377,8 +381,6 @@ header{
     height: 700px;
     margin: 0 auto;
     z-index: 1;
-
-
 }
 
 .prolog_about_me{
@@ -445,6 +447,7 @@ header{
 
 .skills{
     box-shadow: 10px 10px 15px $main-color5;
+    border-radius: 10px;
     margin-top: -20px;
     display: flex;
     flex-direction: column;
@@ -491,14 +494,7 @@ header{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
 }
 
-.my_foto_front{
-    position: relative;
-    // height: 550px;
-    width: 500px;
-    margin-top: 310px;
-    margin-left: -120px;
-    
-}
+
 
 
 
@@ -533,7 +529,7 @@ header h1{
    margin-top: 40px;
    padding: 10px 0;
    box-shadow: 10px 10px 15px $main-color5;
-   border-radius: 5px;
+   border-radius: 10px;
 }
 
 .kurz{
@@ -726,6 +722,7 @@ main h1{
     font-size: 19px;
     line-height: 23px;
     margin-top: 10px;
+    text-align: center;
 }
 
  .title_who_are{
@@ -739,10 +736,18 @@ main h1{
     margin-bottom: 40px;
     padding: 20px 0;
     box-shadow: 10px 10px 15px $main-color5;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 18px;
-
 } 
+
+.my_foto_front{
+    position: absolute;
+    // height: 550px;
+    width: 500px;
+    margin-top: 910px;
+    margin-left: -30px;
+    
+}
 // ********************************************Footer
 footer{
     width: 100%;

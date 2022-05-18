@@ -10,10 +10,9 @@ html {
 
 header {
   width: 100%;
-  height: 100px;
+  height: 150px;
   background-color: #F2F2F2;
   position: absolute;
-  height: 150px;
 }
 
 .index {
@@ -27,6 +26,7 @@ header {
   background-size: contain;
   position: relative;
   box-shadow: 10px 10px 15px #716D6E;
+  border-radius: 10px;
 }
 
 .menu {
@@ -140,22 +140,27 @@ header {
   line-height: 40px;
   color: #F24E29;
 }
-.animation .content_animation {
+
+.content_animation {
   font-weight: 600;
   overflow: hidden;
   height: 40px;
   padding: 0 0px;
+  border: 2px solid green;
 }
-.animation .content_animation:before {
+
+.hi:before {
   content: "[";
   left: 190px;
 }
-.animation .content_animation:after {
+
+.hi:after {
   content: "]";
   position: absolute;
   right: 220px;
 }
-.animation .content_animation:after, .animation .content_animation:before {
+
+.hi:after, .hi:before {
   position: absolute;
   top: 8%;
   color: #45A9BF;
@@ -168,12 +173,14 @@ header {
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-.animation .content_animation .hi {
+
+.hi {
   display: inline;
   float: left;
   margin: 0;
 }
-.animation .content_animation .animation_list {
+
+.animation_list {
   margin-top: 0px;
   padding-left: 110px;
   text-align: left;
@@ -185,7 +192,8 @@ header {
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
-.animation .content_animation .animation_list .animation_list_item {
+
+.animation_list_item {
   line-height: 40px;
   margin: 0;
 }
@@ -303,6 +311,7 @@ header {
   position: relative;
   background-color: #F2F2F2;
   box-shadow: 10px 10px 15px #716D6E;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -393,6 +402,7 @@ header {
 
 .skills {
   box-shadow: 10px 10px 15px #716D6E;
+  border-radius: 10px;
   margin-top: -20px;
   display: flex;
   flex-direction: column;
@@ -442,13 +452,6 @@ header {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
 }
 
-.my_foto_front {
-  position: relative;
-  width: 500px;
-  margin-top: 310px;
-  margin-left: -120px;
-}
-
 header h1 {
   font-family: "Inconsolata", monospace;
   padding-top: 50px;
@@ -480,7 +483,7 @@ header h1 {
   margin-top: 40px;
   padding: 10px 0;
   box-shadow: 10px 10px 15px #716D6E;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .kurz {
@@ -661,6 +664,7 @@ main h1 {
   font-size: 19px;
   line-height: 23px;
   margin-top: 10px;
+  text-align: center;
 }
 
 .title_who_are {
@@ -674,8 +678,15 @@ main h1 {
   margin-bottom: 40px;
   padding: 20px 0;
   box-shadow: 10px 10px 15px #716D6E;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 18px;
+}
+
+.my_foto_front {
+  position: absolute;
+  width: 500px;
+  margin-top: 910px;
+  margin-left: -30px;
 }
 
 footer {

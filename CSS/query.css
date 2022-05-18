@@ -1,11 +1,11 @@
 
 @media only screen and (min-width: 1500px){
     
-    .my_foto{
+    /* .my_foto{
     width: 500px;
     margin-top: 120px;
 
-}
+} */
     .color{
         margin-top: -300px;
     }
@@ -30,14 +30,6 @@
         height: 750px;
      }
 
-/* FOTO - Who are */
-    .my_foto_front{
-        position: absolute;
-        width: 550px;
-        margin-top: 100px;
-        margin-left: -280px;
-    
-}
     footer{
         position: relative;
         height: 100px;
@@ -46,31 +38,77 @@
 
 }
 
-@media only screen and (max-width: 1024px){
-    .menu{
-        width: 300px;
-        height: 100vh;
-        margin-top: 40px;
-        margin-left: 40px;
-        border-radius: 10px;
+@media only screen and (max-width: 1024px){  
+  .navigace{
+      margin-top: 60px;     
+  }
+    /* ***********************************INDEX */
+    .main_index{
+      height: 1320px;
+      width: 100%;
+      margin-top: -20px;
+  }
+
+    .content_animation {
+        display: none;
     }
 
+    .name{
+      font-size: 35px;
+      letter-spacing: 4px;
+      text-align: left;
+      margin-top: -200px;
+      margin-left: 400px;
+  }
+  
+  .text{
+      font-size: 22px;
+      letter-spacing: 2px;
+      margin-top: -50px;
+      margin-left: -250px;
+  }
+  
+  .developer{
+    display: block;
+    margin-left: 145px;
+    margin-top: 10px;
+  }
+
+  .btn_port{
+      margin-bottom: 160px;
+      font-size: 25px;
+  
+  }
+  
+  .btn_port:hover{
+      border-style: inset;
+  }
+
+  .prolog{
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+  
+      
     header h1{
         padding-top: 50px;
         letter-spacing: 2px;
         font-size: 40px;
         margin: 20px 600px;
     }
-
+/**************************** WHOARE */
     .who{
         height: 1600px;
         width: 100%;        
     }
-
-    .my_foto_front{
-        margin-top: 490px;
-        
-    }   
 
     .row{
         width: 55%;
@@ -94,6 +132,16 @@
         font-size: 17px;
         line-height: 21px;
     }
+
+    
+
+    .my_foto_front{
+        position: absolute;
+        width: 450px;
+        margin-top: 1138px;
+        /* margin-left: -280px; */
+    
+}
     
   
     /******************************** Životopis */
