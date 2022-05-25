@@ -4,15 +4,24 @@
   box-sizing: border-box;
 }
 
-html {
-  position: relative;
-}
-
 header {
   width: 100%;
   height: 150px;
   background-color: #F2F2F2;
   position: absolute;
+  background-color: rgba(137, 52, 94, 0.4549019608);
+}
+
+.headline {
+  font-family: "Inconsolata", monospace;
+  position: absolute;
+  text-align: center;
+  width: 300px;
+  padding-top: 50px;
+  letter-spacing: 2px;
+  font-size: 50px;
+  color: #89345e;
+  border-bottom: 2px solid #89345e;
 }
 
 .index {
@@ -29,6 +38,10 @@ header {
   border-radius: 10px;
 }
 
+.foto_mobil {
+  display: none;
+}
+
 .menu {
   position: absolute;
   width: 300px;
@@ -38,6 +51,15 @@ header {
   margin-left: 40px;
   box-shadow: 10px 10px 20px #716D6E;
   border-radius: 10px;
+}
+
+.slozka_close, .slozka_open {
+  width: 40px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
 }
 
 .navigace {
@@ -95,7 +117,7 @@ header {
 
 .follow {
   font-family: "Inconsolata", monospace;
-  color: #F24E29;
+  color: #45A9BF;
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
@@ -108,6 +130,10 @@ header {
   margin-top: 20px;
   width: 30px;
   margin-left: 135px;
+}
+
+.socMedia_responzivita {
+  display: none;
 }
 
 .title_name {
@@ -138,7 +164,7 @@ header {
   font-family: "Inconsolata", monospace;
   font-size: 35px;
   line-height: 40px;
-  color: #F24E29;
+  color: rgba(137, 52, 94, 0.4549019608);
 }
 
 .content_animation {
@@ -146,7 +172,6 @@ header {
   overflow: hidden;
   height: 40px;
   padding: 0 0px;
-  border: 2px solid green;
 }
 
 .hi:before {
@@ -270,6 +295,10 @@ header {
   -webkit-text-stroke-color: #010D00;
 }
 
+.foto_mobil {
+  display: none;
+}
+
 .text {
   font-size: 25px;
   letter-spacing: 2px;
@@ -304,7 +333,7 @@ header {
 .port, .who, .curiculum {
   background-color: #F2F2F2;
   height: 1420px;
-  width: 100%;
+  width: 100vw;
 }
 
 .prolog {
@@ -452,15 +481,6 @@ header {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
 }
 
-header h1 {
-  font-family: "Inconsolata", monospace;
-  padding-top: 50px;
-  letter-spacing: 2px;
-  font-size: 40px;
-  margin: 20px 750px;
-  color: #89345e;
-}
-
 .icon {
   width: 50px;
   margin-left: -60px;
@@ -471,7 +491,7 @@ header h1 {
   margin-left: 380px;
   height: 1000px;
   position: absolute;
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 .textCV {
@@ -479,11 +499,12 @@ header h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #45A9BF;
+  color: #010D00;
   margin-top: 40px;
   padding: 10px 0;
   box-shadow: 10px 10px 15px #716D6E;
   border-radius: 10px;
+  background-color: rgba(137, 52, 94, 0.4549019608);
 }
 
 .kurz {
@@ -516,7 +537,7 @@ h4 {
   font-size: 17px;
 }
 
-.eyes {
+.document {
   width: 40px;
   margin-top: 20px;
   margin-left: 20px;
@@ -584,7 +605,7 @@ h4 {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #F24E29;
+  color: rgba(137, 52, 94, 0.4549019608);
   border-radius: 10px;
   font-size: 20px;
   font-weight: 600;
@@ -593,7 +614,7 @@ h4 {
   text-align: center;
   transform: translateZ(80px) translate(-50%, -50%);
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #010D00;
+  -webkit-text-stroke-color: #45A9BF;
 }
 
 .flip-box:hover .flip-box-inner {
@@ -611,7 +632,7 @@ h4 {
 }
 
 .front {
-  background-color: #45A9BF;
+  background-color: rgba(137, 52, 94, 0.4549019608);
   color: #010D00;
   border-radius: 10px;
   font-family: "Inconsolata", monospace;
@@ -635,7 +656,7 @@ h4 {
   top: 20%;
   left: 15%;
   font-size: 20px;
-  color: #F24E29;
+  color: #45A9BF;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1px;
@@ -646,7 +667,7 @@ main h1 {
   color: #45A9BF;
   margin-bottom: 20px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .name_who_are {

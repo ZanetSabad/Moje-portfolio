@@ -9,7 +9,7 @@ $main-color: #45A9BF;
 $main-color1: #89345e;
 $main-color2: #F2F2F2;
 $main-color3: #010D00;
-$main-color4: #F24E29;
+$main-color4: #89345e74;
 $main-color5:#716D6E;
 
 @mixin font {
@@ -50,15 +50,24 @@ $main-color5:#716D6E;
 
 
 // ****************************Header
-html{
-    position: relative;
-}
 header{
     width: 100%;
     height: 150px;
     background-color: $main-color2;
     position: absolute;
+    background-color:$main-color4;
+}
 
+.headline{
+    @include font;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    padding-top: 50px;
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: $main-color1;
+    border-bottom: 2px solid $main-color1;
 }
 // ****************************************Index - hlavní stránka
 .index{
@@ -76,6 +85,10 @@ header{
 
 }
 
+.foto_mobil{
+    display: none;
+}
+
 // ******************************navigace (na všech stránkách stejná)
 .menu{
     position: absolute;
@@ -86,6 +99,15 @@ header{
     margin-left: 40px;
     box-shadow: 10px 10px 20px $main-color5;
     border-radius: 10px;
+}
+
+.slozka_close, .slozka_open{
+    width:40px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
 }
 
 .navigace{
@@ -139,7 +161,7 @@ header{
 
 .follow{
     @include font;
-    color: $main-color4;
+    color: $main-color;
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
@@ -153,6 +175,10 @@ header{
     width: 30px;
     margin-left: 135px;
 
+}
+
+.socMedia_responzivita{
+    display: none;
 }
 
 .title_name{
@@ -193,7 +219,6 @@ header{
       overflow: hidden;
       height: 40px;
       padding: 0 0px;
-      border: 2px solid green;
     }
   
     .hi:before {
@@ -323,6 +348,10 @@ header{
     -webkit-text-stroke-color: $main-color3;
 }
 
+.foto_mobil{
+    display: none;
+}
+
 .text{
     // margin-top: 0px;
     font-size: 25px;
@@ -362,13 +391,11 @@ header{
 .port, .who, .curiculum{
     background-color: $main-color2;
     height: 1420px;
-    width: 100%;
+    width: 100vw;
     
 }
 
 // *******************************Index MAIN
-
-
 .prolog{
     position: relative;
     background-color: $main-color2;
@@ -463,7 +490,7 @@ header{
     width: 700px;
     margin-top: 100px;
 }
-
+// ************************************skilly
 .cardfull{
     width: 100px;
     height: 100px;
@@ -499,15 +526,6 @@ header{
 
 
 // ********************************************ŽIVOTOPIS
-header h1{
-    @include font;
-    padding-top: 50px;
-    letter-spacing: 2px;
-    font-size: 40px;
-    margin: 20px 750px;
-    color: $main-color1;
-}
-
 .icon{
     width: 50px;
     margin-left: -60px;
@@ -517,7 +535,7 @@ header h1{
    @include window;
    height: 1000px;
    position: absolute;
-   margin-top: 120px;
+   margin-top: 150px;
 }
 
 .textCV{
@@ -525,11 +543,12 @@ header h1{
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   color: $main-color;
+   color: $main-color3;
    margin-top: 40px;
    padding: 10px 0;
    box-shadow: 10px 10px 15px $main-color5;
    border-radius: 10px;
+   background-color: $main-color4;
 }
 
 .kurz{
@@ -563,7 +582,7 @@ h4{
     font-size: 17px;
 }
 
-.eyes{
+.document{
     width: 40px;
     margin-top: 20px;
     margin-left: 20px;
@@ -641,7 +660,7 @@ h4{
     text-align: center;
     transform: translateZ(80px) translate(-50%,-50%);
     -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: $main-color3;
+    -webkit-text-stroke-color: $main-color;
 }
 
 .flip-box:hover 
@@ -662,7 +681,7 @@ h4{
 }
 
 .front{
-    background-color: $main-color;
+    background-color: $main-color4;
     color: #010D00;
     border-radius: 10px;
     @include font;
@@ -690,7 +709,7 @@ h4{
     top: 20%;
     left: 15%;
     font-size: 20px;
-    color: $main-color4;
+    color: $main-color;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
@@ -704,7 +723,8 @@ main h1{
     color: $main-color;
     margin-bottom: 20px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
+   
 }
 
 .name_who_are{
