@@ -5,7 +5,7 @@
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   height: 150px;
   background-color: #F2F2F2;
   position: absolute;
@@ -15,17 +15,17 @@ header {
 .headline {
   font-family: "Inconsolata", monospace;
   position: absolute;
+  width: 1000px;
+  margin-left: 350px;
+  line-height: 150px;
   text-align: center;
-  width: 300px;
-  padding-top: 50px;
   letter-spacing: 2px;
   font-size: 50px;
   color: #89345e;
-  border-bottom: 2px solid #89345e;
 }
 
 .index {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #F2F2F2;
   background: url(../IMG/my_foto.png);
@@ -39,6 +39,10 @@ header {
 }
 
 .foto_mobil {
+  display: none;
+}
+
+.sipka {
   display: none;
 }
 
@@ -187,7 +191,7 @@ header {
 
 .hi:after, .hi:before {
   position: absolute;
-  top: 8%;
+  top: 11%;
   color: #45A9BF;
   font-size: 40px;
   line-height: 40px;
@@ -332,7 +336,7 @@ header {
 
 .port, .who, .curiculum {
   background-color: #F2F2F2;
-  height: 1420px;
+  height: 1520px;
   width: 100vw;
 }
 
@@ -460,9 +464,8 @@ header {
 .card {
   position: absolute;
   width: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  top: -60px;
   color: #F2F2F2;
   text-align: center;
 }
@@ -704,9 +707,8 @@ main h1 {
 }
 
 .my_foto_front {
-  position: absolute;
   width: 500px;
-  margin-top: 910px;
+  margin-top: 1010px;
   margin-left: -30px;
 }
 

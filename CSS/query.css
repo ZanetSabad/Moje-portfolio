@@ -210,13 +210,12 @@
 @media only screen and (max-width: 375px){
     .menu{
         position: relative;
-        left: 50%;
-        top: 10px;
-        transform: translate(-50%, -50%);
+        left: 0;
+        top: 0;
         width: 90vw;
         height: 10vh;
-        margin-top: 0px;
-        margin-left: 0px;
+        margin-top: -40px;
+        margin-left: 20px;
     }
 
     .index{ 
@@ -225,50 +224,57 @@
         border-radius: 0px;    
     }
     
-    .slozka_close, .slozka_open{
+    .slozka_close{
         display: block;
     }
 
     .navigace ul{
         position: absolute;
+        display: inline-block;
         z-index: 999;
         background-color: #45A9BF;
-        right: 0px;    
-        top: 0px;
-        left: -110%;
+        /* right: 0px;     */
+        top: -550px;
+        bottom: 0;
+        /* left: -110%; */
         width:100%;
-        height: 80vh;
+        height: 50vh;
         border-radius: 10px;
         text-align: center;
-        transition: all 0.5s;  
+        transition: all 0.7s;  
     
     }
 
     .navigace li{
         display: block;
-        line-height: 30px;
+        line-height: 5px;
         margin: 50px 5px;        
     }
       
     .navigace a{
-        font-size: 20px;
+        font-size: 25px;
    }
 
     .name{
         position: absolute;
+        width: 310px;
         top: 150px;
         font-size: 30px;
         /* margin-top: 10px; */
         /* margin-bottom: 0px; */
         margin-left: 370px;
-        text-align: justify;
+        /* text-align: justify; */
+        /* border: 2px solid red; */
     }
 
     .foto_mobil{
         display: inline-block;
-        margin-top: 240px;
-        margin-left: -70px;
-
+        position: absolute;        
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: -70px;
+        width: 150px;
+        border-radius: 10px;
     }
 
     .text{
@@ -306,19 +312,24 @@
         display: none;
 
     }
+    .sipka img{
+        width: 50px;
+    }
 
-.foto_mobil{
-    position: absolute;
-    left: 50%;
-    top: 4%;
-    width: 150px;
-    border-radius: 10px;
-}
+    .sipka{
+        display: inline-block;
+        width: 350px;
+        position: absolute;
+        text-align: center;
+        margin-top: 180px;
+        margin-right: 250px;     
+    }
+
 /**************************************** main INDEX */
 .main_index{
-    height: 1320px;
+    height: 1150px;
     width: 100%;
-    margin-top: -20px;
+    margin-top: 0px;
 }
 
 .prolog{
@@ -448,7 +459,7 @@ main h1{
 }
 /************************************** WHOare */
 .who{
-    height: 1680px;
+    height: 1780px;
     width: 100vw;
     
 }
@@ -456,7 +467,7 @@ main h1{
 .row{
     width: 100vw;
     margin-left: 250px;
-    height: 1000px;
+    height: 500px;
     position: absolute;
     margin-top: 120px;
  }
@@ -484,7 +495,6 @@ main h1{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     margin-bottom: 25px;
     margin-left: 20px;
     padding: 20px 0;
@@ -494,28 +504,114 @@ main h1{
 } 
 
 .my_foto_front{
-    position: absolute;
-    height: 300px;
-    width: 300px;
-    margin-top: 110px;
-    margin-left: -30px;
     display: none;
     
 }
+
+/************************************************** Portfolio */
+.preview{
+    width: 375px;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 0px;
+}
+
+.flip-box, .preview-content, .title-front{
+    width: 150px;
+    height: 90px;
+   
+}
+
+.flip-box-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    
+}
+
+.flip-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 10% 100%;
+    transform: translateZ(2rem);
+}
+
+.title-front{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: 200px;
+    transform: translateZ(80px) translate(-50%,-50%);
+}
+
+.flip-box:hover 
+.flip-box-inner{
+    transform: rotateY(0deg);   
+
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.front{
+    color: #010D00;
+    border-radius: 10px;
+}
+
+.back{
+    position: absolute;
+    line-height: 200px;
+    text-align: center;
+    font-size: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    
+}
+
+.back a{
+    color: #010D00;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
 
 
 
 /*********************************************Footer */
 
 footer{
-    width: 100%;
-    height: 100px;
+    height: 80px;
 }
 
 footer p{ 
     text-align: center;
     font-size: 15px;
-    line-height: 100px;
+    line-height: 80px;
 }
 
 }
