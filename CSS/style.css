@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Inconsolata", monospace;
+}
+
 header {
   width: 100vw;
   height: 150px;
@@ -13,10 +17,9 @@ header {
 }
 
 .headline {
-  font-family: "Inconsolata", monospace;
   position: absolute;
   width: 1000px;
-  margin-left: 350px;
+  margin-left: 340px;
   line-height: 150px;
   text-align: center;
   letter-spacing: 2px;
@@ -71,6 +74,10 @@ header {
   margin-top: 100px;
 }
 
+.navigace img {
+  width: 50px;
+}
+
 .navigace li {
   margin-top: 40px;
   list-style-type: none;
@@ -81,14 +88,9 @@ header {
   text-decoration: none;
   font-weight: 600;
   color: #010D00;
-  font-family: "Inconsolata", monospace;
   font-size: 25px;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-
-.navigace img {
-  width: 50px;
 }
 
 .active {
@@ -108,7 +110,6 @@ header {
 .cv {
   position: absolute;
   display: inline-block;
-  font-family: "Inconsolata", monospace;
   font-weight: 600;
   text-decoration: none;
   background-color: #89345e;
@@ -120,7 +121,6 @@ header {
 }
 
 .follow {
-  font-family: "Inconsolata", monospace;
   color: #45A9BF;
   letter-spacing: 2px;
   text-align: center;
@@ -152,7 +152,6 @@ header {
 
 .title {
   position: absolute;
-  font-family: "Inconsolata", monospace;
   width: 800px;
   height: 650px;
   color: #010D00;
@@ -165,7 +164,6 @@ header {
 .animation {
   height: 40px;
   overflow: hidden;
-  font-family: "Inconsolata", monospace;
   font-size: 35px;
   line-height: 40px;
   color: rgba(137, 52, 94, 0.4549019608);
@@ -365,7 +363,6 @@ header {
 .prolog_about_me h1 {
   width: 230px;
   margin-top: 100px;
-  font-family: "Inconsolata", monospace;
   border-left: #010D00 6px solid;
   font-size: 28px;
   letter-spacing: 1px;
@@ -373,7 +370,6 @@ header {
 
 .prolog_about_me p {
   margin-top: 20px;
-  font-family: "Inconsolata", monospace;
   letter-spacing: 1px;
   font-size: 21px;
 }
@@ -402,7 +398,6 @@ header {
   display: inline-block;
   position: relative;
   font-weight: 600;
-  font-family: "Inconsolata", monospace;
 }
 
 .email {
@@ -427,7 +422,6 @@ header {
   margin-top: 20px;
   position: absolute;
   color: #89345e;
-  font-family: "Inconsolata", monospace;
   letter-spacing: 2px;
   font-size: 30px;
   border-bottom: 2px solid #89345e;
@@ -514,12 +508,7 @@ header {
   margin-top: 120px;
 }
 
-h2 {
-  font-family: "Inconsolata", monospace;
-}
-
 h3 {
-  font-family: "Inconsolata", monospace;
   color: #89345e;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -528,13 +517,11 @@ h3 {
 }
 
 h4 {
-  font-family: "Inconsolata", monospace;
   margin-bottom: 10px;
   font-size: 18px;
 }
 
 .popis {
-  font-family: "Inconsolata", monospace;
   line-height: 25px;
   margin-top: 40px;
   font-size: 17px;
@@ -547,11 +534,10 @@ h4 {
   margin-right: 20px;
 }
 
-.watch a {
+.certifications a {
   font-size: 15px;
   color: #45A9BF;
   font-weight: 600;
-  font-family: "Inconsolata", monospace;
   margin-left: 20px;
   margin-top: -30px;
 }
@@ -638,7 +624,6 @@ h4 {
   background-color: rgba(137, 52, 94, 0.4549019608);
   color: #010D00;
   border-radius: 10px;
-  font-family: "Inconsolata", monospace;
 }
 
 .back {
@@ -649,7 +634,6 @@ h4 {
   overflow: hidden;
   background-color: #89345e;
   border-radius: 10px;
-  font-family: "Inconsolata", monospace;
   transform: rotateY(180deg);
 }
 
@@ -663,7 +647,6 @@ h4 {
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1px;
-  font-family: "Inconsolata", monospace;
 }
 
 main h1 {
@@ -684,7 +667,6 @@ main h1 {
 }
 
 .text_who_are {
-  font-family: "Inconsolata", monospace;
   font-size: 19px;
   line-height: 23px;
   margin-top: 10px;
@@ -692,7 +674,6 @@ main h1 {
 }
 
 .title_who_are {
-  font-family: "Inconsolata", monospace;
   display: flex;
   flex-direction: row;
   justify-content: center;

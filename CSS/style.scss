@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Inconsolata', monospace;
+}
+
 // ****************************Mixiny
 $main-color: #45A9BF;
 $main-color1: #89345e;
@@ -11,10 +15,6 @@ $main-color2: #F2F2F2;
 $main-color3: #010D00;
 $main-color4: #89345e74;
 $main-color5:#716D6E;
-
-@mixin font {
-    font-family: 'Inconsolata', monospace;
-}
 
 @mixin window{
     width: 70%;
@@ -25,7 +25,6 @@ $main-color5:#716D6E;
     text-decoration: none;
     font-weight: 600;
     color: $main-color3;
-    @include font;
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -53,11 +52,10 @@ header{
     background-color:$main-color4;
 }
 
-.headline{
-    @include font;
+.headline{ 
     position: absolute;
     width: 1000px;
-    margin-left: 350px;
+    margin-left: 340px;
     line-height: 150px;
     text-align: center;    
     letter-spacing: 2px;
@@ -116,19 +114,18 @@ header{
    
 }
 
+.navigace img{
+    width: 50px;
+}
+
 .navigace li{
     margin-top: 40px;
     list-style-type: none;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .navigace a{
     @include navigace;
-}
-
-.navigace img{
-    width: 50px;
 }
 
 .active{
@@ -148,7 +145,7 @@ header{
 .cv{
     position: absolute;
     display: inline-block;
-    @include font;
+     
     font-weight: 600;
     text-decoration: none;
     background-color: #89345e;
@@ -160,7 +157,6 @@ header{
 }
 
 .follow{
-    @include font;
     color: $main-color;
     letter-spacing: 2px;
     text-align: center;
@@ -193,7 +189,6 @@ header{
 
 .title{
     position: absolute;
-    @include font;
     width: 800px;
     height: 650px;
     color: $main-color3;
@@ -206,8 +201,6 @@ header{
 .animation {
     height: 40px;
     overflow:hidden;
-
-    @include font;
     font-size: 35px;
     line-height: 40px;
     color: $main-color4;
@@ -421,7 +414,6 @@ header{
 .prolog_about_me h1{
     width: 230px;
     margin-top: 100px;
-    @include font;
     border-left: $main-color3 6px solid;
     font-size: 28px;
     letter-spacing: 1px;
@@ -429,7 +421,6 @@ header{
 
 .prolog_about_me p{
     margin-top: 20px;
-    @include font;
     letter-spacing: 1px;
     font-size: 21px;
 }
@@ -450,7 +441,7 @@ header{
     display: inline-block;
     position: relative;
     font-weight: 600;
-    @include font;
+     
 }
 
 .email{
@@ -466,7 +457,6 @@ header{
     margin-top: 20px;
     position: absolute;
     color: $main-color1;
-    @include font;
     letter-spacing: 2px;
     font-size: 30px;
     border-bottom: 2px solid $main-color1;
@@ -516,6 +506,7 @@ header{
     transition: all 1s linear;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
+
 .cardfull img:hover{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
 }
@@ -554,13 +545,7 @@ header{
     margin-top: 120px;
 }
 
-h2{
-    @include font;    
-
-}
-
-h3{
-    @include font;
+h3{  
     color: $main-color1;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -568,14 +553,13 @@ h3{
     font-size: 20px;
 }
 
-h4{
-    @include font;
+h4{ 
     margin-bottom: 10px;
     font-size: 18px;
 }
 
 .popis{
-    @include font;
+     
     line-height: 25px;
     margin-top: 40px;
     font-size: 17px;
@@ -589,11 +573,10 @@ h4{
     
 }
 
-.watch a{
+.certifications a{
     font-size: 15px;
     color: $main-color;
-    font-weight: 600;
-    @include font;
+    font-weight: 600; 
     margin-left: 20px;
     margin-top: -30px;
 }
@@ -616,7 +599,6 @@ h4{
     width: 280px;
     height: 200px;
     border-radius: 10px;
-    // box-shadow: 10px 10px 15px $main-color5;
     perspective: 1000px;
 }
 
@@ -666,8 +648,6 @@ h4{
 .flip-box-inner{
     transform: rotateY(180deg);
     box-shadow: 10px 10px 15px $main-color2;
-    
-
 }
 
 .front, .back{
@@ -683,21 +663,16 @@ h4{
     background-color: $main-color4;
     color: #010D00;
     border-radius: 10px;
-    @include font;
-    // z-index: 1;
 }
 
 .back{
     position: absolute;
-    // top: 40%;
     line-height: 200px;
     text-align: center;
     font-size: 25px;
     overflow: hidden;
     background-color: $main-color1;
     border-radius: 10px;
-    @include font;
-    // z-index: 0;
     transform: rotateY(180deg);
     
 }
@@ -712,9 +687,9 @@ h4{
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
-    @include font;
-
+    
 }
+
 
 
 // ***********************************************WHOARE
@@ -737,7 +712,6 @@ main h1{
 }
 
 .text_who_are{
-    @include font;
     font-size: 19px;
     line-height: 23px;
     margin-top: 10px;
@@ -745,7 +719,6 @@ main h1{
 }
 
  .title_who_are{
-    @include font;
     display: flex;
     flex-direction: row;
     justify-content: center;

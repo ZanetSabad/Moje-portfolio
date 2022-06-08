@@ -13,13 +13,13 @@
 <body>
     <header>
         <section class="menu"> 
-            <nav class ="navigace"> 
-                <ul>     
-                    <li><a href="whoare.html">Kdo jsem</a></li>
-                    
+            <img src="IMG/icons/slozka_close.png" alt="" class="slozka_close">
+            <nav class = "navigace"> 
+                <ul class="menu_respon"> 
+                    <li><a href="index.html"><img src="IMG/icons/home.png" alt="ikona domečku - zpět na úvodní stranu"></a></li>
+                    <li><a href="whoare.html">Kdo jsem</a></li>                    
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a class="active" href="zivotopis.html">Životopis</a></li>
-                    <li><a href="index.html"><img src="IMG/icons/home.png" alt="ikona domečku - zpět na úvodní stranu"></a></li>
                 </ul>    
             </nav>
             <a href="documenty/Zaneta_Sabadkova_CV.pdf" download="Zaneta_Sabadkova_CV.pdf" class="cv"> Stáhnout životopis</a>
@@ -34,7 +34,7 @@
 
     <main class="curiculum">    
         <figure class="row">
-            <article class="col span-1-of-2">
+            <article class="col span-1-of-2 work">
                 <aside class="textCV">
                     <img class="icon" src="IMG/icons/work.png" alt="ikona zaměstnání" class="iconWork">
                     <h2>Pracovní zkušenosti</h2>
@@ -57,7 +57,7 @@
 
                 
 
-            <article class="col span-1-of-2">
+            <article class="col span-1-of-2 work">
                 <aside class="textCV">
                     <img class="icon" src="IMG/icons/stady.png" alt="ikona vzdělávání">
                     <h2>Vzdělání</h2>
@@ -79,15 +79,15 @@
                 <h4>Webová vývojářka</h4>
                 <p class="popis">Orientace v HTML, CSS, SASS, WordPress, responzivita webu (media queries a flex-box). Základy JavaScriptu. Google Analytics, SEO, Google Search Console. </p>
 
-                <figure class="watch">
-                    <a href="documenty/Webová vývojářka.pdf" target="_blank"><img class="document certif" src="IMG/icons/eyes.png" alt="ikona na otevření certifikát">Vývojářka webu a multimédií</a>
+                <figure class="certifications"> 
+                    <a href="documenty/Webová vývojářka.pdf" target="_blank"><img class="document" src="IMG/icons/eyes.png" alt="ikona na otevření certifikát">Vývojářka webu a multimédií</a>
                 </figure>
 
                 <h3>Attavena, o.p.s. - 2021</h3>
                 <h4>Kurz osobního rozvoje</h4>
                 <p class="popis">MS Excel, Canva, Zoner Photo Studio X, práce v týmu</p>
 
-                <figure class="watch"> 
+                <figure class="certifications"> 
                     <a href="documenty/pracovni_navyky.pdf" target="_blank"><img class="document" src="IMG/icons/eyes.png" alt="oko, prohládnout si certifikát">Pracovní návyky</a>
                     <a href="documenty/tematicke miniworkshopy.pdf" target="_blank"><img class="document" src="IMG/icons/eyes.png" alt="oko, prohládnout si certifikát">Miniworkshopy</a>
                     <a href="documenty/orientace_na_trhu_prace.pdf" target="_blank"><img class="document" src="IMG/icons/eyes.png" alt="oko, prohládnout si certifikát">Trh práce</a>
@@ -101,5 +101,6 @@
         <p>&copy; Na brzkou shledanou - Žaneta Sabadková &#128540;</p>
     </footer>
     
+    <script src="script.js"></script>
 </body>
 </html>
