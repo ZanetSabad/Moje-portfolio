@@ -83,10 +83,6 @@ header{
     display: none;
 }
 
-.sipka{
-    display: none;
-}
-
 // ******************************navigace (na všech stránkách stejná)
 .menu{
     position: absolute;
@@ -391,15 +387,15 @@ header{
 // *******************************Index MAIN
 .prolog{
     position: relative;
+    width: 90%;
+    height: 700px;
+    margin: 0 auto;
     background-color: $main-color2;
     box-shadow: 10px 10px 15px $main-color5;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 90%;
-    height: 700px;
-    margin: 0 auto;
     z-index: 1;
 }
 
@@ -512,8 +508,159 @@ header{
 }
 
 
+// ***********************************************WHOARE
+main h1{
+    color: $main-color;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 100px;
+   
+}
 
+.name_who_are{
+    font-size: 45px;
+    color: $main-color3;
+}
 
+.head_title_who_are{
+    font-size: 30px;
+    color: $main-color;
+}
+
+.text_who_are{
+    font-size: 19px;
+    line-height: 23px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+ .title_who_are{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $main-color;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    box-shadow: 10px 10px 15px $main-color5;
+    border-radius: 10px;
+    font-size: 18px;
+} 
+
+.my_foto_front{
+    width: 500px;
+    margin-top: 1010px;
+    margin-left: -30px;
+    
+}
+
+// ****************************************************************Portfolio
+.preview{
+    @include window;
+    height: 500px;
+    margin-top: 150px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.flip-box, .preview-content, .title-front{
+    background-color: transparent;
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+    perspective: 1000px;
+}
+
+.flip-box-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    
+}
+
+.flip-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 10% 100%;
+    transform: translateZ(2rem);
+    box-shadow: 10px 10px 15px $main-color5;
+}
+
+.title-front{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: $main-color;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 999;
+    line-height: 200px;
+    text-align: center;
+    transform: translateZ(80px) translate(-50%,-50%);
+}
+
+.flip-box:hover 
+.flip-box-inner{
+    transform: rotateY(180deg);
+    box-shadow: 10px 10px 15px $main-color2;
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.front{
+    background-color: $main-color4;
+    color: #010D00;
+    border-radius: 10px;
+}
+
+.back{
+    position: absolute;
+    line-height: 200px;
+    text-align: center;
+    font-size: 25px;
+    overflow: hidden;
+    background-color: $main-color1;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    
+}
+
+.back a{
+    color: #010D00;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 20px;
+    color: $main-color;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
 
 // ********************************************ŽIVOTOPIS
 .icon{
@@ -581,163 +728,7 @@ h4{
     margin-top: -30px;
 }
 
-// ****************************************************************Portfolio
-.preview{
-    @include window;
-    height: 500px;
-    margin-top: 150px;
-    position: absolute;
-    display: flex;
-    flex-direction: row;    
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: space-around;
-}
 
-.flip-box, .preview-content, .title-front{
-    background-color: transparent;
-    width: 280px;
-    height: 200px;
-    border-radius: 10px;
-    perspective: 1000px;
-}
-
-.flip-box-inner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    border-radius: 10px;
-    transition: transform 2s;
-    transform-style: preserve-3d;
-    
-}
-
-.flip-box img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border-radius: 10px;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 10% 100%;
-    transform: translateZ(2rem);
-    box-shadow: 10px 10px 15px $main-color5;
-}
-
-.title-front{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: $main-color4;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    z-index: 999;
-    line-height: 200px;
-    text-align: center;
-    transform: translateZ(80px) translate(-50%,-50%);
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: $main-color;
-}
-
-.flip-box:hover 
-.flip-box-inner{
-    transform: rotateY(180deg);
-    box-shadow: 10px 10px 15px $main-color2;
-}
-
-.front, .back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-}
-
-.front{
-    background-color: $main-color4;
-    color: #010D00;
-    border-radius: 10px;
-}
-
-.back{
-    position: absolute;
-    line-height: 200px;
-    text-align: center;
-    font-size: 25px;
-    overflow: hidden;
-    background-color: $main-color1;
-    border-radius: 10px;
-    transform: rotateY(180deg);
-    
-}
-
-.back a{
-    color: #010D00;
-    position: absolute;
-    top: 20%;
-    left: 15%;
-    font-size: 20px;
-    color: $main-color;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    
-}
-
-
-
-// ***********************************************WHOARE
-main h1{
-    color: $main-color;
-    margin-bottom: 20px;
-    text-align: center;
-    margin-top: 100px;
-   
-}
-
-.name_who_are{
-    font-size: 45px;
-    color: $main-color3;
-}
-
-.head_title_who_are{
-    font-size: 30px;
-    color: $main-color;
-}
-
-.text_who_are{
-    font-size: 19px;
-    line-height: 23px;
-    margin-top: 10px;
-    text-align: center;
-}
-
- .title_who_are{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: $main-color;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px 0;
-    box-shadow: 10px 10px 15px $main-color5;
-    border-radius: 10px;
-    font-size: 18px;
-} 
-
-.my_foto_front{
-    width: 500px;
-    margin-top: 1010px;
-    margin-left: -30px;
-    
-}
 // ********************************************Footer
 footer{
     width: 100%;

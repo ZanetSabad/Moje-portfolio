@@ -12,7 +12,7 @@
         display: inline;
         float: left;
         margin: 0px;
-      }
+    }
 
     header h1{
         font-size: 60px;
@@ -22,7 +22,7 @@
 
     .row{
         height: 750px;
-     }
+    }
 
     footer{
         position: relative;
@@ -52,24 +52,25 @@
       letter-spacing: 4px;
       text-align: left;
       margin-top: -200px;
-      margin-left: 400px;
+      margin-left: -200px;
   }
 
   
-  .begin_front{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    margin-top:0px;
-}
+    .begin_front{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top:0px;
+    }
   
-  .text{
-      font-size: 22px;
-      letter-spacing: 2px;
-      margin-top: -50px;
-      margin-left: -200px;
-      text-align: center;
-  }
+    .text{
+        font-size: 22px;
+        letter-spacing: 2px;
+        margin-top: -50px;
+        margin-left: -200px;
+        text-align: center;
+    }
   
   .developer{
     display: block;
@@ -79,6 +80,7 @@
 
   .btn_port{
       margin-bottom: 160px;
+      margin-left: -280px;
       font-size: 25px;
   
   }
@@ -226,15 +228,272 @@
         width: 450px;
         margin-top: 1238px;
     
-}
+    }
     
   
 }
 
-@media only screen and (max-width: 470px){
+
+
+@media only screen and (max-width: 990px){
+    .index{
+        width: 100vw;
+        height: 120vh;
+        box-shadow: 0px 0px 0px;
+    }
+    
+
+    .navigace img{
+        width: 30px;
+    }
+
+    .navigace li{
+        margin-top: 30px;
+        list-style-type: none;
+        text-align: center;    
+    }
+    
+    .navigace a{
+        font-size: 20px;
+    }
+
+    .active_house{
+        padding-top: 15px;
+    } 
+    
+
+    .main_index{
+        height: 1320px;
+        width: 100%;
+        margin-top: -20px;
+    }
+
+    .name{
+        font-size: 35px;
+        margin-top: -240px;
+        margin-left: -60px;
+        letter-spacing: 4px;
+        text-align: left;
+    }
+  
+    
+    .begin_front{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin-bottom: 250px;
+  }
+    
+    .text{
+        font-size: 22px;
+        letter-spacing: 2px;
+        margin-top: -50px;
+        margin-left: -200px;
+        text-align: center;
+    }
+
+    .cv{
+        display: none;
+    }
+
+    .btn_port{
+        display: none;       
+    
+    }
+
+    .prolog{
+        height: 650px;
+    }
+    .prolog_about_me h1{
+        font-size: 26px;
+        margin-top: 80px;
+    }
+
+    .prolog_about_me p{
+        font-size: 17px;
+    }
+
+    .phone, .mail{
+        width: 30px;
+        margin-bottom: 8px;
+        
+    }
+    
+    .phoneNumber, .email{
+        width: 240px;
+        height: 80px;
+        margin-top: 400px;
+    }
+    /******************************************************* SKILY */
+    
+    .skills{
+        box-shadow: 0px 0px 0px;
+    }
+
+    /****************************************************** HEADLINE*/
+    .headline{ 
+        width: 574px;       
+    }
+
+    /* *****************************************************WHOARE */
+    main h1{
+        margin-top: 60px;
+       
+    }
+
+    .follow{
+        margin-top: -80px;
+    }
+
+    
+    .socMedia{
+        width: 40px;
+    }
+
+    .title_who_are{
+        width: 100%; 
+    } 
+
+    /*************************************************** PORTFOLIO */
+    .flip-box, .preview-content, .title-front{ 
+        width: 200px;
+        height: 140px;     
+    }
+
+}
+
+@media only screen and  (max-width: 850px){
+    
+    .name{
+        font-size: 30px;
+    }  
+    
+    .begin_front{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin-bottom: 250px;
+  }
+    
+    .text{
+        margin-top: -50px;
+        margin-left: -100px;
+    }
+
+    .prolog{
+        width: 100%;
+        height: 550px;
+        box-shadow: 0px 0px 0px;
+    }
+
+}
+
+@media only screen and (max-width: 710px){
     .headline{
         display: none;
     }
+
+    .menu{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 85vw;
+        height: 15vh;
+        margin-top: -40px;
+        margin-left: 20px;
+    }
+
+    .index{ 
+        background: #f2f2f2; 
+        box-shadow: 0px 0px 0px #f2f2f2;
+        border-radius: 0px;    
+    }
+    
+    .slozka_close{
+        display: block;
+    }
+
+    .slozka_close, .slozka_open{
+        margin-top: 15px;
+    }
+
+    .navigace ul{
+        position: absolute;
+        display: inline-block;
+        z-index: 999;
+        background-color: #45A9BF;
+        top: -550px;
+        bottom: 0;
+        width: 100%;
+        height: 72vh;
+        border-radius: 10px;
+        text-align: center;
+        transition: all 0.7s;  
+    
+    }
+
+    .navigace li{
+        margin-top: 50px;    
+    }
+
+    .name{
+        position: absolute;
+        top: 300px;
+        left: 120px;
+        text-align: center;
+        font-size: 34px;
+    }
+
+    .foto_mobil{
+        display: inline-block;
+        position: absolute;        
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: -80px;
+        width: 220px;
+        border-radius: 10px;
+    }
+
+    .begin_front{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 480px;
+    }
+  
+    .text{
+        font-size: 22px;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        margin-left: -220px;
+        text-align: center;
+  }
+
+    .cv{
+    display: none;
+    }
+
+    .follow{
+        display: none;
+    }
+
+    .socMedia{ 
+        position: absolute;
+        width: 50px;        
+        bottom: 10px;
+        right: 10px;       
+    }
+}
+
+@media only screen and (max-width: 412px){
+    .headline{
+        display: none;
+    }
+
+    .slozka_close, .slozka_open{
+        margin-top: 25px;
+    }
+
     .menu{
         position: relative;
         left: 0;
@@ -255,6 +514,7 @@
         display: block;
     }
 
+
     .navigace ul{
         position: absolute;
         display: inline-block;
@@ -271,21 +531,15 @@
     }
 
     .navigace li{
-        display: block;
-        line-height: 5px;
-        margin: 50px 5px;        
+        margin-top: 50px;    
     }
-      
-    .navigace a{
-        font-size: 25px;
-   }
 
     .name{
         position: absolute;
-        width: 310px;
-        top: 80px;
-        font-size: 30px;
-        margin-left: 370px;
+        width: 320px;
+        top: 50px;
+        left: 160px;
+        font-size: 34px;
     }
 
     .foto_mobil{
@@ -293,25 +547,24 @@
         position: absolute;        
         left: 50%;
         transform: translate(-50%);
-        margin-top: -0px;
-        width: 250px;
+        margin-top: 0px;
+        width: 270px;
         border-radius: 10px;
     }
 
     .begin_front{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
-        margin-top: 160px;
+        margin-top: 200px;
     }
-
-    .text{
-        width: 100vw;
-        margin-top: -150px;
-        margin-bottom: 90px;
-        font-size: 24px;
-        text-align: center;
-    }
+  
+  .text{
+      font-size: 28px;
+      letter-spacing: 2px;
+      margin-top: 10px;
+      text-align: center;
+  }
 
     .cv{
     display: none;
@@ -343,7 +596,7 @@
 .prolog{
     height: 600px;
     box-shadow: 0px 0px 0px #f2f2f2;
-    margin-top: -100px;
+    margin-top: -120px;
     
 }
 
@@ -359,6 +612,7 @@
     margin-top: 50px;
     font-size: 26px;
     letter-spacing: 1px;
+    margin-left: 10px;
 }
 
 .prolog_about_me p{
@@ -383,7 +637,7 @@
     height: 50px;
     position: absolute;
     margin-top: 440px;
-    margin-left: 20px;
+    margin-left: 50px;
     text-align: center;
     padding: 5px 10px;
     
@@ -395,7 +649,7 @@
     height: 50px;
     position: absolute;
     margin-top: 500px;
-    margin-left: 20px;
+    margin-left: 50px;
     text-align: center;
     padding: 5px 10px;
 }
@@ -568,13 +822,13 @@ main h1{
     align-items: center;
     margin-top: 40px;
     padding: 10px 0;
- }
+}
 
- h3{
+.h3{
     font-size: 18px;
 }
 
-h4{
+.h4{
     margin-bottom: 10px;
     font-size: 15px;
 }
@@ -624,10 +878,15 @@ footer p{
 
 
 @media only screen and (max-width: 375px){
+    .headline{
+        display: none;
+    }
+
+    .slozka_close, .slozka_open{
+        margin-top: 15px;
+    }
+
     .navigace ul{
-        position: absolute;
-        display: inline-block;
-        z-index: 999;
         background-color: #45A9BF;
         /* right: 0px;     */
         top: -550px;
@@ -651,38 +910,39 @@ footer p{
         font-size: 25px;
    }
 
-    .name{
-        position: absolute;
-        width: 310px;
-        top: 150px;
-        font-size: 30px;
-        margin-left: 370px;
-    }
+   .name{
+    position: absolute;
+    width: 320px;
+    top: 150px;
+    left: 160px;
+    font-size: 30px;
+}
 
     .foto_mobil{
-        display: inline-block;
-        position: absolute;        
         left: 50%;
         transform: translate(-50%);
-        margin-top: -70px;
+        margin-top: -100px;
+        width: 220px;
         border-radius: 10px;
+            
     }
 
-    .begin_front{
-        margin-top: 270px;
-    }
-
-    .text{
       
-        margin-top: -140px;
-        margin-bottom: 90px;
-        font-size: 22px;
-        
+    .begin_front{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 170px;
+        margin-left: 130px;
     }
-
-    .sipka img{
-        width: 50px;
-    }
+  
+  .text{
+      font-size: 24px;
+      letter-spacing: 2px;
+      margin-top: 10px;
+      margin-left: -270px;
+      text-align: center;
+  }
 
 /**************************************** main INDEX */
 .prolog{
@@ -755,7 +1015,22 @@ footer p{
 /************************************************** Portfolio */
 /* stejné jako předchozí */
 /* ***********************************************ŽIVOTOPIS */
-/* stejné jako předchozí */
+.curiculum{
+    height: 1800px;
+}
+.row{
+    width: 100%;
+    height: 1000px;
+    margin-left: 0px;
+    margin-top: 150px;
+    padding: 10px 15px;
+}
+
+.work{
+    width: 100%;
+    margin-left: 0px;    
+}
+
 /*********************************************Footer */
 
 footer{
