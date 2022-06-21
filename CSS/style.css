@@ -90,10 +90,15 @@ body {
   margin-top: 80px;
 }
 
-.socMedia {
-  margin-top: 20px;
-  width: 30px;
-  margin-left: 135px;
+.socialMedia {
+  position: absolute;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.socMediaIcons {
+  width: 35px;
 }
 
 .socMedia_responzivita {

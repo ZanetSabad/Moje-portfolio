@@ -736,9 +736,11 @@
     }
 
     .two{
-        letter-spacing: 2px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        letter-spacing: 4px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 25px;
+
     }
 
     .three{
@@ -775,11 +777,16 @@
         display: none;
     }
 
-    .socMedia{ 
+    .socialMedia{
         position: absolute;
-        width: 40px;        
-        bottom: 10px;
-        right: 20px;       
+        width: 30%;
+        margin-top: -340px;
+        margin-left: 260px;
+        text-align: center;
+    }
+    
+    .socMediaIcons{
+        width: 45px;
     }
 
     .cv{
@@ -796,7 +803,7 @@
 
 /**************************************** main INDEX */
     .main_index{
-        height: 950px;
+        height: 1050px;
         width: 100%;
    }
 
