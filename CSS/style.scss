@@ -629,19 +629,19 @@ main h1{
     box-shadow: 10px 10px 15px $main-color5;
 }
 
-.title-front{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: $main-color;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    z-index: 999;
-    line-height: 200px;
-    text-align: center;
-    transform: translateZ(80px) translate(-50%,-50%);
-}
+// .title-front{
+//     position: absolute;
+//     top: 30%;
+//     left: 50%;
+//     color: $main-color;
+//     border-radius: 10px;
+//     font-size: 20px;
+//     font-weight: 600;
+//     z-index: 999;
+//     line-height: 200px;
+//     text-align: center;
+//     transform: translateZ(80px) translate(-50%,-50%);
+// }
 
 .flip-box:hover 
 .flip-box-inner{
@@ -687,6 +687,18 @@ main h1{
     font-weight: 600;
     letter-spacing: 1px;
     
+}
+
+.useSkills{
+    color: #010D00;
+    position: absolute;
+    bottom: -30%;
+    right: 5%;
+    font-size: 15px;
+    color: $main-color3;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 // ********************************************ŽIVOTOPIS

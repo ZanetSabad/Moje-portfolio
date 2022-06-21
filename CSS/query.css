@@ -14,14 +14,32 @@
         margin: 0px;
     }
 
-    header h1{
-        font-size: 60px;
-        margin: 20px 900px;
-    
+    .headline{
+        width: 1560px;
+        line-height: 150px;    
+        letter-spacing: 4px;
+        font-size: 60px;    
     }
 
     .row{
-        height: 750px;
+        width: 80%;
+        margin-left: 360px;
+    }
+
+    .title_who_are{        
+        margin: 60px auto;
+        width:50%
+
+      
+    }    
+
+    .line{
+        margin-top: 30px;        
+    }
+
+    .preview{
+        width: 80%;
+        margin-left: 360px;    
     }
 
     footer{
