@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6FFXGZTF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T6FFXGZTF4');
+</script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +21,37 @@
     <title>Curriculum vitae</title>
 </head>
 <body>
-    <header class="zivotopis">
+    <header>
         <section class="menu"> 
+            <img src="IMG/icons/slozka_close.png" alt="" class="slozka_close">
             <nav class = "navigace"> 
-                <ul>     
-                    <li><a class="active" href="#">Kdo jsem</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                <ul class="menu_respon"> 
                     <li><a href="index.html"><img src="IMG/icons/home.png" alt="ikona domečku - zpět na úvodní stranu"></a></li>
+                    <li><a href="whoare.html">Kdo jsem</a></li>                    
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a class="active" href="zivotopis.html">Životopis</a></li>
                 </ul>    
             </nav>
             <a href="documenty/Zaneta_Sabadkova_CV.pdf" download="Zaneta_Sabadkova_CV.pdf" class="cv"> Stáhnout životopis</a>
             <p class="follow">follow me</p>
             <a href="https://www.linkedin.com/in/žaneta-sabadková-56542b213/" target="_blank"><img class = "socMedia "src="IMG/icons/linkedin.png" alt="odkaz na Linkedin"> </a>
         </section>
-    </header>
-    <main> 
+    
         
-        <h1>Životopis</h1>        
+        <h1 class="headline">Životopis</h1>        
 
+    </header>
+
+    <main class="curiculum">    
         <figure class="row">
-            <article class="col span-1-of-2">
+            <article class="col span-1-of-2 work">
                 <aside class="textCV">
                     <img class="icon" src="IMG/icons/work.png" alt="ikona zaměstnání" class="iconWork">
                     <h2>Pracovní zkušenosti</h2>
                 </aside>
                 
                 <h3>Rodičovská dovolená</h3>
-                <h4>Manager v domáctnosti - 2014 / dosud</h4>
+                <h4>Manager v domácnosti - 2014 / dosud</h4>
                 <p class="popis">Schopnost práce pod tlakem, Multitasking, Krizový management, Asertivita, Maximální pracovní výdrž, Komunikační dovednosti, Trvalá práce na sobě</p>
 
 
@@ -53,7 +67,7 @@
 
                 
 
-            <article class="col span-1-of-2">
+            <article class="col span-1-of-2 work">
                 <aside class="textCV">
                     <img class="icon" src="IMG/icons/stady.png" alt="ikona vzdělávání">
                     <h2>Vzdělání</h2>
@@ -75,18 +89,28 @@
                 <h4>Webová vývojářka</h4>
                 <p class="popis">Orientace v HTML, CSS, SASS, WordPress, responzivita webu (media queries a flex-box). Základy JavaScriptu. Google Analytics, SEO, Google Search Console. </p>
 
-                <figure class="watch">
-                    <a href="documenty/Webová vývojářka.pdf" target="_blank"><img class="eyes" src="IMG/icons/eyes.png" alt="oko, prohládnout si certifikát">Vývojářka webu a multimédií</a>
+                <figure class="certifications"> 
+                    <a href="documenty/Webová vývojářka.pdf" target="_blank"><img class="document" src="IMG/icons/eyes.png" alt="ikona na otevření certifikát">Vývojářka webu a multimédií</a>
                 </figure>
 
                 <h3>Attavena, o.p.s. - 2021</h3>
                 <h4>Kurz osobního rozvoje</h4>
                 <p class="popis">MS Excel, Canva, Zoner Photo Studio X, práce v týmu</p>
 
-                <figure class="watch"> 
-                    <a href="documenty/pracovni_navyky.pdf" target="_blank"><img class="eyes" src="IMG/icons/eyes.png" alt="oko, prohládnout si certifikát">Pracovní návyky</a>
-                    <a href="documenty/tematicke miniworkshopy.pdf" target="_blank"><img class="eyes" src="IMG/icons/eyes.png" alt="oko, prohládnout si certifikát">Miniworkshopy</a>
-                    <a href="documenty/orientace_na_trhu_prace.pdf" target="_blank"><img class="eyes" src="IMG/icons/eyes.png" alt="oko, prohládnout si certifikát">Trh práce</a>
+                <figure class="certifications"> 
+                    <a href="documenty/pracovni_navyky.pdf" target="_blank"><img class="document" src="IMG/icons/eyes.png" alt="oko, prohládnout si certifikát">Pracovní návyky</a>
+                    <a href="documenty/tematicke miniworkshopy.pdf" target="_blank"><img class="document" src="IMG/icons/eyes.png" alt="oko, prohládnout si certifikát">Miniworkshopy</a>
+                    <a href="documenty/orientace_na_trhu_prace.pdf" target="_blank"><img class="document" src="IMG/icons/eyes.png" alt="oko, prohládnout si certifikát">Trh práce</a>
+                </figure>
+
+                <h3>Další certifikáty</h3>
+                <h4>GOOGLE - Coursera</h4>
+                <p class="popis">UX Design</p>
+
+                <figure class="certifications"> 
+                    <a href="documenty/Coursera.pdf" target="_blank"><img class="document" src="IMG/icons/eyes.png" alt="oko, prohládnout si certifikát">Základy designu UX</a>
+                    <a href="documenty/StartUXDesign.pdf" target="_blank"><img class="document" src="IMG/icons/eyes.png" alt="oko, prohládnout si certifikát">Procesy návrhu UX</a>
+                    <a href="documenty/Wireframes.pdf" target="_blank"><img class="document" src="IMG/icons/eyes.png" alt="oko, prohládnout si certifikát">Výroba wireframů a prototypů Low-Fidelity</a>
                 </figure>
             </article>
         </figure>
@@ -96,5 +120,6 @@
         <p>&copy; Na brzkou shledanou - Žaneta Sabadková &#128540;</p>
     </footer>
     
+    <script src="script.js"></script>
 </body>
 </html>

@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Inconsolata', monospace;
+}
+
 // ****************************Mixiny
 $main-color: #45A9BF;
 $main-color1: #89345e;
 $main-color2: #F2F2F2;
 $main-color3: #010D00;
+<<<<<<< HEAD
 $main-color4: #F24E29;
 $main-color5: #716D6E;
 
@@ -24,20 +29,30 @@ $main-color5: #716D6E;
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 1px;
+=======
+$main-color4: #89345e74;
+$main-color5:#716D6E;
+
+@mixin window{
+    width: 70%;
+    margin-left: 380px;
+>>>>>>> responzivita
 }
 
 @mixin phoneMail{
     border: 2px solid $main-color3;
-    border-radius: 5px;
-    width: 230px;
-    display: inline-block;
+    border-radius: 10px;
+    width: 260px;
+    height: 100px;
     position: absolute;
-    margin-top: 400px;
+    margin-top: 500px;
+    margin-left: -40px;
     text-align: center;
     padding: 10px 25px;
     background-color: $main-color;
 }
 
+<<<<<<< HEAD
 @mixin window{
     width: 70%;
     height: 500px;
@@ -67,6 +82,9 @@ $main-color5: #716D6E;
 }
 
 // ******************************navigace
+=======
+// ******************************navigace (na všech stránkách stejná)
+>>>>>>> responzivita
 .menu{
     position: absolute;
     width: 300px;
@@ -75,58 +93,96 @@ $main-color5: #716D6E;
     margin-top: 40px;
     margin-left: 40px;
     box-shadow: 10px 10px 20px $main-color5;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.slozka_close, .slozka_open{
+    width:40px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
 }
 
 .navigace{
     height: 300px;
     margin-top: 100px;
-    // position: absolute;
    
+}
+
+.navigace img{
+    width: 50px;
 }
 
 .navigace li{
     margin-top: 40px;
     list-style-type: none;
-    text-align: center;
+    text-align: center;    
+}
+
+.navigace a{
+    text-decoration: none;
+    font-weight: 600;
+    color: $main-color3;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.active{
+    box-shadow: 5px 2px 15px $main-color3;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.active_house{
+    box-shadow: 5px 2px 15px $main-color3;
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}    
     
-}
-
-.navigace li a{
-    @include navigace;
-}
-
-.navigace ul li img{
-    width: 50px;
-}
-
 .cv{
-    @include navigace;
     position: absolute;
-    background-color: #89345e;
+    display: inline-block;
+    width: 100%;    
     text-align: center;
     font-size: 20px;
-    height: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #89345e;    
     color: $main-color2;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+   
 }
 
 .follow{
+<<<<<<< HEAD
     @include font;
     color: $main-color4;
+=======
+    color: $main-color;
+>>>>>>> responzivita
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .socMedia{
-    width: 30px;
     margin-top: 20px;
+    width: 30px;
     margin-left: 135px;
 
+}
+
+.socMedia_responzivita{
+    display: none;
 }
 
 .title_name{
@@ -141,7 +197,10 @@ $main-color5: #716D6E;
 
 .title{
     position: absolute;
+<<<<<<< HEAD
     @include font;
+=======
+>>>>>>> responzivita
     width: 800px;
     height: 650px;
     color: $main-color3;
@@ -149,40 +208,63 @@ $main-color5: #716D6E;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    // border: 2px solid yellow;
+}
 
+// ****************************************Index - hlavní stránka
+
+.index{
+    width: 100vw;
+    height: 100vh; 
+    background-color: $main-color2;
+    background: url(../IMG/my_foto.png);
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    box-shadow: 10px 10px 15px $main-color5;
+    border-radius: 10px;
+}
+
+.foto_mobil{
+    display: none;
 }
 
 .animation {
     height: 40px;
     overflow:hidden;
+<<<<<<< HEAD
 
     @include font;
+=======
+>>>>>>> responzivita
     font-size: 35px;
     line-height: 40px;
     color: $main-color4;
     
+}
+
     .content_animation {
       font-weight: 600;
       overflow: hidden;
       height: 40px;
       padding: 0 0px;
+    }
   
-      &:before {
+    .hi:before {
         content: '[';
         left: 190px;
       }
   
-      &:after {
+    .hi:after {
         content: ']';
         position: absolute;
         right: 220px;
       }
   
-      &:after, &:before {
+      .hi:after, .hi:before {
         position: absolute;
-        top: 13%;
-        
+        top: 5%;
         color: $main-color;
         font-size: 40px;
         line-height: 40px;
@@ -213,15 +295,16 @@ $main-color5: #716D6E;
         animation-name: change;
         animation-duration: 10s;
         animation-iteration-count: infinite;
+      }
   
         .animation_list_item {  
           line-height:40px;
           margin:0;
           
         }
-      }
-    }
-}
+      
+    
+
   
   @-webkit-keyframes opacity {
     0%, 100% {opacity:0;}
@@ -281,15 +364,28 @@ $main-color5: #716D6E;
   }
 
 .name{
-    font-size: 60px;
+    width: 100%;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: $main-color;
+    margin-top: -30px;    
 }
-.color_name{
+
+.Iam{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     color: $main-color3;
+
+}
+.myName{
+    font-size: 60px;
+    color: $main-color;
     -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: $main-color3;
+    -webkit-text-stroke-color: $main-color;
+}
+
+.foto_mobil{
+    display: none;
 }
 
 .text{
@@ -298,38 +394,49 @@ $main-color5: #716D6E;
     letter-spacing: 2px;
 }
 
+.text{
+    display: inline-block;
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.two{
+    width: 100%;
+    letter-spacing: 4.5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.three{
+    letter-spacing: 5px;
+}
+
 .btn_port{
+    display: inline-block;
     text-decoration: none;
-    margin-bottom: 80px;
+    margin-bottom: 140px;
     font-size: 25px;
     color: $main-color3;
     font-weight: 700;
     border: $main-color1 4px solid;
-    border-radius: 5px;
+    border-radius: 10px;
     letter-spacing: 1px;
     padding: 10px 15px;
     border-style: outset;
     background-color:$main-color1;
+
 }
 
 .btn_port:hover{
     border-style: inset;
 }
 
-.arrow{
-    width: 30px;
-    margin-top: -150px;
-    display: block;
-    animation: fromTop 2s 0.5s;
-    animation-iteration-count: infinite;
-}
 
-@keyframes fromTop{
-    0%{
-        opacity: 1;
-        transform: translateY(0);
-    }
 
+<<<<<<< HEAD
     100%{
         opacity: 1;
         transform: translateY(40px);
@@ -339,29 +446,32 @@ $main-color5: #716D6E;
 .h1{
     background-color: $main-color2;
     height: 20px;
+=======
+// ***************************************MAIN
+.main_index{
+    background-color: $main-color2;
+    height: 1320px;
+>>>>>>> responzivita
     width: 100%;
     margin-top: -20px;
-    // position: relative;
-    // margin: 0px auto;
-
 }
 
-.about{
+// *******************************Index MAIN
+.prolog{
     position: relative;
+    width: 90%;
+    height: 700px;
+    margin: 0 auto;
     background-color: $main-color2;
     box-shadow: 10px 10px 15px $main-color5;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 90%;
-    height: 600px;
-    margin: 0 auto;
     z-index: 1;
-
-
 }
 
-.about_me{
+.prolog_about_me{
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -369,28 +479,45 @@ $main-color5: #716D6E;
     color: $main-color3;
 }
 
-.about_me h1{
+.prolog_about_me h1{
+    width: 230px;
     margin-top: 100px;
+<<<<<<< HEAD
     @include font;
+=======
+>>>>>>> responzivita
     border-left: $main-color3 6px solid;
-    padding-left: 10px;
     font-size: 28px;
     letter-spacing: 1px;
 }
 
-.about_me p{
+.prolog_about_me p{
     margin-top: 20px;
+<<<<<<< HEAD
     @include font;
+=======
+>>>>>>> responzivita
     letter-spacing: 1px;
     font-size: 21px;
+}
+
+.phone, .mail{
+    width: 50px;
+    margin-bottom: 8px;
+    
 }
 
 .phoneNumber{
     @include phoneMail;
 }
 
-.phone{
-    width: 40px;
+.phoneNumber a, .email a{
+    text-decoration: none;
+    color: $main-color3;
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
+     
 }
 
 .email{
@@ -401,23 +528,24 @@ $main-color5: #716D6E;
 .phoneNumber .email:hover{
     border-style: groove;
 }
-
-.mail{
-    width: 40px;
-}
-
+// ************************************skilly
 .WhichIWork{
     margin-top: 20px;
     position: absolute;
     color: $main-color1;
+<<<<<<< HEAD
     @include font;
+=======
+>>>>>>> responzivita
     letter-spacing: 2px;
     font-size: 30px;
     border-bottom: 2px solid $main-color1;
+    text-decoration: underline;
 }
 
 .skills{
     box-shadow: 10px 10px 15px $main-color5;
+    border-radius: 10px;
     margin-top: -20px;
     display: flex;
     flex-direction: column;
@@ -446,9 +574,8 @@ $main-color5: #716D6E;
 .card{
     position: absolute;
     width: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    top: -60px;
     color: $main-color2;
     text-align: center;
 }
@@ -460,10 +587,12 @@ $main-color5: #716D6E;
     transition: all 1s linear;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
+
 .cardfull img:hover{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
 }
 
+<<<<<<< HEAD
 
 
 // ********************************************ŽIVOTOPIS
@@ -477,8 +606,200 @@ main h1{
     font-size: 60px;
     // margin: 20px 750px;
     color: $main-color1;
+=======
+// ****************************Header
+header{
+    width: 100vw;
+    height: 150px;
+    // background-color: $main-color2;
+    position: absolute;
+    background-color:$main-color4;
+>>>>>>> responzivita
 }
 
+.headline{ 
+    position: absolute;
+    width: 1000px;
+    margin-left: 340px;
+    line-height: 150px;
+    text-align: center;    
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: $main-color1;
+}
+// ***********************************************WHOARE
+.who{
+    background-color: $main-color2;
+    height: 1525px;
+    width: 100vw;    
+}
+
+main h1{
+    color: $main-color;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 100px;
+   
+}
+
+.name_who_are{
+    font-size: 45px;
+    color: $main-color3;
+}
+
+.head_title_who_are{
+    font-size: 30px;
+    color: $main-color;
+}
+
+.text_who_are{
+    font-size: 19px;
+    line-height: 23px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+ .title_who_are{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $main-color;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    box-shadow: 10px 10px 15px $main-color5;
+    border-radius: 10px;
+    font-size: 18px;
+} 
+
+.my_foto_front{
+    width: 500px;
+    margin-top: 1010px;
+    margin-left: -30px;
+    
+}
+
+// ****************************************************************Portfolio
+.port{
+    background-color: $main-color2;
+    height: 1220px;
+    width: 100vw;
+    
+}
+.preview{
+    @include window;
+    height: 500px;
+    margin-top: 150px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.flip-box, .preview-content, .title-front{
+    background-color: transparent;
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+    perspective: 1000px;
+}
+
+.flip-box-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    
+}
+
+.flip-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 10% 100%;
+    transform: translateZ(2rem);
+    box-shadow: 10px 10px 15px $main-color5;
+}
+
+.title-front{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: $main-color;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 999;
+    line-height: 200px;
+    text-align: center;
+    transform: translateZ(80px) translate(-50%,-50%);
+}
+
+.flip-box:hover 
+.flip-box-inner{
+    transform: rotateY(180deg);
+    box-shadow: 10px 10px 15px $main-color2;
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.front{
+    background-color: $main-color4;
+    color: #010D00;
+    border-radius: 10px;
+}
+
+.back{
+    position: absolute;
+    line-height: 200px;
+    text-align: center;
+    font-size: 25px;
+    overflow: hidden;
+    background-color: $main-color1;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    
+}
+
+.back a{
+    color: #010D00;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 20px;
+    color: $main-color;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+
+// ********************************************ŽIVOTOPIS
+.curiculum{
+    background-color: $main-color2;
+    height: 1720px;
+    width: 100vw;
+    
+}
 .icon{
     width: 50px;
     margin-left: -60px;
@@ -486,6 +807,9 @@ main h1{
 }
 .row{
    @include window;
+   height: 1000px;
+   position: absolute;
+   margin-top: 150px;
 }
 
 .textCV{
@@ -493,17 +817,19 @@ main h1{
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   color: $main-color;
+   color: $main-color3;
    margin-top: 40px;
    padding: 10px 0;
    box-shadow: 10px 10px 15px $main-color5;
-   border-radius: 5px;
+   border-radius: 10px;
+   background-color: $main-color4;
 }
 
 .kurz{
     margin-top: 120px;
 }
 
+<<<<<<< HEAD
 h2{
     @include font;
     
@@ -512,27 +838,41 @@ h2{
 
 h3{
     @include font;
+=======
+h3{  
+>>>>>>> responzivita
     color: $main-color1;
-    margin-top: 20px;
+    margin-top: 24px;
     margin-bottom: 20px;
     text-decoration: underline;
     font-size: 20px;
+    text-align: center;
 }
 
+<<<<<<< HEAD
 h4{
     @include font;
+=======
+h4{ 
+>>>>>>> responzivita
     margin-bottom: 10px;
     font-size: 18px;
+    text-align: center;
 }
 
+<<<<<<< HEAD
 .popis{
     @include font;
+=======
+.popis{ 
+>>>>>>> responzivita
     line-height: 25px;
     margin-top: 40px;
     font-size: 17px;
+    text-align: center;
 }
 
-.eyes{
+.document{
     width: 40px;
     margin-top: 20px;
     margin-left: 20px;
@@ -540,6 +880,7 @@ h4{
     
 }
 
+<<<<<<< HEAD
 .watch a{
     font-size: 15px;
     color: $main-color;
@@ -668,6 +1009,28 @@ h4{
 }
 
 
+=======
+.certifications{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.certifications a{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+    line-height: 20px;
+}
+
+.document{
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 20px;
+    
+}
+>>>>>>> responzivita
 
 // ********************************************Footer
 footer{

@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6FFXGZTF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T6FFXGZTF4');
+</script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/query.css">
     <title>Žaneta Sabadková</title>
 </head>
 <body>
     <header class="index">
+        <section class="menu">           
+            <img src="IMG/icons/slozka_close.png" alt="zavřené menu" class="slozka_close">
+            <nav class = "navigace"> 
+                <ul class="menu_respon"> 
+                    <li><a class="active_house" href="index.html"><img src="IMG/icons/home.png" alt="ikona domečku - zpět na úvodní stranu"></a></li>
+                    <li><a href="whoare.html">Kdo jsem</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="zivotopis.html">Životopis</a></li>
+                   
+                </ul>    
+            </nav>
+ 
+            <a href="documenty/Zaneta_Sabadkova_CV.pdf" download="Zaneta_Sabadkova_CV.pdf" class="cv"> Stáhnout životopis</a>
+            <p class="follow">follow me</p>
+            <a href="https://www.linkedin.com/in/žaneta-sabadková-56542b213/" target="_blank"><img class = "socMedia "src="IMG/icons/linkedin.png" alt="odkaz na Linkedin"> </a>
+        </section>
+
+
         <section class="title_name"> 
             <article class="title">                 
                 <div class="animation">
@@ -26,51 +55,53 @@
                         </ul>
                     </div>
                 </div>
+
+
+                <img src="IMG/my_foto2.png" alt="" class="foto_mobil">
+
                 
-                <h1 class="name">jsem<span class="color_name"> Žaneta&nbsp;Sabadková</span></h1>
-                <p class="text">začínající Front-end developer</p>
-                <a class="btn_port" href="#">Portfolio</a>
+                <h2 class="name Iam">jsem </h2>
+                <h2 class="name myName"><strong>Žaneta&nbsp;Sabadková</strong></h2>
 
-                <img class="arrow"src="IMG/sipka.png" alt="sipka ukazující směrem dolů, pro pokračování stránky">
+                <div class="begin_front"> 
+                    <p class="text one"> začínající </p>
+                    <p class="text two"><strong> Front-end</strong> </p>
+                    <p class="text three"><strong> developer</strong></p>
+                </div>    
+                <a class="btn_port" href="portfolio.html">Portfolio</a>             
+
             </article>
-        </section>
-
-        <section class="menu"> 
-            <nav class = "navigace"> 
-                <ul>     
-                    <li><a class="active" href="#">Kdo jsem</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="zivotopis.html">Životopis</a></li>
-                </ul>    
-            </nav>
-            <a href="documenty/Zaneta_Sabadkova_CV.pdf" download="Zaneta_Sabadkova_CV.pdf" class="cv"> Stáhnout životopis</a>
-            <p class="follow">follow me</p>
-            <a href="https://www.linkedin.com/in/žaneta-sabadková-56542b213/" target="_blank"><img class = "socMedia "src="IMG/icons/linkedin.png" alt="odkaz na Linkedin"> </a>
         </section>
 
     </header>
 
-    <main>
-        <section class="about"> 
-            <article class="about_me">
+    <main class="main_index">
+        <section class="prolog"> 
+            <article class="prolog_about_me">
                     <h1>Ve zkratce...</h1>
                     <p>Kdo jsem...</p>
-                    <p>Jsem máma na rodičovské "dovolené". A tak se to nějak semlelo, že jsem si ke svým dětem ještě opatřila další společníky.</p>
-                    <p>HTML, CSS, JavaScript, ...</p>
-                    <p>Momentálně se ucházím o pozici jako junior kodér.</p>
+                    <p>Zatím jsem začátečník ve světě IT. Teď jsem dodělala kurz Webové vývojářky a chci pokračovat dál. Mám neskutečnou motivaci a chuť dokázat, že mám na to stát se Frontendistkou.</p>
+                    <p>Teď pokračuji ještě kurzem angličtiny a samostudiem.</p>
+                    <p>Momentálně se ucházím o pozici jako <strong>junior kodér</strong>/<strong>Front-end</strong>.</p>
                     
-                   
                     <div class="phoneNumber"> 
-                        <img class= "phone" src="IMG/phone.png" 
-                        alt="telefonní číslo">
-                        <p>+420 724 831 189</p>
+                        <a href="tel:+420724831189"><img class= "phone" src="IMG/phone.png" 
+                        alt="telefonní číslo"></a><br>
+                        
+                        <div class="text_number">
+                            <a href="tel:+420724831189">+ 420 724 831 189</a>
+                        </div>
                     </div>
 
                     <div class="email"> 
-                        <img class= "mail" src="IMG/mail.png" 
-                        alt="Email">
-                        <p>zaneta.sabadkova <br> @gmail.com</p>
+                        <a href="mailto:zaneta.sabadkova@gmail.com"><img class= "mail" src="IMG/mail.png" 
+                        alt="Email"></a>
+                        
+                        <div class="text_mail"> 
+                            <a href="mailto:zaneta.sabadkova@gmail.com">zaneta.sabadkova@gmail.com</a>
+                        </div>
                     </div>
+                
             </article>
         </section>
 
@@ -86,14 +117,21 @@
                     <div class="card">
                         <h1>HTML</h1>
                     </div>
-                    <img src="IMG/icons/html.png" alt="">
+                    <img src="IMG/icons/html.png" alt="HTML">
                 </div>
 
                 <div class="cardfull"> 
                     <div class="card">
                         <h1>CSS</h1>
                     </div>
-                    <img src="IMG/icons/CSS.png" alt="">
+                    <img src="IMG/icons/CSS.png" alt="CSS">
+                </div>
+
+                <div class="cardfull">
+                    <div class="card">
+                        <h1>JavaScript</h1>
+                    </div> 
+                    <img src="IMG/icons/JS.png" alt="JavaScript">       
                 </div>
 
                 <div class="cardfull">
@@ -101,7 +139,7 @@
                     <div class="card">
                         <h1>SCSS</h1>
                     </div> 
-                    <img src="IMG/icons/SCSS.png" alt="">       
+                    <img src="IMG/icons/SCSS.png" alt="SCSS">       
                 </div>
 
                 <div class="cardfull"> 
@@ -109,7 +147,7 @@
                     <div class="card">
                         <h1>GIT</h1>
                     </div>
-                    <img src="IMG/icons/GIT.png" alt="">        
+                    <img src="IMG/icons/GIT.png" alt="GIT">        
                 </div>
 
                 <div class="cardfull">
@@ -117,46 +155,51 @@
                     <div class="card">
                         <h1>GITHUB</h1>
                     </div>
-                    <img src="IMG/icons/GITHUB.png" alt="">        
+                    <img src="IMG/icons/GITHUB.png" alt="GitHub">        
                 </div>
             </article>
 
             <article class="skill">
-                <div class="cardfull">
-                    
+                <div class="cardfull">                    
                     <div class="card">
-                        <h1>Google</h1>
-                        <h1>Analytics</h1>
+                            <h1>Python</h1>
+                        </div> 
+                        <img src="IMG/icons/python.png" alt="Python">       
                     </div>
-                    <img src="IMG/icons/GA.png" alt="">        
-                </div>
-                <div class="cardfull">
                     
+                <div class="cardfull">    
+                    <div class="card">
+                        <h1>Google Analytics</h1>
+                    </div>
+                    <img src="IMG/icons/GA.png" alt="Google Analytics">        
+                </div>
+
+                <div class="cardfull">
                     <div class="card">
                         <h1>SEO</h1>
                     </div>
-                    <img src="IMG/icons/SEO.png" alt="">        
+                    <img src="IMG/icons/SEO.png" alt="SEO">        
                 </div>
+
                 <div class="cardfull"> 
-                    
                     <div class="card">
                         <h1>Canva</h1>
                     </div>
-                    <img src="IMG/icons/Canva.png" alt="">        
+                    <img src="IMG/icons/Canva.png" alt="Canva">        
                 </div>
                 <div class="cardfull"> 
                     
                     <div class="card">
                         <h1>ShotCut</h1>
                     </div>
-                    <img src="IMG/icons/Shotcut.png" alt="">        
+                    <img src="IMG/icons/Shotcut.png" alt="ShotCut">        
                 </div>
                 <div class="cardfull">
                     
                     <div class="card">
                         <h1>Figma</h1>
                     </div>        
-                    <img src="IMG/icons/Figma.png" alt="">
+                    <img src="IMG/icons/Figma.png" alt="Figma">
                 </div>
             
         </article>
@@ -167,5 +210,6 @@
         <p>&copy; Na brzkou shledanou - Žaneta Sabadková &#128540;</p>
     </footer>
     
+   <script src="script.js"></script>
 </body>
 </html>

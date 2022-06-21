@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6FFXGZTF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T6FFXGZTF4');
+</script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/query.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <header class="zivotopis">
-        <section class="menu"> 
+    <header>
+        <section class="menu">
+            <img src="IMG/icons/slozka_close.png" alt="" class="slozka_close">
             <nav class = "navigace"> 
-                <ul>     
-                    <li><a class="active" href="#">Kdo jsem</a></li>
-                    <li><a href="zivotopis.html">Životopis</a></li>
+                <ul class="menu_respon"> 
                     <li><a href="index.html"><img src="IMG/icons/home.png" alt="ikona domečku - zpět na úvodní stranu"></a></li>
+                    <img src="IMG/icons/slozka_open.png" alt="" class="slozka_open">      
+                    <li><a href="whoare.html">Kdo jsem</a></li>                    
+                    <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                    <li><a href="zivotopis.html">Životopis</a></li>
                 </ul>    
             </nav>
             <a href="documenty/Zaneta_Sabadkova_CV.pdf" download="Zaneta_Sabadkova_CV.pdf" class="cv"> Stáhnout životopis</a>
@@ -25,32 +39,21 @@
         </section>
     
 
-     
-        <h1>Portfolio</h1> 
-
+    
+        <h1 class="headline">Portfolio</h1> 
+    </header>
+    <main class="port">    
         <section class="preview">
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="front">
+                      <a class="responzLink" href="https://sabadtest.fun/">
                         <img class="preview-content"src="IMG/VilbeeWeb.jpg" alt="Webová stránka">
-                        <p class="title-front">Webová stránka</p>
+                        <p class="title-front">Webová stránka</p></a>
                     </div>
                     <div class="back">
                         <p>Webová stránka</p>
-                        <a href="#">HTML</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="front">
-                        <img src="IMG/Vlna.jpg" alt="Efekt vlna pomocí CSS">
-                        <p class="title-front">Efekt Vlna</p>
-                    </div>
-                    <div class="back">
-                        <p class="title-back">Práce s CSS</p>
-                        <a class="html-back"href="#">HTML</a>
+                        <a class="html-back" href="https://sabadtest.fun/" target="_blank">HTML</a>
                     </div>
                 </div>
             </div>
@@ -58,12 +61,27 @@
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="front">
-                        <img src="IMG/Tecka.jpg" alt="Efekt vyskočení z tečky">
-                        <p class="title-front">Efekt vyskočení z tečky</p>
+                        <a class="responzLink" href="efekt VLNA/index.html">
+                            <img src="IMG/Vlna.jpg" alt="Efekt vlna pomocí CSS">
+                            <p class="title-front">Efekt Vlna</p></a>
                     </div>
                     <div class="back">
                         <p class="title-back">Práce s CSS</p>
-                        <a class="html-back" href="#">HTML</a>
+                        <a class="html-back"href="efekt VLNA/index.html" target="_blank">HTML</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="front">
+                        <a class="responzLink" href="efekt Vyskakovaci/index.html">
+                            <img src="IMG/Tecka.jpg" alt="Efekt vyskočení z tečky">
+                            <p class="title-front">Efekt vyskočení</p></a>
+                    </div>
+                    <div class="back">
+                        <p class="title-back">Práce s CSS</p>
+                        <a class="html-back" href="efekt Vyskakovaci/index.html" target="_blank">HTML</a>
                     </div>
                 </div>
             </div>
@@ -71,20 +89,25 @@
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="front">            
-                        <img src="IMG/Flex-box.jpg" alt="Zkoušení flex-boxu">
-                        <p class="title-front">Flex-box</p>
+                        <a class="responzLink" href="Flexbox/index.html">
+                            <img src="IMG/Flex-box.jpg" alt="Zkoušení flex-boxu">
+                            <p class="title-front">Flex-box</p></a>
                     </div>
                     <div class="back">
                         <p class="title-back">Práce s flex-boxem</p>
-                        <a class="html-back"href="#">HTML</a>
+                        <a href="Flexbox/index.html" target="_blank">HTML</a>
                     </div>
                 </div>
             </div>
+
         </section>
-    </header>
+    </main>
 
     <footer>
         <p>&copy; Na brzkou shledanou - Žaneta Sabadková &#128540;</p>
     </footer>   
+    <script src="script.js"></script>
 </body>
 </html>
+
+                   

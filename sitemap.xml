@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	  	  
+<!-- www.check-domains.com sitemap generator -->
+
+<url>
+   <loc>https://zanetasabadka.cz/</loc>
+   <priority>1.0000</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/index.html</loc>
+
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/whoare.html</loc>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/portfolio.html</loc>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/zivotopis.html</loc>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/documenty/Zaneta_Sabadkova_CV.pdf</loc>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/efekt%20VLNA/index.html</loc>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/efekt%20Vyskakovaci/index.html</loc>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/Flexbox/index.html</loc>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/documenty/Webová%20vývojářka.pdf</loc>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/documenty/pracovni_navyky.pdf</loc>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/documenty/tematicke%20miniworkshopy.pdf</loc>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/documenty/orientace_na_trhu_prace.pdf</loc>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/documenty/Coursera.pdf</loc>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/documenty/StartUXDesign.pdf</loc>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://zanetasabadka.cz/documenty/Wireframes.pdf</loc>
+   <priority>0.6400</priority>
+</url>
+</urlset>
