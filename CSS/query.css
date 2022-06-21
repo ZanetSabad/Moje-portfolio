@@ -32,7 +32,8 @@
 
 }
 
-@media only screen and (max-width: 1100px){  
+/* *********************************************************************************************************************************************************************************************************** */
+@media only screen and (max-width: 1024px){  
   .navigace{
       margin-top: 60px;     
   }
@@ -41,65 +42,97 @@
       height: 1320px;
       width: 100%;
       margin-top: -20px;
-  }
+    }
+
+    .title_name{
+        width: 680px;
+        height: 100vh;
+        margin-left: 180px;
+    }
+    
+    .title{
+        position: absolute;
+        width: 100%;
+        height: 100%;  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    align-items: flex-start;      
+    }
+
+    .animation{
+        display: none;
+    }
 
     .content_animation {
         display: none;
     }
 
     .name{
-      font-size: 35px;
-      letter-spacing: 4px;
-      text-align: left;
-      margin-top: -200px;
-      margin-left: -200px;
-  }
+        width: 100%;
+        letter-spacing: 2px;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    .Iam{
+        font-size: 40px;
+        margin-top: 120px;
+    
+    }
+
+    .myName{
+        font-size: 50px;
+    }
 
   
     .begin_front{
+        width: 150px;
+        height: 150px;
+        position: relative;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        margin-top:0px;
+        align-items: center;
+        margin-left: 120px;
     }
   
     .text{
         font-size: 22px;
-        letter-spacing: 2px;
-        margin-top: -50px;
-        margin-left: -200px;
+        letter-spacing: 1px;
+        margin-top: 0px;
         text-align: center;
     }
-  
-  .developer{
-    display: block;
-    margin-left: 145px;
-    margin-top: 10px;
-  }
 
-  .btn_port{
-      margin-bottom: 160px;
-      margin-left: -280px;
-      font-size: 25px;
-  
-  }
-  
-  .btn_port:hover{
-      border-style: inset;
-  }
+    .two{
+        letter-spacing: 2px;
+        padding-top: -30px;
+        padding-bottom: -30px;
+    }
 
-  .prolog{
-    position: relative;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 80%;
-    height: 700px;
-    margin: 0 auto;
-    z-index: 1;
-}  
+    .three{
+        letter-spacing: 2.5px;
+    }
+
+    .btn_port{
+        position: relative;
+        margin-bottom: 90px;
+        margin-left: 120px;
+        font-size: 25px;
+    } 
+
+    .prolog{
+        position: relative;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
+        height: 700px;
+        margin: 0 auto;
+        z-index: 1;
+    }
+
       /***************************** nadpisy */
     .headline{ 
         position: absolute;
@@ -110,26 +143,130 @@
         font-size: 50px;
     }
 
+    /* *********************************menu */
+    .menu{
+        margin-top: 20px;
+    }
+
+    .navigace img{
+        width: 40px;
+    }
+    
+    .navigace li{
+        margin-top: 30px;  
+    }
+    
+    .navigace a{
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .active_house{
+        padding-top: 30px;      
+    } 
+
+    .cv{
+        margin-top: -40px;
+        font-size: 18px;
+    }
+
+    .follow{
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .socMedia{
+        margin-top: 20px;
+        width: 35px;
+        margin-left: 135px;
+    
+    }
+
+    /****************************************************** WHOARE */
+    .who{
+        height: 1500px;
+        width: 100%;        
+    }
+
+    main h1{
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 50px;       
+    }
+
+    /* .row{
+        width: 55%;
+    } */
+
+    .name_who_are{
+        font-size: 37px;
+    }
+
+    .title_who_are{
+        width: 90%;
+        margin: 30px auto;
+        font-size: 16px;
+        text-align: center;   
+    }     
+
+    .text_who_are{
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .my_foto_front{
+        width: 450px;
+        margin-top: 1038px;
+    
+    }
+
+    
+    /*********************************************** portfolio */
+    .port{
+        /* height: 1000px; */
+        width: 100vw;  
+    }
+    .preview{
+        max-width: 60%;
+    }
+
+    .flip-box, .preview-content, .title-front{
+        width: 250px;
+        height: 180px;
+    }
+
+    .port{
+        height: 1000px;
+        width: 100%;
+        
+    }
+
     /******************************** Životopis */
     .curiculum{        
-        height: 1900px;
+        height: 2600px;
         width: 100vw;
         
     }
     .row{
-        width: 70%;
-        margin-left: 380px;
-        height: 1000px;
-        position: absolute;
-        margin-top: 150px;
+        width: 60%;
+        /* margin-left: 380px; */
         
     }
 
     .work{
         width: 100%;
-        margin-left: 10px;
-        
+        margin-top: 10px;        
     }
+
+    .col{
+        margin: 0;
+    }
+
+    .textCV{
+        margin-top: 50px;
+       
+     }
     
     .kurz{
         margin-top: 80px;
@@ -140,26 +277,24 @@
         margin-left:0px;    
     }
 
-    h2{
-        font-size: 20px;
-        text-align: center;
-        width: 200px;    
+    h3{
+        font-size: 22px;
+        margin-top: 50px;
+        /* text-align: center; */
+        /* width: 200px;     */
     }
     
     h4{
         margin-bottom: 5px;
+        /* text-align: center; */
     }
     
     .popis{
         line-height: 22px;
         margin-top: 20px;
-        font-size: 17px;
-    }
-
-  
+    } 
     
     .document{
-        width: 40px;
         margin-top: 50px;        
     }
 
@@ -169,88 +304,24 @@
     }
     
     .certifications a{
-        font-size: 20px;
-        font-weight: 600;
-        margin-left: 20px;
-        margin-top: 0px;
-    }
-
-    /*********************************************** portfolio */
-    .preview{
-        margin-left: 380px;
-        width: 55%;
-        height: 500px;        
-    }
-
-    .flip-box, .preview-content, .title-front{
-        background-color: transparent;
-        width: 250px;
-        height: 180px;
-    }
-
-    .port{
-        height: 1000px;
-        width: 100%;
-        
-    }
-    /**************************** WHOARE */
-    .who{
-        height: 1700px;
-        width: 100%;        
-    }
-
-    .row{
-        width: 55%;
-    }
-
-    .name_who_are{
-        font-size: 37px;
-    }
-
-    .title_who_are{
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding: 20px 0;
-        border-radius: 5px;
-        font-size: 16px;
-        width: 600px;
-        text-align: center;    
-    } 
-
-     .text_who_are{
         font-size: 17px;
-        line-height: 21px;
-    }
-
-    
-
-    .my_foto_front{
-        width: 450px;
-        margin-top: 1238px;
-    
-    }
-    
+    }   
   
 }
-
-
-
-@media only screen and (max-width: 990px){
-    .index{
-        width: 100vw;
-        height: 120vh;
-        box-shadow: 0px 0px 0px;
+/* ************************************************************************************************************************************************************************************************************* */
+@media only screen and (max-width: 768px){
+     /* *********************************menu */
+    .menu{
+        width: 200px;
+        margin-top: 10px;
     }
-    
 
     .navigace img{
-        width: 30px;
+        width: 35px;
     }
-
+    
     .navigace li{
-        margin-top: 30px;
-        list-style-type: none;
-        text-align: center;    
+        margin-top: 25px;  
     }
     
     .navigace a{
@@ -258,272 +329,414 @@
     }
 
     .active_house{
-        padding-top: 15px;
+        padding-top: 25px;      
     } 
+
+    .cv{
+        margin-top: -80px;
+        font-size: 16px;
+    }
+
+    .follow{
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+    .socMedia{
+        margin-top: 20px;
+        width: 35px;
+        margin-left: 85px;
     
+    }
+
+      /* ***********************************INDEX */
+    
+    .index{
+        width: 100vw;
+        height: 100vh; 
+        background: url(../IMG/my_foto.png);
+        background-position: right;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        box-shadow: 0px 0px 0px;
+        border-radius: 10px;
+    }
+
+    .title_name{
+        width: 490px;
+        height: 100%;
+        margin-left: 140px;
+    }
 
     .main_index{
-        height: 1320px;
         width: 100%;
-        margin-top: -20px;
-    }
+        height: 1120px;
+    }   
 
     .name{
-        font-size: 35px;
-        margin-top: -240px;
-        margin-left: -60px;
-        letter-spacing: 4px;
-        text-align: left;
+        width: 100%;
+        letter-spacing: 2px;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    .Iam{
+        font-size: 30px;
+        margin-top: 170px;
+    
+    }
+
+    .myName{
+        font-size: 40px;
+        margin-top: 0px;
     }
   
-    
     .begin_front{
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      margin-bottom: 250px;
-  }
-    
+        width: 150px;
+        height: 150px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+  
     .text{
         font-size: 22px;
-        letter-spacing: 2px;
-        margin-top: -50px;
-        margin-left: -200px;
+        letter-spacing: 1px;
+        margin-top: 0px;
         text-align: center;
     }
 
-    .cv{
-        display: none;
+    .two{
+        letter-spacing: 2px;
+        padding-top: -30px;
+        padding-bottom: -30px;
+    }
+
+    .three{
+        letter-spacing: 2.4px;
     }
 
     .btn_port{
-        display: none;       
-    
-    }
+        position: relative;
+        margin-bottom: 60px;
+        margin-left: 120px;
+        font-size: 25px;
+    } 
 
     .prolog{
-        height: 650px;
+        height: 600px;
     }
+
     .prolog_about_me h1{
-        font-size: 26px;
         margin-top: 80px;
+        font-size: 26px;
+        letter-spacing: 0px;
     }
 
     .prolog_about_me p{
-        font-size: 17px;
+        margin-top: 20px;
+        letter-spacing: 0px;
+        font-size: 19px;
     }
 
     .phone, .mail{
-        width: 30px;
-        margin-bottom: 8px;
-        
+        width: 100px;
+        border: 2px solid #010D00;
+        border-radius: 10px;
+        padding: 10px 25px;
+        background-color: #45A9BF;  
+        margin-top: -100px;  
     }
-    
-    .phoneNumber, .email{
-        width: 240px;
-        height: 80px;
-        margin-top: 400px;
+
+    .phone{
+        margin-left: 150px;
     }
-    /******************************************************* SKILY */
+
+    .mail{
+        margin-right: 50px;
+    }
+
+    .phoneNumber, .email{ 
+        width: 0px;
+        height: 0px;
+        padding: 0px 0px;
+        border: 2px solid #f2f2f2;
+    }
+
+    .text_number, .text_mail{
+        display: none;
+    }
+
+    /* **********************************skills */
+    .WhichIWork{
+        margin-top: 10px;
+    }
+
     
     .skills{
-        box-shadow: 0px 0px 0px;
+        height: 550px;     
     }
 
-    /****************************************************** HEADLINE*/
+    .skill{
+        width: 600px;
+        margin-top: 80px;
+    }
+
+    .cardfull{
+        width: 80px;
+        height: 80px;
+    }
+
+    .card{
+        display: none;
+    }
+
+   /***************************** nadpisy */
     .headline{ 
-        width: 574px;       
+        max-width: 67%;
+        margin-left: 250px;
+        line-height: 149px;    
+        font-size: 40px;
     }
 
-    /* *****************************************************WHOARE */
+  
+    /****************************************************** WHOARE */
+    .who{
+        height: 1600px;
+        max-width: 100%;       
+    }
+  
     main h1{
-        margin-top: 60px;
-       
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 50px;    
     }
-
-    .follow{
-        margin-top: -80px;
+  
+    .row{
+        margin-left: 280px;
+        width: 55%;
     }
-
-    
-    .socMedia{
-        width: 40px;
+  
+    .name_who_are{
+        font-size: 37px;
     }
-
+  
+    .text_who_are{
+        font-size: 17px;
+        line-height: 21px;
+    }
+  
     .title_who_are{
-        width: 100%; 
-    } 
-
-    /*************************************************** PORTFOLIO */
-    .flip-box, .preview-content, .title-front{ 
-        width: 200px;
-        height: 140px;     
-    }
-
-}
-
-@media only screen and  (max-width: 850px){
-    
-    .name{
-        font-size: 30px;
-    }  
-    
-    .begin_front{
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      margin-bottom: 250px;
-  }
-    
-    .text{
-        margin-top: -50px;
-        margin-left: -100px;
-    }
-
-    .prolog{
-        width: 100%;
-        height: 550px;
-        box-shadow: 0px 0px 0px;
-    }
-
-}
-
-@media only screen and (max-width: 710px){
-    .headline{
-        display: none;
-    }
-
-    .menu{
-        position: relative;
-        left: 0;
-        top: 0;
-        width: 85vw;
-        height: 15vh;
-        margin-top: -40px;
-        margin-left: 20px;
-    }
-
-    .index{ 
-        background: #f2f2f2; 
-        box-shadow: 0px 0px 0px #f2f2f2;
-        border-radius: 0px;    
-    }
-    
-    .slozka_close{
-        display: block;
-    }
-
-    .slozka_close, .slozka_open{
-        margin-top: 15px;
-    }
-
-    .navigace ul{
-        position: absolute;
-        display: inline-block;
-        z-index: 999;
-        background-color: #45A9BF;
-        top: -550px;
-        bottom: 0;
-        width: 100%;
-        height: 72vh;
-        border-radius: 10px;
-        text-align: center;
-        transition: all 0.7s;  
-    
-    }
-
-    .navigace li{
-        margin-top: 50px;    
-    }
-
-    .name{
-        position: absolute;
-        top: 300px;
-        left: 120px;
-        text-align: center;
-        font-size: 34px;
-    }
-
-    .foto_mobil{
-        display: inline-block;
-        position: absolute;        
-        left: 50%;
-        transform: translate(-50%);
-        margin-top: -80px;
-        width: 220px;
-        border-radius: 10px;
-    }
-
-    .begin_front{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 480px;
+        max-width: 90%;
+        font-size: 16px;
+        text-align: center; 
+        margin: 30px auto;   
+    }     
+  
+    .my_foto_front{
+        width: 350px;
+        margin-top: 1238px;
+      
     }
   
-    .text{
+      
+      /*********************************************** portfolio */
+        .port{
+            height: 800px;
+            width: 100vw;  
+        }
+        
+      .preview{
+            max-width: 60%;
+            margin-left: 280px;
+      }
+  
+      .flip-box, .preview-content, .title-front{
+          width: 200px;
+          height: 130px;
+      }
+  
+      /******************************** Životopis */
+    .curiculum{        
+        height: 2600px;
+        width: 100vw;
+    }
+      
+    .row{
+        width: 60%;
+        /* margin-left: 380px; */
+    }
+  
+    .work{
+        width: 100%;
+        margin-top: 10px;        
+    }
+  
+    .col{
+        margin: 0;
+    }
+  
+    .textCV{
+        margin-top: 50px;
+    }
+      
+    .kurz{
+        margin-top: 80px;
+    }
+  
+    .icon{
+        width: 35px;
+        margin-left:0px;    
+    }
+  
+    h3{
         font-size: 22px;
-        letter-spacing: 2px;
-        margin-top: 10px;
-        margin-left: -220px;
-        text-align: center;
-  }
-
-    .cv{
-    display: none;
+        margin-top: 50px;
+        /* text-align: center; */
+        /* width: 200px;     */
     }
-
-    .follow{
-        display: none;
+      
+    h4{
+        margin-bottom: 5px;
+        /* text-align: center; */
     }
-
-    .socMedia{ 
-        position: absolute;
-        width: 50px;        
-        bottom: 10px;
-        right: 10px;       
+      
+    .popis{
+        line-height: 22px;
+        margin-top: 20px;
+    } 
+      
+    .document{
+        margin-top: 50px;        
     }
+  
+    .certifications{
+        display: flex;
+        flex-direction: column;
+    }
+      
+    .certifications a{
+        font-size: 18px;
+    }   
+    
 }
 
-@media only screen and (max-width: 412px){
-    .headline{
+@media only screen and (max-width: 425px){
+    .animation{
         display: none;
+    }
+
+    .title_name{
+        width: 100%;
+        height: 500px;
+        margin-left: 0px;
+    }
+    
+    .title{
+        width: 100%;
+        height: 500px;       
+    }
+
+    .index{
+        width: 100%;
+        height: 100vh; 
+        background: #f2f2f2; 
+        box-shadow: 0px 0px 0px #f2f2f2;
+        border-radius: 0px;
+    }
+    /*************************************************** menu */
+    .menu{
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        height: 80px;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-radius: 0px 0px;
+        box-shadow: 0px 0px 0px;
+    
+    }
+
+    .slozka_close{
+        display: block;
+        margin-left: 40px;
     }
 
     .slozka_close, .slozka_open{
-        margin-top: 25px;
+        margin-top: 17px;
+    }
+    /* **********************************responzivní index */
+   .name{
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
-    .menu{
-        position: relative;
-        left: 0;
-        top: 0;
-        width: 85vw;
-        height: 10vh;
-        margin-top: -40px;
-        margin-left: 20px;
-    }
-
-    .index{ 
-        background: #f2f2f2; 
-        box-shadow: 0px 0px 0px #f2f2f2;
-        border-radius: 0px;    
-    }
+    .Iam{
+        font-size: 30px;
+        margin-top: 0px;
     
-    .slozka_close{
-        display: block;
     }
 
+    .myName{
+        font-size: 40px;
+        margin-top: -80px;
+    }
 
+    .foto_mobil{
+        display: block;
+        position: absolute;   
+        width: 200px;     
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+         margin-top: 0px;
+    }
+
+    .begin_front{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+        margin-left: 0px;
+    }
+  
+    .text{
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .two{
+        letter-spacing: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .three{
+        letter-spacing: 2.4px;
+    }
+
+/* **********************************************responzivní menu */
     .navigace ul{
         position: absolute;
         display: inline-block;
         z-index: 999;
         background-color: #45A9BF;
-        top: -550px;
+        top: -600px;
         bottom: 0;
         width: 100%;
-        height: 40vh;
+        height: 50vh;
         border-radius: 10px;
         text-align: center;
         transition: all 0.7s;  
@@ -534,208 +747,138 @@
         margin-top: 50px;    
     }
 
-    .name{
-        position: absolute;
-        width: 320px;
-        top: 50px;
-        left: 160px;
-        font-size: 34px;
+    /* *******************************************headline */
+    header{
+        width: 100%;
+        height: 100px;
     }
 
-    .foto_mobil{
-        display: inline-block;
-        position: absolute;        
-        left: 50%;
-        transform: translate(-50%);
-        margin-top: 0px;
-        width: 270px;
-        border-radius: 10px;
-    }
-
-    .begin_front{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 200px;
-    }
-  
-  .text{
-      font-size: 28px;
-      letter-spacing: 2px;
-      margin-top: 10px;
-      text-align: center;
-  }
-
-    .cv{
-    display: none;
-    }
-
-    .follow{
+    .headline{ 
         display: none;
     }
 
     .socMedia{ 
         position: absolute;
-        width: 50px;        
+        width: 40px;        
         bottom: 10px;
-        right: 10px;       
+        right: 20px;       
     }
 
+    .cv{
+        display: none;
+    }
+    
+    .follow{
+        display: none;
+    }
+    
     .btn_port{
         display: none;
-
     }
 
 /**************************************** main INDEX */
-.main_index{
-    height: 1150px;
-    width: 100%;
-   
-}
+    .main_index{
+        height: 950px;
+        width: 100%;
+   }
 
-.prolog{
-    height: 600px;
-    box-shadow: 0px 0px 0px #f2f2f2;
-    margin-top: -120px;
-    
-}
+    .prolog{
+        height: 500px;
+        box-shadow: 0px 0px 0px #f2f2f2;
+        margin-top: 0px;
+    }
 
-.prolog_about_me{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    height: 400px;
-}
+    .prolog_about_me{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 400px;
+    }
 
-.prolog_about_me h1{
-    width: 230px;
-    margin-top: 50px;
-    font-size: 26px;
-    letter-spacing: 1px;
-    margin-left: 10px;
-}
+    .prolog_about_me h1{
+        /* width: 230px;
+        margin-top: 50px; */
+        font-size: 24px;
+        /* letter-spacing: 1px;
+        margin-left: 10px; */
+    }
 
-.prolog_about_me p{
-    margin-top: 20px;
-    font-size: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+    .prolog_about_me p{
+        margin-top: 14px;
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
-.phone, .mail{
-    position: absolute;
-    top: -25px;
-    left: -40px;
-    margin-bottom: 0px;
-    width: 35px;
-    
-}
+    .phone, .mail{
+        width: 90px;
+        margin-bottom: 50px; 
+    }
 
-.phoneNumber{
-    border-radius: 10px;
-    width: 260px;
-    height: 50px;
-    position: absolute;
-    margin-top: 440px;
-    margin-left: 50px;
-    text-align: center;
-    padding: 5px 10px;
-    
-}
+    .phone{
+        margin-left: 90px;
+    }
 
-.email{
-    border-radius: 10px;
-    width: 260px;
-    height: 50px;
-    position: absolute;
-    margin-top: 500px;
-    margin-left: 50px;
-    text-align: center;
-    padding: 5px 10px;
-}
+    .mail{
+        margin-left: -110px;
+    }
 
-.phoneNumber a, .email a{
-    position: absolute;
-    bottom: 15px;
-    left: 50px;
-    font-size: 15px;
-    color: black;
-    display: inline-block;
-}
-
-.phoneNumber .email:hover{
-    border-style: groove;
-}
 /* *************************************Skilly */
-.WhichIWork{
-    margin-top: -25px;
-    margin-left: -15px;
-    font-size: 25px;
-}
+    .WhichIWork{
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: 22px;
+        border-bottom: 0px solid;
+        text-decoration: underline;
+    }
 
 .skills{
     box-shadow: 0px 0px 0px #f2f2f2;
     border-radius: 10px;
     margin-top: 0px;
-    height: 600px;
+    height: 500px;
     margin-left: -20px;
      
 }
 .skill{
     flex-wrap: wrap;
     width: 350px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .cardfull{
-    width: 80px;
-    height: 80px;
-    margin-top: 5px;
-    margin-left: 5px;
-    background-color: transparent;
+    width: 60px;
+    height: 60px;
 }
 
-.cardfull img{
-    position: relative;
-    z-index: 1;
-}
 
-.cardfull img:hover{
-    display: none;
-}
-
-.card{
-    display: none;
-}
-
-main h1{
-    margin-top: 50px;
-}
 /************************************** WHOare */
 
 .who{
-    height: 1780px;
-    width: 100vw;
+    height: 1580px;
+    width: 100%;
+    
     
 }
 
+main h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+   
+}
+
 .row{
-    width: 90%;
-    margin-left: 300px;
-    height: 0px;
-    position: absolute;
-    margin-top: 120px;
+    width: 100%;
+    height: 1000px;
+    margin-left: 0px;
+    margin-top: 0px;
  }
 
  .textCV{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-top: 40px;
     padding: 10px 0;
-    border-radius: 10px;
-    border: 2px blue;
+    border-radius: 10px;    
  }
  
 .name_who_are{
@@ -743,22 +886,23 @@ main h1{
 }
 
 .head_title_who_are{
-    font-size: 8px;
+    font-size: 16px;
     
 }
 
 .text_who_are{
-    width: 340px;
+    width: 100%;
     font-size: 15px;
     line-height: 20px;
-    margin-top: 5px;
-    margin-left: 0px;
+    margin-top: 10px;
+    text-align: center;
 }
 
  .title_who_are{
-    width: 300px;
-    margin-bottom: 25px;
+    width: 100%;
+    margin-bottom: 23px;
     margin-left: 20px;
+    font-size: 15px;
 } 
 
 .my_foto_front{
@@ -770,22 +914,20 @@ main h1{
 .preview{
     width: 375px;
     height: 700px;
-    margin-top: 180px;
-    margin-left: 0px;
-    flex-direction: column;    
-    justify-content: space-evenly;
+    margin-top: 110px;
+    margin-left: 80px;
 }
 
 .flip-box, .preview-content, .title-front{
-    width: 150px;
-    height: 100px;   
+    width: 130px;
+    height: 90px;   
     margin-bottom: 40px;
 }
 
 .title-front{
     font-size: 15px;
     line-height: 0px;
-    margin-top: 120px;
+    margin-top: 110px;
 }
 
 .flip-box:hover 
@@ -793,21 +935,15 @@ main h1{
     transform: rotateY(0deg);   
 }
 
-.front{
-    color: #010D00;
-    border-radius: 10px;
-}
 
 /* ***********************************************ŽIVOTOPIS */
 .curiculum{
-    height: 1800px;
+    height: 2100px;
 }
 .row{
-    width: 100%;
-    height: 1000px;
-    margin-left: 0px;
-    margin-top: 150px;
-    padding: 10px 15px;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 130px;
 }
 
 .work{
@@ -816,21 +952,18 @@ main h1{
 }
 
 .textCV{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 10px 0;
 }
 
-.h3{
-    font-size: 18px;
+h3{
+    font-size: 20px;
+    margin-top: 20px;    
 }
 
-.h4{
+h4{
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 19px;
 }
 
 .popis{
@@ -838,6 +971,7 @@ main h1{
     margin-top: 20px;
     font-size: 14px;
 }
+
 .certifications{
     display: flex;
     flex-direction: column;
@@ -876,172 +1010,19 @@ footer p{
 
 }
 
-
 @media only screen and (max-width: 375px){
-    .headline{
-        display: none;
+    .phone, .mail{
+        width: 90px;
+        margin-bottom: 50px; 
     }
 
-    .slozka_close, .slozka_open{
-        margin-top: 15px;
+    .phone{
+        margin-left: 70px;
     }
 
-    .navigace ul{
-        background-color: #45A9BF;
-        /* right: 0px;     */
-        top: -550px;
-        bottom: 0;
-        /* left: -110%; */
-        width:100%;
-        height: 50vh;
-        border-radius: 10px;
-        text-align: center;
-        transition: all 0.7s;  
-    
+    .mail{
+        margin-left: -130px;
     }
-
-    .navigace li{
-        display: block;
-        line-height: 5px;
-        margin: 50px 5px;        
-    }
-      
-    .navigace a{
-        font-size: 25px;
-   }
-
-   .name{
-    position: absolute;
-    width: 320px;
-    top: 150px;
-    left: 160px;
-    font-size: 30px;
 }
 
-    .foto_mobil{
-        left: 50%;
-        transform: translate(-50%);
-        margin-top: -100px;
-        width: 220px;
-        border-radius: 10px;
-            
-    }
-
-      
-    .begin_front{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 170px;
-        margin-left: 130px;
-    }
-  
-  .text{
-      font-size: 24px;
-      letter-spacing: 2px;
-      margin-top: 10px;
-      margin-left: -270px;
-      text-align: center;
-  }
-
-/**************************************** main INDEX */
-.prolog{
-    margin-top: -50px;    
-}
-
-/* *************************************Skilly */
-.WhichIWork{ 
-    margin-left: 10px;
-    font-size: 23px;
-}
-
-.skills{
-    margin-left: 0px;
-     
-}
-/************************************** WHOare */
-
-.who{
-    width: 100vw;
-    
-}
-
-.row{
-    width: 90%;
-    margin-left: 300px;
-    height: 0px;
-    position: absolute;
-    margin-top: 120px;
- }
-
- .textCV{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    padding: 10px 0;
-    border-radius: 10px;
-    border: 2px blue;
- }
- 
-.name_who_are{
-    font-size: 24px;
-}
-
-.head_title_who_are{
-    font-size: 8px;
-    
-}
-
-.text_who_are{
-    width: 340px;
-    font-size: 15px;
-    line-height: 20px;
-    margin-top: 5px;
-    margin-left: 0px;
-}
-
- .title_who_are{
-    width: 300px;
-    margin-bottom: 25px;
-    margin-left: 20px;
-} 
-
-.my_foto_front{
-    display: none;
-    
-}
-/************************************************** Portfolio */
-/* stejné jako předchozí */
-/* ***********************************************ŽIVOTOPIS */
-.curiculum{
-    height: 1800px;
-}
-.row{
-    width: 100%;
-    height: 1000px;
-    margin-left: 0px;
-    margin-top: 150px;
-    padding: 10px 15px;
-}
-
-.work{
-    width: 100%;
-    margin-left: 0px;    
-}
-
-/*********************************************Footer */
-
-footer{
-    height: 80px;
-}
-
-footer p{ 
-    text-align: center;
-    font-size: 15px;
-    line-height: 80px;
-}
-
-}
 

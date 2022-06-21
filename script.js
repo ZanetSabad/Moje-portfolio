@@ -12,7 +12,7 @@ menuIcon.addEventListener("click", function(){
 
     if(imageName == "slozka_close.png"){
         menuIcon.src = "IMG/icons/slozka_open.png"
-        menu.style.top = "65px"
+        menu.style.top = "80px"
         menu.style.backgroundColor = "#45A9BF"
         nameone.style.display = "none"
         text.style.display = "none"
@@ -20,7 +20,7 @@ menuIcon.addEventListener("click", function(){
        
     } else {
         menuIcon.src = "IMG/icons/slozka_close.png"
-        menu.style.top = "-550px"
+        menu.style.top = "-600px"
         menu.style.backgroundColor = "transparent"
         nameone.style.display = "inline-block"
         text.style.display = "inline-block"

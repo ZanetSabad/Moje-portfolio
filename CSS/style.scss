@@ -21,15 +21,6 @@ $main-color5:#716D6E;
     margin-left: 380px;
 }
 
-@mixin navigace{
-    text-decoration: none;
-    font-weight: 600;
-    color: $main-color3;
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
 @mixin phoneMail{
     border: 2px solid $main-color3;
     border-radius: 10px;
@@ -41,46 +32,6 @@ $main-color5:#716D6E;
     text-align: center;
     padding: 10px 25px;
     background-color: $main-color;
-}
-
-// ****************************Header
-header{
-    width: 100vw;
-    height: 150px;
-    background-color: $main-color2;
-    position: absolute;
-    background-color:$main-color4;
-}
-
-.headline{ 
-    position: absolute;
-    width: 1000px;
-    margin-left: 340px;
-    line-height: 150px;
-    text-align: center;    
-    letter-spacing: 2px;
-    font-size: 50px;
-    color: $main-color1;
-}
-
-// ****************************************Index - hlavní stránka
-
-.index{
-    width: 100vw;
-    height: 100vh; 
-    background-color: $main-color2;
-    background: url(../IMG/my_foto.png);
-    background-position: right;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-    box-shadow: 10px 10px 15px $main-color5;
-    border-radius: 10px;
-}
-
-.foto_mobil{
-    display: none;
 }
 
 // ******************************navigace (na všech stránkách stejná)
@@ -121,7 +72,12 @@ header{
 }
 
 .navigace a{
-    @include navigace;
+    text-decoration: none;
+    font-weight: 600;
+    color: $main-color3;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .active{
@@ -141,15 +97,16 @@ header{
 .cv{
     position: absolute;
     display: inline-block;
-     
+    width: 100%;    
+    text-align: center;
+    font-size: 20px;
     font-weight: 600;
     text-decoration: none;
-    background-color: #89345e;
-    font-size: 20px;
+    background-color: #89345e;    
     color: $main-color2;
     letter-spacing: 2px;
-    margin-left: 40px;
     margin-top: 20px;
+   
 }
 
 .follow{
@@ -194,6 +151,26 @@ header{
     justify-content: space-evenly;
 }
 
+// ****************************************Index - hlavní stránka
+
+.index{
+    width: 100vw;
+    height: 100vh; 
+    background-color: $main-color2;
+    background: url(../IMG/my_foto.png);
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    box-shadow: 10px 10px 15px $main-color5;
+    border-radius: 10px;
+}
+
+.foto_mobil{
+    display: none;
+}
+
 .animation {
     height: 40px;
     overflow:hidden;
@@ -223,7 +200,7 @@ header{
   
       .hi:after, .hi:before {
         position: absolute;
-        top: 11%;
+        top: 5%;
         color: $main-color;
         font-size: 40px;
         line-height: 40px;
@@ -323,18 +300,24 @@ header{
   }
 
 .name{
-    font-size: 60px;
+    width: 100%;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: $main-color;
-    text-align: center;
-    margin-top: -30px;
-    margin-bottom: 20px;
+    margin-top: -30px;    
 }
-.color_name{
+
+.Iam{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     color: $main-color3;
+
+}
+.myName{
+    font-size: 60px;
+    color: $main-color;
     -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: $main-color3;
+    -webkit-text-stroke-color: $main-color;
 }
 
 .foto_mobil{
@@ -347,10 +330,30 @@ header{
     letter-spacing: 2px;
 }
 
+.text{
+    display: inline-block;
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.two{
+    width: 100%;
+    letter-spacing: 4.5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.three{
+    letter-spacing: 5px;
+}
+
 .btn_port{
     display: inline-block;
     text-decoration: none;
-    margin-bottom: 90px;
+    margin-bottom: 140px;
     font-size: 25px;
     color: $main-color3;
     font-weight: 700;
@@ -375,13 +378,6 @@ header{
     height: 1320px;
     width: 100%;
     margin-top: -20px;
-}
-
-.port, .who, .curiculum{
-    background-color: $main-color2;
-    height: 1520px;
-    width: 100vw;
-    
 }
 
 // *******************************Index MAIN
@@ -456,6 +452,7 @@ header{
     letter-spacing: 2px;
     font-size: 30px;
     border-bottom: 2px solid $main-color1;
+    text-decoration: underline;
 }
 
 .skills{
@@ -507,8 +504,32 @@ header{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
 }
 
+// ****************************Header
+header{
+    width: 100vw;
+    height: 150px;
+    // background-color: $main-color2;
+    position: absolute;
+    background-color:$main-color4;
+}
 
+.headline{ 
+    position: absolute;
+    width: 1000px;
+    margin-left: 340px;
+    line-height: 150px;
+    text-align: center;    
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: $main-color1;
+}
 // ***********************************************WHOARE
+.who{
+    background-color: $main-color2;
+    height: 1525px;
+    width: 100vw;    
+}
+
 main h1{
     color: $main-color;
     margin-bottom: 20px;
@@ -556,6 +577,12 @@ main h1{
 }
 
 // ****************************************************************Portfolio
+.port{
+    background-color: $main-color2;
+    height: 1220px;
+    width: 100vw;
+    
+}
 .preview{
     @include window;
     height: 500px;
@@ -663,6 +690,12 @@ main h1{
 }
 
 // ********************************************ŽIVOTOPIS
+.curiculum{
+    background-color: $main-color2;
+    height: 1720px;
+    width: 100vw;
+    
+}
 .icon{
     width: 50px;
     margin-left: -60px;
@@ -694,22 +727,24 @@ main h1{
 
 h3{  
     color: $main-color1;
-    margin-top: 20px;
+    margin-top: 24px;
     margin-bottom: 20px;
     text-decoration: underline;
     font-size: 20px;
+    text-align: center;
 }
 
 h4{ 
     margin-bottom: 10px;
     font-size: 18px;
+    text-align: center;
 }
 
-.popis{
-     
+.popis{ 
     line-height: 25px;
     margin-top: 40px;
     font-size: 17px;
+    text-align: center;
 }
 
 .document{
@@ -720,14 +755,26 @@ h4{
     
 }
 
-.certifications a{
-    font-size: 15px;
-    color: $main-color;
-    font-weight: 600; 
-    margin-left: 20px;
-    margin-top: -30px;
+.certifications{
+    display: flex;
+    flex-direction: column;
+
 }
 
+.certifications a{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+    line-height: 20px;
+}
+
+.document{
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 20px;
+    
+}
 
 // ********************************************Footer
 footer{
