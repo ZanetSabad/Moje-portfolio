@@ -1,969 +1,159 @@
+ 
+@media only screen and (max-width: 1450px){
 
-@media only screen and (min-width: 1500px){
-    .color{
-        margin-top: -300px;
-    }
-
-    .follow{
-        margin-top: 300px;
-    }
-
-    .hi {
-        display: inline;
-        float: left;
-        margin: 0px;
-    }
-
-    header h1{
-        font-size: 60px;
-        margin: 20px 900px;
-    
-    }
-
-    .row{
-        height: 750px;
-    }
-
-    footer{
-        position: relative;
-        height: 100px;
-        margin-top: 0px;
-    }
-
+                    /* navigace */
+.navigation a{
+    font-size: 22px;
 }
 
-/* *********************************************************************************************************************************************************************************************************** */
-@media only screen and (max-width: 1024px){  
-  .navigace{
-      margin-top: 60px;     
-  }
-    /* ***********************************INDEX */
-    .main_index{
-      height: 1320px;
-      width: 100%;
-      margin-top: -20px;
-    }
 
-    .title_name{
-        width: 680px;
-        height: 100vh;
-        margin-left: 180px;
-    }
-    
-    .title{
-        position: absolute;
-        width: 100%;
-        height: 100%;  
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    align-items: flex-start;      
-    }
+                    /* index.html */        
+.myName {
+    font-size: 20px;
+}
 
-    .animation{
-        display: none;
-    }
+.textAboutMe{
+    font-size: 17px;
+    line-height: 20px;
+}
 
-    .content_animation {
-        display: none;
-    }
-
-    .name{
-        width: 100%;
-        letter-spacing: 2px;
-        margin-top: 0px;
-        margin-left: 20px;
-    }
-
-    .Iam{
-        font-size: 40px;
-        margin-top: 120px;
-    
-    }
-
-    .myName{
-        font-size: 50px;
-    }
-
-  
-    .begin_front{
-        width: 150px;
-        height: 150px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 120px;
-    }
-  
-    .text{
-        font-size: 22px;
-        letter-spacing: 1px;
-        margin-top: 0px;
-        text-align: center;
-    }
-
-    .two{
-        letter-spacing: 2px;
-        padding-top: -30px;
-        padding-bottom: -30px;
-    }
-
-    .three{
-        letter-spacing: 2.5px;
-    }
-
-    .btn_port{
-        position: relative;
-        margin-bottom: 90px;
-        margin-left: 120px;
-        font-size: 25px;
-    } 
-
-    .prolog{
-        position: relative;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 80%;
-        height: 700px;
-        margin: 0 auto;
-        z-index: 1;
-    }
-
-      /***************************** nadpisy */
-    .headline{ 
-        position: absolute;
-        width: 680px;
-        margin-left: 340px;
-        line-height: 150px;
-        text-align: center;    
-        font-size: 50px;
-    }
-
-    /* *********************************menu */
-    .menu{
-        margin-top: 20px;
-    }
-
-    .navigace img{
-        width: 40px;
-    }
-    
-    .navigace li{
-        margin-top: 30px;  
-    }
-    
-    .navigace a{
-        font-size: 22px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-
-    .active_house{
-        padding-top: 30px;      
-    } 
-
-    .cv{
-        margin-top: -40px;
-        font-size: 18px;
-    }
-
-    .follow{
-        font-size: 20px;
-        margin-top: 0px;
-    }
-
-    .socMedia{
-        margin-top: 20px;
-        width: 35px;
-        margin-left: 135px;
-    
-    }
-
-    /****************************************************** WHOARE */
-    .who{
-        height: 1500px;
-        width: 100%;        
-    }
-
-    main h1{
-        margin-bottom: 20px;
-        text-align: center;
-        margin-top: 50px;       
-    }
-
-    /* .row{
-        width: 55%;
-    } */
-
-    .name_who_are{
-        font-size: 37px;
-    }
-
-    .title_who_are{
-        width: 90%;
-        margin: 30px auto;
-        font-size: 16px;
-        text-align: center;   
-    }     
-
-    .text_who_are{
-        font-size: 17px;
-        line-height: 21px;
-    }
-
-    .my_foto_front{
-        width: 450px;
-        margin-top: 1038px;
-    
-    }
-
+span{
+    font-size: 20px;
+}
     
     /*********************************************** portfolio */
-    .port{
-        /* height: 1000px; */
-        width: 100vw;  
-    }
-    .preview{
-        max-width: 60%;
-    }
-
-    .flip-box, .preview-content, .title-front{
-        width: 250px;
-        height: 180px;
-    }
-
-    .port{
-        height: 1000px;
-        width: 100%;
-        
-    }
+.flip-box, .preview-content, .title-front{
+    width: 250px;
+    height: 180px;
+}
 
     /******************************** Životopis */
-    .curiculum{        
-        height: 2600px;
-        width: 100vw;
-        
-    }
-    .row{
-        width: 60%;
-        /* margin-left: 380px; */
-        
-    }
-
-    .work{
-        width: 100%;
-        margin-top: 10px;        
-    }
-
-    .col{
-        margin: 0;
-    }
-
-    .textCV{
-        margin-top: 50px;
-       
-     }
-    
-    .kurz{
-        margin-top: 80px;
-    }
-
-    .icon{
-        width: 35px;
-        margin-left:0px;    
-    }
-
-    h3{
-        font-size: 22px;
-        margin-top: 50px;
-        /* text-align: center; */
-        /* width: 200px;     */
-    }
-    
-    h4{
-        margin-bottom: 5px;
-        /* text-align: center; */
-    }
-    
-    .popis{
-        line-height: 22px;
-        margin-top: 20px;
-    } 
-    
-    .document{
-        margin-top: 50px;        
-    }
-
-    .certifications{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .certifications a{
-        font-size: 17px;
-    }   
-  
-}
-/* ************************************************************************************************************************************************************************************************************* */
-@media only screen and (max-width: 768px){
-     /* *********************************menu */
-    .menu{
-        width: 200px;
-        margin-top: 10px;
-    }
-
-    .navigace img{
-        width: 35px;
-    }
-    
-    .navigace li{
-        margin-top: 25px;  
-    }
-    
-    .navigace a{
-        font-size: 20px;
-    }
-
-    .active_house{
-        padding-top: 25px;      
-    } 
-
-    .cv{
-        margin-top: -80px;
-        font-size: 16px;
-    }
-
-    .follow{
-        font-size: 18px;
-        margin-top: 0px;
-    }
-
-    .socMedia{
-        margin-top: 20px;
-        width: 35px;
-        margin-left: 85px;
-    
-    }
-
-      /* ***********************************INDEX */
-    
-    .index{
-        width: 100vw;
-        height: 100vh; 
-        background: url(../IMG/my_foto.png);
-        background-position: right;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: relative;
-        box-shadow: 0px 0px 0px;
-        border-radius: 10px;
-    }
-
-    .title_name{
-        width: 490px;
-        height: 100%;
-        margin-left: 140px;
-    }
-
-    .main_index{
-        width: 100%;
-        height: 1120px;
-    }   
-
-    .name{
-        width: 100%;
-        letter-spacing: 2px;
-        margin-top: 0px;
-        margin-left: 20px;
-    }
-
-    .Iam{
-        font-size: 30px;
-        margin-top: 170px;
-    
-    }
-
-    .myName{
-        font-size: 40px;
-        margin-top: 0px;
-    }
-  
-    .begin_front{
-        width: 150px;
-        height: 150px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0px;
-    }
-  
-    .text{
-        font-size: 22px;
-        letter-spacing: 1px;
-        margin-top: 0px;
-        text-align: center;
-    }
-
-    .two{
-        letter-spacing: 2px;
-        padding-top: -30px;
-        padding-bottom: -30px;
-    }
-
-    .three{
-        letter-spacing: 2.4px;
-    }
-
-    .btn_port{
-        position: relative;
-        margin-bottom: 60px;
-        margin-left: 120px;
-        font-size: 25px;
-    } 
-
-    .prolog{
-        height: 600px;
-    }
-
-    .prolog_about_me h1{
-        margin-top: 80px;
-        font-size: 26px;
-        letter-spacing: 0px;
-    }
-
-    .prolog_about_me p{
-        margin-top: 20px;
-        letter-spacing: 0px;
-        font-size: 19px;
-    }
-
-    .phone, .mail{
-        width: 100px;
-        border: 2px solid #010D00;
-        border-radius: 10px;
-        padding: 10px 25px;
-        background-color: #45A9BF;  
-        margin-top: -100px;  
-    }
-
-    .phone{
-        margin-left: 150px;
-    }
-
-    .mail{
-        margin-right: 50px;
-    }
-
-    .phoneNumber, .email{ 
-        width: 0px;
-        height: 0px;
-        padding: 0px 0px;
-        border: 2px solid #f2f2f2;
-    }
-
-    .text_number, .text_mail{
-        display: none;
-    }
-
-    /* **********************************skills */
-    .WhichIWork{
-        margin-top: 10px;
-    }
-
-    
-    .skills{
-        height: 550px;     
-    }
-
-    .skill{
-        width: 600px;
-        margin-top: 80px;
-    }
-
-    .cardfull{
-        width: 80px;
-        height: 80px;
-    }
-
-    .card{
-        display: none;
-    }
-
-   /***************************** nadpisy */
-    .headline{ 
-        max-width: 67%;
-        margin-left: 250px;
-        line-height: 149px;    
-        font-size: 40px;
-    }
-
-  
-    /****************************************************** WHOARE */
-    .who{
-        height: 1600px;
-        max-width: 100%;       
-    }
-  
-    main h1{
-        margin-bottom: 20px;
-        text-align: center;
-        margin-top: 50px;    
-    }
-  
-    .row{
-        margin-left: 280px;
-        width: 55%;
-    }
-  
-    .name_who_are{
-        font-size: 37px;
-    }
-  
-    .text_who_are{
-        font-size: 17px;
-        line-height: 21px;
-    }
-  
-    .title_who_are{
-        max-width: 90%;
-        font-size: 16px;
-        text-align: center; 
-        margin: 30px auto;   
-    }     
-  
-    .my_foto_front{
-        width: 350px;
-        margin-top: 1238px;
-      
-    }
-  
-      
-      /*********************************************** portfolio */
-        .port{
-            height: 800px;
-            width: 100vw;  
-        }
-        
-      .preview{
-            max-width: 60%;
-            margin-left: 280px;
-      }
-  
-      .flip-box, .preview-content, .title-front{
-          width: 200px;
-          height: 130px;
-      }
-  
-      /******************************** Životopis */
-    .curiculum{        
-        height: 2600px;
-        width: 100vw;
-    }
-      
-    .row{
-        width: 60%;
-        /* margin-left: 380px; */
-    }
-  
-    .work{
-        width: 100%;
-        margin-top: 10px;        
-    }
-  
-    .col{
-        margin: 0;
-    }
-  
-    .textCV{
-        margin-top: 50px;
-    }
-      
-    .kurz{
-        margin-top: 80px;
-    }
-  
-    .icon{
-        width: 35px;
-        margin-left:0px;    
-    }
-  
-    h3{
-        font-size: 22px;
-        margin-top: 50px;
-        /* text-align: center; */
-        /* width: 200px;     */
-    }
-      
-    h4{
-        margin-bottom: 5px;
-        /* text-align: center; */
-    }
-      
-    .popis{
-        line-height: 22px;
-        margin-top: 20px;
-    } 
-      
-    .document{
-        margin-top: 50px;        
-    }
-  
-    .certifications{
-        display: flex;
-        flex-direction: column;
-    }
-      
-    .certifications a{
-        font-size: 18px;
-    }   
-    
-}
-
-@media only screen and (max-width: 425px){
-    .animation{
-        display: none;
-    }
-
-    .title_name{
-        width: 100%;
-        height: 500px;
-        margin-left: 0px;
-    }
-    
-    .title{
-        width: 100%;
-        height: 500px;       
-    }
-
-    .index{
-        width: 100%;
-        height: 100vh; 
-        background: #f2f2f2; 
-        box-shadow: 0px 0px 0px #f2f2f2;
-        border-radius: 0px;
-    }
-    /*************************************************** menu */
-    .menu{
-        position: absolute;
-        display: inline-block;
-        width: 100%;
-        height: 80px;
-        margin-top: 0px;
-        margin-left: 0px;
-        border-radius: 0px 0px;
-        box-shadow: 0px 0px 0px;
-    
-    }
-
-    .slozka_close{
-        display: block;
-        margin-left: 40px;
-    }
-
-    .slozka_close, .slozka_open{
-        margin-top: 17px;
-    }
-    /* **********************************responzivní index */
-   .name{
-        width: 100%;
-        font-size: 35px;
-        text-align: center;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-
-    .Iam{
-        font-size: 30px;
-        margin-top: 0px;
-    
-    }
-
-    .myName{
-        font-size: 40px;
-        margin-top: -80px;
-    }
-
-    .foto_mobil{
-        display: block;
-        position: absolute;   
-        width: 200px;     
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-         margin-top: 0px;
-    }
-
-    .begin_front{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 150px;
-        margin-left: 0px;
-    }
-  
-    .text{
-        font-size: 18px;
-        letter-spacing: 1px;
-        margin-top: 5px;
-        text-align: center;
-    }
-
-    .two{
-        letter-spacing: 2px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-
-    .three{
-        letter-spacing: 2.4px;
-    }
-
-/* **********************************************responzivní menu */
-    .navigace ul{
-        position: absolute;
-        display: inline-block;
-        z-index: 999;
-        background-color: #45A9BF;
-        top: -600px;
-        bottom: 0;
-        width: 100%;
-        height: 50vh;
-        border-radius: 10px;
-        text-align: center;
-        transition: all 0.7s;  
-    
-    }
-
-    .navigace li{
-        margin-top: 50px;    
-    }
-
-    /* *******************************************headline */
-    header{
-        width: 100%;
-        height: 100px;
-    }
-
-    .headline{ 
-        display: none;
-    }
-
-    .socMedia{ 
-        position: absolute;
-        width: 40px;        
-        bottom: 10px;
-        right: 20px;       
-    }
-
-    .cv{
-        display: none;
-    }
-    
-    .follow{
-        display: none;
-    }
-    
-    .btn_port{
-        display: none;
-    }
-
-/**************************************** main INDEX */
-    .main_index{
-        height: 950px;
-        width: 100%;
-   }
-
-    .prolog{
-        height: 500px;
-        box-shadow: 0px 0px 0px #f2f2f2;
-        margin-top: 0px;
-    }
-
-    .prolog_about_me{
-        display: flex;
-        flex-direction: column;
-        width: 500px;
-        height: 400px;
-    }
-
-    .prolog_about_me h1{
-        /* width: 230px;
-        margin-top: 50px; */
-        font-size: 24px;
-        /* letter-spacing: 1px;
-        margin-left: 10px; */
-    }
-
-    .prolog_about_me p{
-        margin-top: 14px;
-        font-size: 16px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .phone, .mail{
-        width: 90px;
-        margin-bottom: 50px; 
-    }
-
-    .phone{
-        margin-left: 90px;
-    }
-
-    .mail{
-        margin-left: -110px;
-    }
-
-/* *************************************Skilly */
-    .WhichIWork{
-        margin-top: 0px;
-        margin-left: 0px;
-        font-size: 22px;
-        border-bottom: 0px solid;
-        text-decoration: underline;
-    }
-
-.skills{
-    box-shadow: 0px 0px 0px #f2f2f2;
-    border-radius: 10px;
-    margin-top: 0px;
-    height: 500px;
-    margin-left: -20px;
-     
-}
-.skill{
-    flex-wrap: wrap;
-    width: 350px;
-    margin-top: 80px;
-}
-
-.cardfull{
-    width: 60px;
-    height: 60px;
-}
-
-
-/************************************** WHOare */
-
-.who{
-    height: 1580px;
-    width: 100%;
-    
-    
-}
-
-main h1{
-    width: 100%;
-    text-align: center;
-    margin-top: 0px;
-   
-}
-
-.row{
-    width: 100%;
-    height: 1000px;
-    margin-left: 0px;
-    margin-top: 0px;
- }
-
- .textCV{
-    margin-top: 40px;
-    padding: 10px 0;
-    border-radius: 10px;    
- }
- 
-.name_who_are{
-    font-size: 24px;
-}
-
-.head_title_who_are{
-    font-size: 16px;
-    
-}
-
-.text_who_are{
-    width: 100%;
-    font-size: 15px;
-    line-height: 20px;
-    margin-top: 10px;
-    text-align: center;
-}
-
- .title_who_are{
-    width: 100%;
-    margin-bottom: 23px;
-    margin-left: 20px;
-    font-size: 15px;
-} 
-
-.my_foto_front{
-    display: none;
-    
-}
-
-/************************************************** Portfolio */
-.preview{
-    width: 375px;
-    height: 700px;
-    margin-top: 110px;
-    margin-left: 80px;
-}
-
-.flip-box, .preview-content, .title-front{
-    width: 130px;
-    height: 90px;   
-    margin-bottom: 40px;
-}
-
-.title-front{
-    font-size: 15px;
-    line-height: 0px;
-    margin-top: 110px;
-}
-
-.flip-box:hover 
-.flip-box-inner{
-    transform: rotateY(0deg);   
-}
-
-
-/* ***********************************************ŽIVOTOPIS */
-.curiculum{
-    height: 2100px;
-}
-.row{
-    width: 90%;
-    margin-left: 20px;
-    margin-top: 130px;
-}
-
 .work{
-    width: 100%;
-    margin-left: 0px;    
+    width: 45%;
 }
 
-.textCV{
-    margin-top: 20px;
-    padding: 10px 0;
+.icon{
+    width: 35px;
 }
 
 h3{
-    font-size: 20px;
-    margin-top: 20px;    
+    font-size: 20px;   
 }
 
 h4{
-    margin-bottom: 10px;
-    font-size: 19px;
+    font-size: 18px;   
+}
+
+.popis{
+    line-height: 22px;
+    margin-top: 20px;
+} 
+
+.certifications{
+    display: flex;
+    flex-direction: column;
+}
+
+.certifications a{
+    font-size: 14px;
+}   
+  
+}
+/* ************************************************************************************************************************************************************************************************************* */
+@media only screen and (max-width: 1206px){
+       /* header stránek */
+.index{
+    padding-left: 20px;
+} 
+
+.title{
+    padding-left: 50px;
+}
+
+.page-index, 
+.page-index-curiculum{
+    padding-left: 20px;
+}
+
+.columnText{
+    width: 70%;
+}
+ 
+.intro {
+    width: 100%;     
+}
+
+    /* ***********skills */
+   
+.cardfull{
+    width: 80px;
+    height: 80px;
+}
+      
+      /**************** portfolio */
+        
+.flip-box, .preview-content, .title-front{
+    width: 200px;
+    height: 130px;
+}
+    
+}
+/*****************************************************************************************************************************************************************************************************/
+@media only screen and (max-width: 1024px){
+   
+.index{
+    background: none;
+}
+    
+.title{
+    width: 65vw;
+    margin-left: 40px;
+} 
+
+.columnText{
+    width: 50%;
+    margin-left: 20px;
+}
+
+.prolog_about_me h1{
+    font-size: 24px;
+}
+
+.prolog_about_me p{
+    font-size: 18px;
+}
+
+.phone, .mail{
+    width: 50px;
+    margin-bottom: 8px;   
+}
+
+/************************************************** Portfolio */
+.flip-box, .preview-content, .title-front{
+    width: 170px;
+    height: 100px;   
+    margin-bottom: 40px;
+}
+
+/* ***********************************************ŽIVOTOPIS */
+.page-index-curiculum{
+    height: 1200px;
+}
+
+.work{
+    width: 40%;
+}
+
+.textCV h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+h4{
+    font-size: 16px;
 }
 
 .popis{
@@ -972,57 +162,237 @@ h4{
     font-size: 14px;
 }
 
-.certifications{
-    display: flex;
-    flex-direction: column;
-
 }
 
-.certifications a{
-    font-size: 15px;
-    font-weight: 600;
-    margin-left: 20px;
+/******************************************************************************************************************************************************************************************************************************************/
+@media only screen and (max-width: 769px) {
+nav ul{
     margin-top: 20px;
-    line-height: 20px;
 }
 
-.document{
-    width: 40px;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 20px;
-    
+nav a{
+    font-size: 20px;
 }
 
+.download a{
+    font-size: 18px;
+}
 
+.prolog_about_me{
+    width: 80%;
+}
 
-/*********************************************Footer */
+.contact{
+    justify-content: space-between;
+}
 
-footer{
+.text_number, .text_mail{
+    display: none;
+}
+
+.phoneNumber, .email{
+    width: 150px;
     height: 80px;
 }
 
-footer p{ 
-    text-align: center;
+.phoneNumber a, .email a{
+    font-size: 14px;
+        
+}
+
+.skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+    margin-top: 20px;
+}
+
+.cardfull{
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px;
+}
+
+/*************************************portfolio***********************/
+
+.page-index{
+    height: 600px;
+}
+
+
+/**************************************životopis*************************/
+.page-index-curiculum{
+    height: 2100px;
+}
+
+.curiculum{
+    width: 65%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work{
+    width: 80%;
+}
+}
+
+/*******************************************************************************************************************************************************************************************************************************************/
+
+@media only screen and (max-width:570px){
+.index, 
+.page-index, 
+.page-index-curiculum{
+    padding-left: 0px;
+}
+
+.col{
+    margin: 0;
+}
+ .menuBurger{
+    display: block;
+ }
+
+ nav{ 
+    background-color: #555556;
+    width: 100vw;
+    position: relative;
+ }
+
+ nav ul{ 
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    left: -100%;
+    border-radius: 0px;
+    transition: all 0.5s;
+}
+ 
+.title{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    margin-left: 0px;
+    padding: 10px 20px;
+}
+
+.prolog_about_me{
+    width: 90%;
+}
+
+.contact{
+    width: 80%;
+    margin-top: 20px;
+}
+
+.phoneNumber, .email{
+    width: 100px;  
+}
+
+/******************************************************portfolio*******************************/
+
+.portfolio{
+    height: 90vh;
+    width: 100vw;    
+}
+
+
+/*****************************************************životopis*************************/
+
+.page-index-curiculum{
+    height: 1800px;
+}
+
+.curiculum{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    margin-left: 0px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+h4{ 
+    margin-bottom: 20px;
+    
+}
+
+.popis{
+    line-height: 15px;
+}
+
+/***************************************************footer*******************************/
+
+footer p{
+    font-size: 18px;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+}
+
+/********************************************************************************************************************************************************************************************************/
+
+@media only screen and (max-width: 376px){
+.myName {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+    
+.textAboutMe{
+    font-size: 16px;
+   
+}
+
+
+.prolog_about_me h1{
+    font-size: 22px;
+
+}
+
+.prolog_about_me p{
     font-size: 15px;
-    line-height: 80px;
 }
 
+.skills h1{   
+    font-size: 20px;
 }
 
-@media only screen and (max-width: 375px){
-    .phone, .mail{
-        width: 90px;
-        margin-bottom: 50px; 
-    }
-
-    .phone{
-        margin-left: 70px;
-    }
-
-    .mail{
-        margin-left: -130px;
-    }
+.preview{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+.cardfull{
+    width: 60px;
+    height: 60px;
+}
+/************************************Portfolio*******************/
 
+.portfolio{
+    margin-top: 40px;
+}
+
+.flip-box, .preview-content, .title-front{
+    width: 150px;
+    height: 80px;    
+}
+
+.title-front{
+    top: 20%;
+}
+
+/************************************životopis*******************/
+.page-index-curiculum{
+    height: 2000px;
+}
+
+footer p{
+    font-size: 15px;
+
+}
+}

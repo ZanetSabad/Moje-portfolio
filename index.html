@@ -15,67 +15,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/query.css">
     <title>Žaneta Sabadková</title>
 </head>
 <body>
     <header class="index">
-        <section class="menu">           
-            <img src="IMG/icons/slozka_close.png" alt="zavřené menu" class="slozka_close">
-            <nav class = "navigace"> 
-                <ul class="menu_respon"> 
-                    <li><a class="active_house" href="index.html"><img src="IMG/icons/home.png" alt="ikona domečku - zpět na úvodní stranu"></a></li>
-                    <li><a href="whoare.html">Kdo jsem</a></li>
+        <section class="responMenu col span-1-of-4" >           
+            <nav> 
+                <img class="menuBurger" src="img/icons/burger.png" alt="menu burger">
+                <ul class="menu"> 
+                    <li><a class="active" href="index.html"><img src="img/icons/home.png" alt="ikona domečku - zpět na úvodní stranu"></a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="zivotopis.html">Životopis</a></li>
-                   
-                </ul>    
-            </nav>
- 
-            <a href="documenty/Zaneta_Sabadkova_CV.pdf" download="Zaneta_Sabadkova_CV.pdf" class="cv"> Stáhnout životopis</a>
-            <p class="follow">follow me</p>
-            <a href="https://www.linkedin.com/in/žaneta-sabadková-56542b213/" target="_blank"><img class = "socMedia "src="IMG/icons/linkedin.png" alt="odkaz na Linkedin"> </a>
-        </section>
-
-
-        <section class="title_name"> 
-            <article class="title">                 
-                <div class="animation">
-                    <div class="content_animation">
-                      <p class="hi">
-                        Ahoj,
-                      </p>
-                      
-                        <ul class="animation_list">
-                            <li class="animation_list_item">zdravím  !</li>
-                            <li class="animation_list_item">vítej !</li>
-                            <li class="animation_list_item">světe !</li>
-                            <li class="animation_list_item">ty tam !</li>
-                        </ul>
+                    <div class="download">
+                        <a href="documenty/Zaneta_Sabadkova_CV.pdf" download="Zaneta_Sabadkova_CV.pdf">Stáhnout životopis</a>
                     </div>
-                </div>
+                    <div class="media">                    
+                        <a href="https://www.linkedin.com/in/žaneta-sabadková-56542b213/" target="_blank"><img src="img/icons/linkedin.png" alt="odkaz na Linkedin"> </a>
+                    </div>
+                </ul>        
+            </nav>      
+        </section>
+    
 
 
-                <img src="IMG/my_foto2.png" alt="" class="foto_mobil">
-
+        <section class="columnText col span-3-of-4"> 
+            <article class="title">     
+                <div class="intro"> 
+                <!-- <img src="img/my_foto2.png" alt="" class="foto_mobil"> -->
+                <article class="myName">
+                    <h2>Jsem Žaneta Sabadková</h2>
+                    <h2>A chci se stát Frontendistkou</h2>
+                </article>
                 
-                <h2 class="name Iam">jsem </h2>
-                <h2 class="name myName"><strong>Žaneta&nbsp;Sabadková</strong></h2>
-
-                <div class="begin_front"> 
-                    <p class="text one"> začínající </p>
-                    <p class="text two"><strong> Front-end</strong> </p>
-                    <p class="text three"><strong> developer</strong></p>
+                <article class="textAboutMe">    
+                    <p><strong>Jsem silná žena</strong> - co se nevzdává</p>
+                </article>        
+            
+                <article class="textAboutMe">
+                    <p><strong>Empatická osoba</strong> - která se snaží pomoct</p>
+                </article>
+    
+                <article class="textAboutMe">   
+                    <p><strong>Hrdá rváčka</strong> - co si jde za svým snem</p>
+                </article>   
+                    
+                <article class="textAboutMe">
+                    <p><strong>Týmový hráč</strong> - co nenechá nikoho ve štychu</p>
+                </article>
+    
+                <article class="textAboutMe">
+                    <p>A i když jsem máma, chci si splnit <strong>SVÉ</strong> sny a mít svou práci ráda.</p>
+                </article>
+          
+                <article class="textAboutMe">
+                    <p>Toto a mnohem víc jsem já. Na těchto stránkách najdete mou práci.</p>
+                    <p>Chci se stát <span>Frontend developerkou</span>, nebráním se ani jiné startovní pozici, co mi pomůže se k mému cíly dostat.</p>
+                </article>
                 </div>    
-                <a class="btn_port" href="portfolio.html">Portfolio</a>             
-
             </article>
         </section>
-
     </header>
 
-    <main class="main_index">
+    <main>
         <section class="prolog"> 
             <article class="prolog_about_me">
                     <h1>Ve zkratce...</h1>
@@ -83,10 +87,14 @@
                     <p>Zatím jsem začátečník ve světě IT. Teď jsem dodělala kurz Webové vývojářky a chci pokračovat dál. Mám neskutečnou motivaci a chuť dokázat, že mám na to stát se Frontendistkou.</p>
                     <p>Teď pokračuji ještě kurzem angličtiny a samostudiem.</p>
                     <p>Momentálně se ucházím o pozici jako <strong>junior kodér</strong>/<strong>Front-end</strong>.</p>
-                    
+                </article>    
+                    <div class="contact">
                     <div class="phoneNumber"> 
-                        <a href="tel:+420724831189"><img class= "phone" src="IMG/phone.png" 
-                        alt="telefonní číslo"></a><br>
+                        <a href="tel:+420724831189">
+                            <img class= "phone" src="img/phone.png" 
+                        alt="telefonní číslo">
+                    </a>
+                    <br>
                         
                         <div class="text_number">
                             <a href="tel:+420724831189">+ 420 724 831 189</a>
@@ -94,112 +102,111 @@
                     </div>
 
                     <div class="email"> 
-                        <a href="mailto:zaneta.sabadkova@gmail.com"><img class= "mail" src="IMG/mail.png" 
+                        <a href="mailto:zaneta.sabadkova@gmail.com"><img class= "mail" src="img/mail.png" 
                         alt="Email"></a>
                         
                         <div class="text_mail"> 
                             <a href="mailto:zaneta.sabadkova@gmail.com">zaneta.sabadkova@gmail.com</a>
                         </div>
                     </div>
+                </div>
                 
-            </article>
+           
         </section>
 
         
 
         <section class="skills"> 
-            <article class=" skill">
-                <h1 class="WhichIWork">S čím jsem už pracovala</h1>
-            </article>
+          
+                <h1>S čím jsem už pracovala</h1>
+      
                 <article class=" skill">  
 
                 <div class="cardfull"> 
                     <div class="card">
-                        <h1>HTML</h1>
+                        <p>HTML</p>
                     </div>
-                    <img src="IMG/icons/html.png" alt="HTML">
+                    <img src="img/icons/html.png" alt="HTML">
                 </div>
 
                 <div class="cardfull"> 
                     <div class="card">
-                        <h1>CSS</h1>
+                        <p>CSS</p>
                     </div>
-                    <img src="IMG/icons/CSS.png" alt="CSS">
+                    <img src="img/icons/CSS.png" alt="CSS">
                 </div>
 
                 <div class="cardfull">
                     <div class="card">
-                        <h1>JavaScript</h1>
+                        <p>JavaScript</p>
                     </div> 
-                    <img src="IMG/icons/JS.png" alt="JavaScript">       
+                    <img src="img/icons/JS.png" alt="JavaScript">       
                 </div>
 
                 <div class="cardfull">
                     
                     <div class="card">
-                        <h1>SCSS</h1>
+                        <p>SCSS</p>
                     </div> 
-                    <img src="IMG/icons/SCSS.png" alt="SCSS">       
+                    <img src="img/icons/SCSS.png" alt="SCSS">       
                 </div>
 
                 <div class="cardfull"> 
                     
                     <div class="card">
-                        <h1>GIT</h1>
+                        <p>GIT</p>
                     </div>
-                    <img src="IMG/icons/GIT.png" alt="GIT">        
+                    <img src="img/icons/GIT.png" alt="GIT">        
                 </div>
 
                 <div class="cardfull">
                     
                     <div class="card">
-                        <h1>GITHUB</h1>
+                        <p>GITHUB</p>
                     </div>
-                    <img src="IMG/icons/GITHUB.png" alt="GitHub">        
+                    <img src="img/icons/GITHUB.png" alt="GitHub">        
                 </div>
-            </article>
-
-            <article class="skill">
+          
                 <div class="cardfull">                    
                     <div class="card">
-                            <h1>Python</h1>
+                            <p>Python</p>
                         </div> 
-                        <img src="IMG/icons/python.png" alt="Python">       
+                        <img src="img/icons/python.png" alt="Python">       
                     </div>
                     
                 <div class="cardfull">    
                     <div class="card">
-                        <h1>Google Analytics</h1>
+                        <p>Google Analytics</p>
                     </div>
-                    <img src="IMG/icons/GA.png" alt="Google Analytics">        
+                    <img src="img/icons/GA.png" alt="Google Analytics">        
                 </div>
 
                 <div class="cardfull">
                     <div class="card">
-                        <h1>SEO</h1>
+                        <p>SEO</p>
                     </div>
-                    <img src="IMG/icons/SEO.png" alt="SEO">        
+                    <img src="img/icons/SEO.png" alt="SEO">        
                 </div>
 
                 <div class="cardfull"> 
                     <div class="card">
-                        <h1>Canva</h1>
+                        <p>Canva</p>
                     </div>
-                    <img src="IMG/icons/Canva.png" alt="Canva">        
+                    <img src="img/icons/Canva.png" alt="Canva">        
                 </div>
                 <div class="cardfull"> 
                     
                     <div class="card">
-                        <h1>ShotCut</h1>
+                        <p>ShotCut</p>
                     </div>
-                    <img src="IMG/icons/Shotcut.png" alt="ShotCut">        
+                    <img src="img/icons/Shotcut.png" alt="ShotCut">        
                 </div>
                 <div class="cardfull">
                     
                     <div class="card">
-                        <h1>Figma</h1>
+                        <p>Figma</p>
                     </div>        
-                    <img src="IMG/icons/Figma.png" alt="Figma">
+                    <img src="img/icons/Figma.png" alt="Figma">
                 </div>
             
         </article>
@@ -207,7 +214,7 @@
     </main>
 
     <footer>
-        <p>&copy; Na brzkou shledanou - Žaneta Sabadková &#128540;</p>
+        <p>&copy; Na brzkou shledanou - Žaneta Sabadková</p>
     </footer>
     
    <script src="script.js"></script>

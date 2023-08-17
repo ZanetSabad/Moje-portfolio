@@ -4,499 +4,179 @@
     box-sizing: border-box;
 }
 
-body{
+body, main{
     font-family: 'Inconsolata', monospace;
+    background-color: #E0E0E0;
 }
 
 // ****************************Mixiny
-$main-color: #45A9BF;
-$main-color1: #89345e;
-$main-color2: #F2F2F2;
-$main-color3: #010D00;
-<<<<<<< HEAD
-$main-color4: #F24E29;
-$main-color5: #716D6E;
-
-@mixin font{
-    @include font;
-}
-
-@mixin navigace{
-    text-decoration: none;
-    font-weight: 600;
-    color: $main-color3;
-    @include font;
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-=======
-$main-color4: #89345e74;
-$main-color5:#716D6E;
-
-@mixin window{
-    width: 70%;
-    margin-left: 380px;
->>>>>>> responzivita
-}
+$main-color: #4D4D70;
+$main-color1: #000000;
+$main-color2: #7171A3;
+$main-color3: #EDEDF0;
+$main-color4: #555556;
+$main-color5:#E0E0E0;
 
 @mixin phoneMail{
-    border: 2px solid $main-color3;
+    border: 2px solid $main-color1;
     border-radius: 10px;
     width: 260px;
-    height: 100px;
-    position: absolute;
-    margin-top: 500px;
-    margin-left: -40px;
+    height: 100px;   
     text-align: center;
     padding: 10px 25px;
     background-color: $main-color;
 }
 
-<<<<<<< HEAD
-@mixin window{
-    width: 70%;
-    height: 500px;
-    margin-left: 380px;
+@mixin indexPage{ 
+    padding-left: 30px;
+    box-shadow: 10px 10px 15px $main-color5;
+    background-color: $main-color5;    
 }
 
-
-// ****************************Header
+//******************************header stránek****************
 .index{
-    width: 100%;
-    height: 100vh; 
-    background-color: $main-color2;
-    background: url(../IMG/my_foto.png);
-    box-shadow: 10px 10px 15px $main-color5;
+    @include indexPage;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/ja.png);
     background-position: right;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-
+    background-size:contain;    
 }
 
-.cv{
-    width: 100%;
-    height: 100vh; 
-    background-color: $main-color2;
+.page-index {
+    @include indexPage;
+    height: 800px;
+       
 }
 
-// ******************************navigace
-=======
+.page-index-curiculum{
+    @include indexPage;
+    height: 1100px;
+}
+
 // ******************************navigace (na všech stránkách stejná)
->>>>>>> responzivita
-.menu{
-    position: absolute;
+.menuBurger{ 
+    padding: 10px;
+    margin: auto;
+    display: none;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    position: relative;
     width: 300px;
     height: 90vh;
-    background-color: $main-color1;
-    margin-top: 40px;
-    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: $main-color4;  
     box-shadow: 10px 10px 20px $main-color5;
     border-radius: 10px;
 }
 
-.slozka_close, .slozka_open{
-    width:40px;
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 20px;
-    cursor: pointer;
-    display: none;
-}
-
-.navigace{
-    height: 300px;
-    margin-top: 100px;
-   
-}
-
-.navigace img{
+nav img{
     width: 50px;
 }
 
-.navigace li{
-    margin-top: 40px;
-    list-style-type: none;
-    text-align: center;    
+nav li{
+   display: flex;   
+   flex-direction: column;
+   align-items: center;
+  
 }
 
-.navigace a{
+nav a{
     text-decoration: none;
-    font-weight: 600;
     color: $main-color3;
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    padding: 10px;
 }
 
-.active{
+.active, nav a:hover{
     box-shadow: 5px 2px 15px $main-color3;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-.active_house{
-    box-shadow: 5px 2px 15px $main-color3;
-    padding-top: 35px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     border-radius: 10px;
 }    
     
-.cv{
-    position: absolute;
-    display: inline-block;
-    width: 100%;    
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    background-color: #89345e;    
+.download, .media{
+    text-align: center; 
+}
+
+.download a{
     color: $main-color2;
-    letter-spacing: 2px;
-    margin-top: 20px;
-   
-}
-
-.follow{
-<<<<<<< HEAD
-    @include font;
-    color: $main-color4;
-=======
-    color: $main-color;
->>>>>>> responzivita
-    letter-spacing: 2px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 20px;
-    margin-top: 80px;
-}
-
-.socMedia{
-    margin-top: 20px;
-    width: 30px;
-    margin-left: 135px;
-
-}
-
-.socMedia_responzivita{
-    display: none;
-}
-
-.title_name{
-    width: 800px;
-    height: 450px;
-    margin-left: 122px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.title{
-    position: absolute;
-<<<<<<< HEAD
-    @include font;
-=======
->>>>>>> responzivita
-    width: 800px;
-    height: 650px;
-    color: $main-color3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 // ****************************************Index - hlavní stránka
+.title{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    height: 90vh;    
+}  
 
-.index{
-    width: 100vw;
-    height: 100vh; 
-    background-color: $main-color2;
-    background: url(../IMG/my_foto.png);
-    background-position: right;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-    box-shadow: 10px 10px 15px $main-color5;
-    border-radius: 10px;
-}
-
-.foto_mobil{
-    display: none;
-}
-
-.animation {
-    height: 40px;
-    overflow:hidden;
-<<<<<<< HEAD
-
-    @include font;
-=======
->>>>>>> responzivita
-    font-size: 35px;
-    line-height: 40px;
-    color: $main-color4;
-    
-}
-
-    .content_animation {
-      font-weight: 600;
-      overflow: hidden;
-      height: 40px;
-      padding: 0 0px;
-    }
-  
-    .hi:before {
-        content: '[';
-        left: 190px;
-      }
-  
-    .hi:after {
-        content: ']';
-        position: absolute;
-        right: 220px;
-      }
-  
-      .hi:after, .hi:before {
-        position: absolute;
-        top: 5%;
-        color: $main-color;
-        font-size: 40px;
-        line-height: 40px;
-        
-        -webkit-animation-name: opacity;
-        -webkit-animation-duration: 2s;
-        -webkit-animation-iteration-count: infinite;
-        animation-name: opacity;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-      }
-  
-      .hi {
-        display: inline;
-        float: left;
-        margin: 0;
-      }
-  
-      .animation_list {
-        margin-top: 0px;
-        padding-left: 110px;
-        text-align: left;
-        list-style: none;
-        
-        -webkit-animation-name: change;
-        -webkit-animation-duration: 10s;
-        -webkit-animation-iteration-count: infinite;
-        animation-name: change;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-      }
-  
-        .animation_list_item {  
-          line-height:40px;
-          margin:0;
-          
-        }
-      
-    
-
-  
-  @-webkit-keyframes opacity {
-    0%, 100% {opacity:0;}
-    50% {opacity:1;}
-  }
-  
-  @-webkit-keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-    16.66%, 29.32% {transform:translate3d(0,25%,0);}
-    33.32%, 45.98% {transform:translate3d(0,50%,0);}
-    49.98%, 62.64% {transform:translate3d(0,75%,0);}
-    66.64%, 79.3% {transform:translate3d(0,50%,0);}
-    83.3%, 95.96% {transform:translate3d(0,25%,0);}
-    
-  }
-  
-  @-o-keyframes opacity {
-    0%, 100% {opacity:0;}
-    50% {opacity:1;}
-  }
-  
-  @-o-keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-    16.66%, 29.32% {transform:translate3d(0,25%,0);}
-    33.32%,45.98% {transform:translate3d(0,50%,0);}
-    49.98%,62.64% {transform:translate3d(0,75%,0);}
-    66.64%,79.3% {transform:translate3d(0,50%,0);}
-    83.3%,95.96% {transform:translate3d(0,25%,0);}
-  }
-  
-  @-moz-keyframes opacity {
-    0%, 100% {opacity:0;}
-    50% {opacity:1;}
-  }
-  
-  @-moz-keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-    16.66%, 29.32% {transform:translate3d(0,25%,0);}
-    33.32%,45.98% {transform:translate3d(0,50%,0);}
-    49.98%,62.64% {transform:translate3d(0,75%,0);}
-    66.64%,79.3% {transform:translate3d(0,50%,0);}
-    83.3%,95.96% {transform:translate3d(0,25%,0);}
-  }
-  
-  @keyframes opacity {
-    0%, 100% {opacity:0;}
-    50% {opacity:1;}
-  }
-  
-  @keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
-    33.32%,45.98% {transform:translate3d(0,-50%,0);}
-    49.98%,62.64% {transform:translate3d(0,-75%,0);}
-    66.64%,79.3% {transform:translate3d(0,-50%,0);}
-    83.3%,95.96% {transform:translate3d(0,-25%,0);}
-  }
-
-.name{
+.intro {
     width: 100%;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-top: -30px;    
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
 }
 
-.Iam{
-    font-size: 50px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    color: $main-color3;
-
-}
-.myName{
-    font-size: 60px;
-    color: $main-color;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: $main-color;
-}
-
-.foto_mobil{
-    display: none;
-}
-
-.text{
-    // margin-top: 0px;
+.myName {
+    color: $main-color2;
     font-size: 25px;
-    letter-spacing: 2px;
 }
 
-.text{
-    display: inline-block;
-    width: 100%;
-    font-size: 24px;
-    letter-spacing: 3px;
-    margin-top: 0px;
-    text-align: left;
+.textAboutMe{
+    font-size: 20px;
+    line-height: 30px;
 }
-
-.two{
-    width: 100%;
-    letter-spacing: 4.5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.three{
-    letter-spacing: 5px;
-}
-
-.btn_port{
-    display: inline-block;
-    text-decoration: none;
-    margin-bottom: 140px;
+  
+span{
     font-size: 25px;
-    color: $main-color3;
-    font-weight: 700;
-    border: $main-color1 4px solid;
-    border-radius: 10px;
-    letter-spacing: 1px;
-    padding: 10px 15px;
-    border-style: outset;
-    background-color:$main-color1;
-
+    color: $main-color2;
+    font-weight: 600;
 }
-
-.btn_port:hover{
-    border-style: inset;
-}
-
-
-
-<<<<<<< HEAD
-    100%{
-        opacity: 1;
-        transform: translateY(40px);
-    }
-}
-// ***************************************Main
-.h1{
-    background-color: $main-color2;
-    height: 20px;
-=======
-// ***************************************MAIN
-.main_index{
-    background-color: $main-color2;
-    height: 1320px;
->>>>>>> responzivita
-    width: 100%;
-    margin-top: -20px;
-}
-
 // *******************************Index MAIN
 .prolog{
-    position: relative;
-    width: 90%;
-    height: 700px;
+    width: 90vw;
+    height: 100vh;
     margin: 0 auto;
     background-color: $main-color2;
     box-shadow: 10px 10px 15px $main-color5;
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     z-index: 1;
 }
 
 .prolog_about_me{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    height: 400px;
+    width: 40%;
+    height: 60%;
     color: $main-color3;
 }
 
 .prolog_about_me h1{
-    width: 230px;
-    margin-top: 100px;
-<<<<<<< HEAD
-    @include font;
-=======
->>>>>>> responzivita
+    // width: 230px;
     border-left: $main-color3 6px solid;
     font-size: 28px;
+    padding-left: 20px;
     letter-spacing: 1px;
 }
 
 .prolog_about_me p{
     margin-top: 20px;
-<<<<<<< HEAD
-    @include font;
-=======
->>>>>>> responzivita
     letter-spacing: 1px;
     font-size: 21px;
 }
@@ -506,78 +186,68 @@ $main-color5:#716D6E;
     margin-bottom: 8px;
     
 }
+.contact{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
-.phoneNumber{
+.phoneNumber, .email{
     @include phoneMail;
 }
 
 .phoneNumber a, .email a{
     text-decoration: none;
-    color: $main-color3;
-    display: inline-block;
-    position: relative;
-    font-weight: 600;
-     
-}
-
-.email{
-    @include phoneMail;
-    margin-left: 300px;
-}
-
-.phoneNumber .email:hover{
-    border-style: groove;
+    color: $main-color3;     
 }
 // ************************************skilly
-.WhichIWork{
-    margin-top: 20px;
-    position: absolute;
-    color: $main-color1;
-<<<<<<< HEAD
-    @include font;
-=======
->>>>>>> responzivita
-    letter-spacing: 2px;
-    font-size: 30px;
-    border-bottom: 2px solid $main-color1;
-    text-decoration: underline;
-}
 
 .skills{
-    box-shadow: 10px 10px 15px $main-color5;
-    border-radius: 10px;
-    margin-top: -20px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    perspective: 1000;
-    height: 700px;
-     
+    justify-content: center;
+    box-shadow: 10px 10px 15px $main-color5;
+    border-radius: 10px;    
 }
+
+.skills h1{   
+    font-size: 30px;
+    color: $main-color;
+    border-bottom: 2px solid $main-color1;
+    letter-spacing: 2px;
+}
+
 .skill{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 700px;
-    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
 }
 
 .cardfull{
     width: 100px;
     height: 100px;
-    background: $main-color1;
+    margin: 0 10px;
+    background: $main-color2;
     position: relative;
-    border: 2px solid $main-color1;
     border-radius: 10px;
 }
 
-.card{
+.cardfull p{
     position: absolute;
     width: 100%;
-    left: 0;
-    top: -60px;
-    color: $main-color2;
-    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $main-color3;
 }
 
 .cardfull img{
@@ -592,111 +262,21 @@ $main-color5:#716D6E;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
 }
 
-<<<<<<< HEAD
-
-
-// ********************************************ŽIVOTOPIS
-main h1{
-    @include font;
-    // position: relative;
-    text-align: center;
-    // margin-top: 120px;
-    // padding-top: 50px;
-    // letter-spacing: 2px;
-    font-size: 60px;
-    // margin: 20px 750px;
-    color: $main-color1;
-=======
-// ****************************Header
-header{
+// **********************************************************Portfolio
+.portfolio{
     width: 100vw;
-    height: 150px;
-    // background-color: $main-color2;
-    position: absolute;
-    background-color:$main-color4;
->>>>>>> responzivita
+    height: 100vh;     
 }
 
-.headline{ 
-    position: absolute;
-    width: 1000px;
-    margin-left: 340px;
-    line-height: 150px;
-    text-align: center;    
-    letter-spacing: 2px;
-    font-size: 50px;
-    color: $main-color1;
-}
-// ***********************************************WHOARE
-.who{
-    background-color: $main-color2;
-    height: 1525px;
-    width: 100vw;    
-}
-
-main h1{
-    color: $main-color;
-    margin-bottom: 20px;
-    text-align: center;
-    margin-top: 100px;
-   
-}
-
-.name_who_are{
-    font-size: 45px;
-    color: $main-color3;
-}
-
-.head_title_who_are{
-    font-size: 30px;
-    color: $main-color;
-}
-
-.text_who_are{
-    font-size: 19px;
-    line-height: 23px;
-    margin-top: 10px;
-    text-align: center;
-}
-
- .title_who_are{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: $main-color;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px 0;
-    box-shadow: 10px 10px 15px $main-color5;
-    border-radius: 10px;
-    font-size: 18px;
-} 
-
-.my_foto_front{
-    width: 500px;
-    margin-top: 1010px;
-    margin-left: -30px;
-    
-}
-
-// ****************************************************************Portfolio
-.port{
-    background-color: $main-color2;
-    height: 1220px;
-    width: 100vw;
-    
-}
 .preview{
-    @include window;
-    height: 500px;
-    margin-top: 150px;
-    position: absolute;
+    width: 90%;
+    height: 100%;
     display: flex;
-    flex-direction: row;    
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;    
     flex-wrap: wrap;
-    align-content: space-around;
+    margin: auto;
+
 }
 
 .flip-box, .preview-content, .title-front{
@@ -715,7 +295,6 @@ main h1{
     border-radius: 10px;
     transition: transform 2s;
     transform-style: preserve-3d;
-    
 }
 
 .flip-box img{
@@ -735,22 +314,20 @@ main h1{
 
 .title-front{
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     color: $main-color;
     border-radius: 10px;
     font-size: 20px;
     font-weight: 600;
     z-index: 999;
-    line-height: 200px;
-    text-align: center;
     transform: translateZ(80px) translate(-50%,-50%);
 }
 
 .flip-box:hover 
 .flip-box-inner{
     transform: rotateY(180deg);
-    box-shadow: 10px 10px 15px $main-color2;
+    box-shadow: 5px 5px 20px $main-color3;
 }
 
 .front, .back{
@@ -760,24 +337,22 @@ main h1{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-}
-
-.front{
-    background-color: $main-color4;
-    color: #010D00;
     border-radius: 10px;
 }
 
+.front{
+    background-color: $main-color5;
+}
+
 .back{
-    position: absolute;
+    // position: absolute;
     line-height: 200px;
     text-align: center;
     font-size: 25px;
     overflow: hidden;
-    background-color: $main-color1;
+    background-color: $main-color2;
     border-radius: 10px;
-    transform: rotateY(180deg);
-    
+    transform: rotateY(180deg); 
 }
 
 .back a{
@@ -795,21 +370,15 @@ main h1{
 
 // ********************************************ŽIVOTOPIS
 .curiculum{
-    background-color: $main-color2;
-    height: 1720px;
     width: 100vw;
-    
+    height: 100%;  
+    display: flex;
+    justify-content: center;
 }
+
 .icon{
     width: 50px;
-    margin-left: -60px;
-
-}
-.row{
-   @include window;
-   height: 1000px;
-   position: absolute;
-   margin-top: 150px;
+    margin-right: 20px;
 }
 
 .textCV{
@@ -818,231 +387,62 @@ main h1{
    justify-content: center;
    align-items: center;
    color: $main-color3;
-   margin-top: 40px;
-   padding: 10px 0;
-   box-shadow: 10px 10px 15px $main-color5;
+   padding: 5px 0;
    border-radius: 10px;
-   background-color: $main-color4;
+   background-color: $main-color;
 }
 
-.kurz{
-    margin-top: 120px;
-}
-
-<<<<<<< HEAD
-h2{
-    @include font;
-    
-
-}
-
-h3{
-    @include font;
-=======
 h3{  
->>>>>>> responzivita
-    color: $main-color1;
+    color: $main-color4;
     margin-top: 24px;
     margin-bottom: 20px;
     text-decoration: underline;
-    font-size: 20px;
-    text-align: center;
+    font-size: 22px;
 }
 
-<<<<<<< HEAD
-h4{
-    @include font;
-=======
 h4{ 
->>>>>>> responzivita
-    margin-bottom: 10px;
-    font-size: 18px;
-    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: $main-color2;
 }
 
-<<<<<<< HEAD
-.popis{
-    @include font;
-=======
 .popis{ 
->>>>>>> responzivita
     line-height: 25px;
-    margin-top: 40px;
+    margin: 30px 0;
     font-size: 17px;
-    text-align: center;
 }
 
 .document{
     width: 40px;
-    margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    
 }
 
-<<<<<<< HEAD
-.watch a{
-    font-size: 15px;
-    color: $main-color;
-    font-weight: 600;
-    @include font;
-    margin-left: 20px;
-    margin-top: -30px;
-}
-
-// ****************************************************************Portfolio
-.preview{
-    // height: 100vh;
-    @include window;
-    position: relative;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;    
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: space-around;
-}
-
-.flip-box, .preview-content, .title-front{
-    background-color: transparent;
-    width: 280px;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px $main-color5;
-    perspective: 1000px;
-}
-
-.flip-box-inner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    border-radius: 10px;
-    transition: transform 1.8s;
-    transform-style: preserve-3d;
-}
-
-.flip-box img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border-radius: 10px;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 10% 100%;
-    transform: translateZ(2rem);
-}
-
-.title-front{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: $main-color4;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    z-index: 999;
-    line-height: 200px;
-    text-align: center;
-    transform: translateZ(80px) translate(-50%,-50%);
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: $main-color3;
-}
-
-.flip-box:hover 
-.flip-box-inner{
-    transform: rotateY(180deg);
-}
-
-.front, .back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-}
-
-.front{
-    background-color: $main-color;
-    color: #010D00;
-    border-radius: 10px;
-    @include font;
-    // z-index: 1;
-}
-
-.back{
-    position: absolute;
-    // top: 40%;
-    line-height: 200px;
-    text-align: center;
-    font-size: 25px;
-    overflow: hidden;
-    background-color: $main-color1;
-    border-radius: 10px;
-    @include font;
-    // z-index: 0;
-    transform: rotateY(180deg);
-    
-}
-
-.back a{
-    color: #010D00;
-    position: absolute;
-    top: 20%;
-    left: 15%;
-    font-size: 20px;
-    color: $main-color4;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    @include font;
-
-}
-
-.html-back{
-    color: #010D00;
-    border: 2px solid green;
-}
-
-
-=======
 .certifications{
     display: flex;
     flex-direction: column;
-
 }
 
 .certifications a{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     margin-left: 20px;
     line-height: 20px;
+    color: $main-color;
 }
 
 .document{
     width: 40px;
     margin-top: 10px;
     margin-left: 0px;
-    margin-right: 20px;
-    
+    margin-right: 20px; 
 }
->>>>>>> responzivita
 
 // ********************************************Footer
-footer{
-    width: 100%;
-    height: 100px;
-    background-color: $main-color1;
-    border-top: 1px solid $main-color5;
-}
-
 footer p{
     color: $main-color3;
     text-align: center;
     font-size: 20px;
-    line-height: 100px;
+    background-color: $main-color4;
+    padding: 20px 0px;
 }
