@@ -10,7 +10,7 @@ header{
     width: 100%;
     height: 90vh;
     background:linear-gradient(rgba(63, 11, 63, 0.411), rgba(255, 255, 0, 0.514)),
-        url(../img/main-photo.jpg);
+        url(../IMG/main-photo.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,7 +68,7 @@ header p{
 /* ´*************************************Teams */
 .teams{
     background:linear-gradient(rgba(63, 11, 63, 0.411), rgba(255, 255, 0, 0.514)),
-        url(../img/main-photo.jpg);
+        url(../IMG/main-photo.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,7 +128,7 @@ header p{
 
 .references{
     background:linear-gradient(rgba(63, 11, 63, 0.411), rgba(255, 255, 0, 0.514)),
-        url(../img/main-photo.jpg);
+        url(../IMG/main-photo.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -242,7 +242,7 @@ header p{
   /* *****************************************Contact-3 */
 .contact{
     background:linear-gradient(rgba(63, 11, 63, 0.411), rgba(255, 255, 0, 0.514)),
-        url(../img/main-photo.jpg);
+        url(../IMG/main-photo.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
